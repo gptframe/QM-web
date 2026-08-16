@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantamorph Limited | Precision Manufacturing, Engineered Without Compromise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+:root{
+  --bg:#08090b; --bg2:#0d0f12; --accent:#d61f2c; --accent2:#3a6ff5;
+  --grey:#9aa0a6; --line:#242629; --white:#f5f6f7;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;overflow-x:hidden;}
+h1,h2,h3,.display{font-family:'Archivo',sans-serif;text-transform:uppercase;letter-spacing:-0.02em;}
+a{color:inherit;text-decoration:none;}
+
+nav{position:fixed;top:0;left:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:24px 5%;mix-blend-mode:difference;}
+.logo{font-family:'Archivo',sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:1px;}
+.logo span{color:var(--accent);}
+.navlinks{display:flex;gap:36px;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;}
+.navlinks a{opacity:0.75;transition:opacity 0.3s;}
+.navlinks a:hover{opacity:1;}
+.navcta{border:1px solid var(--white);padding:8px 20px;border-radius:30px;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;}
+
+.hero{height:100vh;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden;}
+.hero-bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(15%) brightness(0.45);transform:scale(1.05);}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(8,9,11,0.55) 0%, rgba(8,9,11,0.35) 40%, rgba(8,9,11,0.9) 100%);}
+.hero-content{position:relative;z-index:2;padding:0 20px;}
+.hero-tag{font-size:0.85rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:24px;font-weight:700;}
+.hero h1{font-size:clamp(2.8rem,8vw,7rem);line-height:0.95;font-weight:900;max-width:1200px;}
+.hero h1 .outline{-webkit-text-stroke:1.5px var(--white);color:transparent;}
+.hero-sub{margin-top:28px;color:#d5d7da;font-size:1.1rem;max-width:600px;font-weight:300;margin-left:auto;margin-right:auto;}
+
+.story{position:relative;background:var(--bg);}
+.story-pin{height:100vh;position:relative;overflow:hidden;}
+.story-imgstage{position:absolute;inset:0;width:100%;height:100%;}
+.story-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:brightness(0.55) saturate(1.05);}
+.story-caption{position:absolute;z-index:5;left:6%;bottom:14%;max-width:600px;}
+.story-caption .num{font-size:0.85rem;color:var(--accent);letter-spacing:0.3em;margin-bottom:16px;font-weight:700;}
+.story-caption h2{font-size:clamp(2.2rem,5.5vw,4.2rem);font-weight:800;line-height:1.05;}
+.story-caption p{margin-top:18px;color:#d5d7da;max-width:480px;font-weight:300;font-size:1.05rem;}
+.story-progress{position:absolute;bottom:6%;right:6%;z-index:5;display:flex;gap:8px;}
+.story-progress .dot{width:34px;height:3px;background:rgba(255,255,255,0.25);transition:background 0.3s;}
+.story-progress .dot.active{background:var(--accent);}
+
+.services{padding:160px 5% 120px;background:var(--bg);}
+.section-head{max-width:700px;margin-bottom:80px;}
+.section-tag{color:var(--accent);font-size:0.8rem;letter-spacing:0.3em;text-transform:uppercase;font-weight:700;margin-bottom:18px;}
+.section-head h2{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.05;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--line);}
+.service-card{background:var(--bg);padding:44px 34px;transition:background 0.4s;position:relative;overflow:hidden;}
+.service-card:hover{background:var(--bg2);}
+.service-card .sn{font-size:0.75rem;color:var(--grey);letter-spacing:0.15em;}
+.service-card h3{font-size:1.3rem;margin-top:18px;margin-bottom:14px;font-weight:700;}
+.service-card p{color:var(--grey);font-size:0.92rem;font-weight:300;line-height:1.6;}
+
+.sectors{padding:100px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;}
+.sectors-head{padding:0 5% 50px;}
+.marquee{display:flex;white-space:nowrap;animation:marquee 28s linear infinite;}
+.marquee span{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(2.5rem,7vw,5.5rem);color:transparent;-webkit-text-stroke:1px var(--grey);padding:0 40px;text-transform:uppercase;}
+.marquee span.hi{-webkit-text-stroke:1px var(--accent);color:var(--accent);}
+@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+.trust{padding:140px 5%;background:var(--bg);}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+.trust-list{display:flex;flex-direction:column;gap:0;}
+.trust-item{padding:28px 0;border-bottom:1px solid var(--line);}
+.trust-item h4{font-size:1.1rem;font-weight:700;margin-bottom:8px;}
+.trust-item p{color:var(--grey);font-size:0.9rem;font-weight:300;}
+.trust-visual{position:sticky;top:120px;border-radius:10px;overflow:hidden;height:640px;}
+.trust-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(25%);}
+
+.gallery{padding:0 0 140px;}
+.gallery-track{display:flex;gap:16px;padding:0 5%;overflow-x:auto;scrollbar-width:none;}
+.gallery-track::-webkit-scrollbar{display:none;}
+.gallery-item{flex:0 0 auto;width:420px;height:520px;border-radius:8px;overflow:hidden;position:relative;}
+.gallery-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(10%) brightness(0.92);transition:transform 0.6s;}
+.gallery-item:hover img{transform:scale(1.06);}
+.gallery-label{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,rgba(0,0,0,0.9));font-size:0.95rem;font-weight:600;letter-spacing:0.03em;}
+
+.mission{padding:160px 5%;text-align:center;background:var(--bg2);border-top:1px solid var(--line);}
+.mission blockquote{font-size:clamp(1.5rem,3.5vw,2.6rem);font-weight:600;line-height:1.3;max-width:960px;margin:0 auto 24px;font-family:'Archivo',sans-serif;}
+.mission cite{color:var(--accent);font-style:normal;font-size:0.85rem;letter-spacing:0.2em;text-transform:uppercase;}
+
+.cta{padding:160px 5%;text-align:center;background:var(--bg);}
+.cta h2{font-size:clamp(2.2rem,6vw,4.5rem);font-weight:900;margin-bottom:36px;}
+.cta-btn{display:inline-block;padding:20px 52px;background:var(--accent);color:white;border-radius:40px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;font-size:0.95rem;transition:transform 0.3s, box-shadow 0.3s;}
+.cta-btn:hover{transform:scale(1.05);box-shadow:0 20px 50px rgba(214,31,44,0.4);}
+
+footer{padding:60px 5% 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;color:var(--grey);font-size:0.85rem;}
+footer .fcol h5{color:var(--white);margin-bottom:12px;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;}
+footer .fcol p, footer .fcol a{display:block;margin-bottom:6px;font-weight:300;}
+
+@media(max-width:768px){
+  .navlinks{display:none;}
+  .trust-grid{grid-template-columns:1fr;}
+  .trust-visual{position:relative;top:0;height:360px;}
+  .story-caption{left:5%;right:5%;bottom:10%;}
+  .gallery-item{width:280px;height:360px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">QUANTA<span>MORPH</span></div>
+  <div class="navlinks">
+    <a href="#services">Services</a>
+    <a href="#sectors">Sectors</a>
+    <a href="#trust">Why Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="navcta">Get a Quote</a>
+</nav>
+
+<section class="hero">
+  <img src="assets/stage3_milling.jpg" class="hero-bgimg" alt="Precision CNC machining">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">UK Precision Manufacturing Partner</div>
+    <h1>Engineering<br><span class="outline">Without</span><br>Compromise</h1>
+    <p class="hero-sub">From raw material to finished component — precision machining, tooling, and fabrication built to exacting tolerance, backed by a single UK point of accountability.</p>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-pin" id="storyPin">
+    <div class="story-imgstage" id="storyStage"></div>
+    <div class="story-caption" id="storyCaption"></div>
+    <div class="story-progress" id="storyProgress"></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-head">
+    <div class="section-tag">Capability</div>
+    <h2>One partner. Every process.</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="sn">01</div><h3>Design &amp; Engineering</h3><p>GD&amp;T-driven manufacturing drawings, SPM design, and legacy 2D-to-3D conversion.</p></div>
+    <div class="service-card"><div class="sn">02</div><h3>Precision Machining</h3><p>CNC and VMC machining, conventional lathe work, and reverse engineering of worn components.</p></div>
+    <div class="service-card"><div class="sn">03</div><h3>Tooling &amp; Fixtures</h3><p>Special purpose machines, checking fixtures, press tools, and progressive dies.</p></div>
+    <div class="service-card"><div class="sn">04</div><h3>Sheet Metal &amp; Fabrication</h3><p>Laser cutting, CNC bending, TIG/MIG welding, and pipe fabrication.</p></div>
+    <div class="service-card"><div class="sn">05</div><h3>Quality &amp; Metrology</h3><p>100% dimensional inspection against your drawings before every dispatch.</p></div>
+    <div class="service-card"><div class="sn">06</div><h3>Logistics &amp; Delivery</h3><p>Documented, inspected components shipped directly to your UK or EU facility.</p></div>
+  </div>
+</section>
+
+<section class="sectors" id="sectors">
+  <div class="sectors-head"><div class="section-tag">Sectors Served</div></div>
+  <div class="marquee">
+    <span class="hi">Automotive</span><span>Electrical</span><span class="hi">Hydraulics</span><span>Construction</span><span class="hi">Agriculture</span><span>Specialist Equipment</span>
+    <span class="hi">Automotive</span><span>Electrical</span><span class="hi">Hydraulics</span><span>Construction</span><span class="hi">Agriculture</span><span>Specialist Equipment</span>
+  </div>
+</section>
+
+<section class="trust" id="trust">
+  <div class="section-head"><div class="section-tag">Why Manufacturers Trust Us</div><h2>Accountability isn't a slogan here.</h2></div>
+  <div class="trust-grid">
+    <div class="trust-list">
+      <div class="trust-item"><h4>Single UK Point of Contact</h4><p>Quantamorph Limited, registered in London, is your accountable legal partner — not an anonymous overseas factory.</p></div>
+      <div class="trust-item"><h4>ISO 9001 Quality System</h4><p>Every batch is produced and inspected under a certified quality management framework.</p></div>
+      <div class="trust-item"><h4>Confidentiality by Default</h4><p>NDAs available on every engagement. Your drawings are never reused beyond project scope.</p></div>
+      <div class="trust-item"><h4>Full Traceability</h4><p>Inspection documentation and first article reports provided with every shipment.</p></div>
+      <div class="trust-item"><h4>Built-in Continuity</h4><p>Multiple machining and fabrication capabilities reduce single-point-of-failure risk.</p></div>
+    </div>
+    <div class="trust-visual"><img src="assets/stage4_inspect.jpg" alt="Quality inspection"></div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="section-head" style="padding:0 5% 50px;"><div class="section-tag">In Production</div><h2>Real parts. Real precision.</h2></div>
+  <div class="gallery-track" id="galleryTrack"></div>
+</section>
+
+<section class="mission">
+  <blockquote>"To give UK and European businesses a trusted, single point of accountability for precision manufacturing — so our clients can focus on their core business while we deliver parts that are right first time, on time, every time."</blockquote>
+  <cite>— Our Mission</cite>
+</section>
+
+<section class="cta" id="contact">
+  <div class="section-tag" style="justify-content:center;display:flex;">Let's Build Something Precise</div>
+  <h2>Send us your drawing.</h2>
+  <a href="mailto:sales@quantamorph.co.uk" class="cta-btn">Start a Project</a>
+</section>
+
+<footer>
+  <div class="fcol">
+    <h5>Quantamorph Limited</h5>
+    <p>Company No. 17389114</p>
+    <p>71-75 Shelton Street, Covent Garden<br>London, WC2H 9JQ, United Kingdom</p>
+  </div>
+  <div class="fcol">
+    <h5>Navigate</h5>
+    <a href="#services">Services</a>
+    <a href="#sectors">Sectors</a>
+    <a href="#trust">Why Us</a>
+  </div>
+  <div class="fcol">
+    <h5>Contact</h5>
+    <a href="mailto:sales@quantamorph.co.uk">sales@quantamorph.co.uk</a>
+  </div>
+</footer>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+const storyData = [
+  {img:'assets/stage1_raw.jpg', num:'01 / RAW MATERIAL', title:'It starts<br>as raw metal.', text:'Every component begins as certified bar stock or billet — inspected for material grade before it ever touches a machine.'},
+  {img:'assets/stage2_cutting.jpg', num:'02 / CUTTING', title:'Cut to<br>size, fast.', text:'Bandsaw and lathe operations bring raw stock down to workable dimensions, ready for precision machining.'},
+  {img:'assets/stage3_milling.jpg', num:'03 / MACHINING', title:'Precision,<br>cut to tolerance.', text:'5-axis CNC and VMC machining shape every feature to within microns of your engineering drawing.'},
+  {img:'assets/stage4_inspect.jpg', num:'04 / INSPECTION', title:'Nothing ships<br>unchecked.', text:'100% dimensional inspection against your drawing tolerances — every batch, every time, fully documented.'},
+  {img:'assets/stage5_finished.jpg', num:'05 / FINISHED PART', title:'Right first time.<br>On time.', text:'A finished, traceable component — ready to ship directly to your UK or European production line.'}
+];
+
+const stage = document.getElementById('storyStage');
+const caption = document.getElementById('storyCaption');
+const progress = document.getElementById('storyProgress');
+
+const imgEls = storyData.map(d=>{
+  const im = document.createElement('img');
+  im.src = d.img; im.className='story-img';
+  stage.appendChild(im);
+  return im;
+});
+storyData.forEach((d,i)=>{
+  const dot = document.createElement('div');
+  dot.className='dot'+(i===0?' active':'');
+  progress.appendChild(dot);
+});
+function renderCaption(idx){
+  const d = storyData[idx];
+  caption.innerHTML = `<div class="num">${d.num}</div><h2>${d.title}</h2><p>${d.text}</p>`;
+  gsap.fromTo(caption, {opacity:0, y:20}, {opacity:1, y:0, duration:0.5});
+  document.querySelectorAll('.story-progress .dot').forEach((el,i)=>el.classList.toggle('active', i===idx));
+}
+renderCaption(0);
+gsap.set(imgEls[0], {opacity:1});
+
+ScrollTrigger.create({
+  trigger:"#storyPin",
+  start:"top top",
+  end:"+=450%",
+  pin:true,
+  scrub:1,
+  onUpdate:(self)=>{
+    const idx = Math.min(storyData.length-1, Math.floor(self.progress * storyData.length));
+    imgEls.forEach((el,i)=>{
+      gsap.to(el, {opacity: i===idx?1:0, scale: i===idx?1:1.04, duration:0.5, overwrite:true});
+    });
+    if(caption.dataset.idx != idx){
+      caption.dataset.idx = idx;
+      renderCaption(idx);
+    }
+  }
+});
+
+const galleryData = [
+  {img:'assets/stage1_raw.jpg', label:'Raw Material Intake'},
+  {img:'assets/stage3_milling.jpg', label:'CNC Precision Machining'},
+  {img:'assets/turned_gears.jpg', label:'Precision Turned Components'},
+  {img:'assets/stage4_inspect.jpg', label:'Inspection & Metrology'},
+  {img:'assets/press_tool.jpg', label:'Press Tools & Dies'},
+  {img:'assets/welding.jpg', label:'Fabrication & Welding'},
+  {img:'assets/stage5_finished.jpg', label:'Finished Component'},
+];
+const track = document.getElementById('galleryTrack');
+galleryData.forEach(g=>{
+  const item = document.createElement('div');
+  item.className='gallery-item';
+  item.innerHTML = `<img src="${g.img}"><div class="gallery-label">${g.label}</div>`;
+  track.appendChild(item);
+});
+
+gsap.utils.toArray('.service-card').forEach((el,i)=>{
+  gsap.fromTo(el, {opacity:0, y:40}, {opacity:1, y:0, duration:0.8, delay:i*0.05,
+    scrollTrigger:{trigger:el, start:'top 90%'}});
+});
+gsap.utils.toArray('.trust-item').forEach((el,i)=>{
+  gsap.fromTo(el, {opacity:0, x:-30}, {opacity:1, x:0, duration:0.7, delay:i*0.08,
+    scrollTrigger:{trigger:el, start:'top 90%'}});
+});
+</script>
+</body>
+</html>
