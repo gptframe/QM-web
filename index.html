@@ -1,290 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quantamorph Limited | Precision Manufacturing, Engineered Without Compromise</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<style>
-:root{
-  --bg:#08090b; --bg2:#0d0f12; --accent:#d61f2c; --accent2:#3a6ff5;
-  --grey:#9aa0a6; --line:#242629; --white:#f5f6f7;
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;overflow-x:hidden;}
-h1,h2,h3,.display{font-family:'Archivo',sans-serif;text-transform:uppercase;letter-spacing:-0.02em;}
-a{color:inherit;text-decoration:none;}
-
-nav{position:fixed;top:0;left:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:24px 5%;mix-blend-mode:difference;}
-.logo{font-family:'Archivo',sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:1px;}
-.logo span{color:var(--accent);}
-.navlinks{display:flex;gap:36px;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;}
-.navlinks a{opacity:0.75;transition:opacity 0.3s;}
-.navlinks a:hover{opacity:1;}
-.navcta{border:1px solid var(--white);padding:8px 20px;border-radius:30px;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;}
-
-.hero{height:100vh;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden;}
-.hero-bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(15%) brightness(0.45);transform:scale(1.05);}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(8,9,11,0.55) 0%, rgba(8,9,11,0.35) 40%, rgba(8,9,11,0.9) 100%);}
-.hero-content{position:relative;z-index:2;padding:0 20px;}
-.hero-tag{font-size:0.85rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:24px;font-weight:700;}
-.hero h1{font-size:clamp(2.8rem,8vw,7rem);line-height:0.95;font-weight:900;max-width:1200px;}
-.hero h1 .outline{-webkit-text-stroke:1.5px var(--white);color:transparent;}
-.hero-sub{margin-top:28px;color:#d5d7da;font-size:1.1rem;max-width:600px;font-weight:300;margin-left:auto;margin-right:auto;}
-
-.story{position:relative;background:var(--bg);}
-.story-pin{height:100vh;position:relative;overflow:hidden;}
-.story-imgstage{position:absolute;inset:0;width:100%;height:100%;}
-.story-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:brightness(0.55) saturate(1.05);}
-.story-caption{position:absolute;z-index:5;left:6%;bottom:14%;max-width:600px;}
-.story-caption .num{font-size:0.85rem;color:var(--accent);letter-spacing:0.3em;margin-bottom:16px;font-weight:700;}
-.story-caption h2{font-size:clamp(2.2rem,5.5vw,4.2rem);font-weight:800;line-height:1.05;}
-.story-caption p{margin-top:18px;color:#d5d7da;max-width:480px;font-weight:300;font-size:1.05rem;}
-.story-progress{position:absolute;bottom:6%;right:6%;z-index:5;display:flex;gap:8px;}
-.story-progress .dot{width:34px;height:3px;background:rgba(255,255,255,0.25);transition:background 0.3s;}
-.story-progress .dot.active{background:var(--accent);}
-
-.services{padding:160px 5% 120px;background:var(--bg);}
-.section-head{max-width:700px;margin-bottom:80px;}
-.section-tag{color:var(--accent);font-size:0.8rem;letter-spacing:0.3em;text-transform:uppercase;font-weight:700;margin-bottom:18px;}
-.section-head h2{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.05;}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--line);}
-.service-card{background:var(--bg);padding:44px 34px;transition:background 0.4s;position:relative;overflow:hidden;}
-.service-card:hover{background:var(--bg2);}
-.service-card .sn{font-size:0.75rem;color:var(--grey);letter-spacing:0.15em;}
-.service-card h3{font-size:1.3rem;margin-top:18px;margin-bottom:14px;font-weight:700;}
-.service-card p{color:var(--grey);font-size:0.92rem;font-weight:300;line-height:1.6;}
-
-.sectors{padding:100px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;}
-.sectors-head{padding:0 5% 50px;}
-.marquee{display:flex;white-space:nowrap;animation:marquee 28s linear infinite;}
-.marquee span{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(2.5rem,7vw,5.5rem);color:transparent;-webkit-text-stroke:1px var(--grey);padding:0 40px;text-transform:uppercase;}
-.marquee span.hi{-webkit-text-stroke:1px var(--accent);color:var(--accent);}
-@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-
-.trust{padding:140px 5%;background:var(--bg);}
-.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-.trust-list{display:flex;flex-direction:column;gap:0;}
-.trust-item{padding:28px 0;border-bottom:1px solid var(--line);}
-.trust-item h4{font-size:1.1rem;font-weight:700;margin-bottom:8px;}
-.trust-item p{color:var(--grey);font-size:0.9rem;font-weight:300;}
-.trust-visual{position:sticky;top:120px;border-radius:10px;overflow:hidden;height:640px;}
-.trust-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(25%);}
-
-.gallery{padding:0 0 140px;}
-.gallery-track{display:flex;gap:16px;padding:0 5%;overflow-x:auto;scrollbar-width:none;}
-.gallery-track::-webkit-scrollbar{display:none;}
-.gallery-item{flex:0 0 auto;width:420px;height:520px;border-radius:8px;overflow:hidden;position:relative;}
-.gallery-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(10%) brightness(0.92);transition:transform 0.6s;}
-.gallery-item:hover img{transform:scale(1.06);}
-.gallery-label{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,rgba(0,0,0,0.9));font-size:0.95rem;font-weight:600;letter-spacing:0.03em;}
-
-.mission{padding:160px 5%;text-align:center;background:var(--bg2);border-top:1px solid var(--line);}
-.mission blockquote{font-size:clamp(1.5rem,3.5vw,2.6rem);font-weight:600;line-height:1.3;max-width:960px;margin:0 auto 24px;font-family:'Archivo',sans-serif;}
-.mission cite{color:var(--accent);font-style:normal;font-size:0.85rem;letter-spacing:0.2em;text-transform:uppercase;}
-
-.cta{padding:160px 5%;text-align:center;background:var(--bg);}
-.cta h2{font-size:clamp(2.2rem,6vw,4.5rem);font-weight:900;margin-bottom:36px;}
-.cta-btn{display:inline-block;padding:20px 52px;background:var(--accent);color:white;border-radius:40px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;font-size:0.95rem;transition:transform 0.3s, box-shadow 0.3s;}
-.cta-btn:hover{transform:scale(1.05);box-shadow:0 20px 50px rgba(214,31,44,0.4);}
-
-footer{padding:60px 5% 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;color:var(--grey);font-size:0.85rem;}
-footer .fcol h5{color:var(--white);margin-bottom:12px;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;}
-footer .fcol p, footer .fcol a{display:block;margin-bottom:6px;font-weight:300;}
-
-@media(max-width:768px){
-  .navlinks{display:none;}
-  .trust-grid{grid-template-columns:1fr;}
-  .trust-visual{position:relative;top:0;height:360px;}
-  .story-caption{left:5%;right:5%;bottom:10%;}
-  .gallery-item{width:280px;height:360px;}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="UK-facing coordination for drawing-led machining, tooling, fixtures and specialist engineering-system enquiries, from requirement review to delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quantamorph Limited | From drawing to delivered component">
+  <meta property="og:description" content="One enquiry path for drawing-led components, tooling, fixtures, specialist engineering systems and delivery coordination.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Quantamorph Limited | From drawing to delivered component">
+  <meta name="twitter:description" content="One enquiry path for drawing-led components, tooling, fixtures, specialist engineering systems and delivery coordination.">
+  <title>Quantamorph Limited | From Drawing to Delivered Component</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-finished.svg" type="image/svg+xml" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<nav>
-  <div class="logo">QUANTA<span>MORPH</span></div>
-  <div class="navlinks">
-    <a href="#services">Services</a>
-    <a href="#sectors">Sectors</a>
-    <a href="#trust">Why Us</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <a href="#contact" class="navcta">Get a Quote</a>
-</nav>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Quantamorph home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>QUANTA<span>MORPH</span></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-button>
+      <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+    </button>
+    <nav class="site-menu" id="site-menu" aria-label="Primary navigation" data-menu>
+      <a href="#process">Process</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#systems">Systems</a>
+      <a href="#quality">Quality</a>
+      <a href="#applications">Applications</a>
+      <a href="#why">Why us</a>
+      <a class="header-cta" href="mailto:sales@quantamorph.co.uk?subject=Drawing-led%20manufacturing%20enquiry">Send drawing <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <img src="assets/stage3_milling.jpg" class="hero-bgimg" alt="Precision CNC machining">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-tag">UK Precision Manufacturing Partner</div>
-    <h1>Engineering<br><span class="outline">Without</span><br>Compromise</h1>
-    <p class="hero-sub">From raw material to finished component — precision machining, tooling, and fabrication built to exacting tolerance, backed by a single UK point of accountability.</p>
-  </div>
-</section>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-image-wrap" aria-hidden="true" data-hero-image>
+        <picture>
+          <img src="assets/hero-finished.svg" alt="" width="1536" height="1024" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero-vignette" aria-hidden="true"></div>
 
-<section class="story" id="story">
-  <div class="story-pin" id="storyPin">
-    <div class="story-imgstage" id="storyStage"></div>
-    <div class="story-caption" id="storyCaption"></div>
-    <div class="story-progress" id="storyProgress"></div>
-  </div>
-</section>
+      <div class="hero-rail" aria-hidden="true">
+        <span>Requirement</span><i></i><span>Material</span><i></i><span>Process</span><i></i><span>Release</span>
+      </div>
 
-<section class="services" id="services">
-  <div class="section-head">
-    <div class="section-tag">Capability</div>
-    <h2>One partner. Every process.</h2>
-  </div>
-  <div class="services-grid">
-    <div class="service-card"><div class="sn">01</div><h3>Design &amp; Engineering</h3><p>GD&amp;T-driven manufacturing drawings, SPM design, and legacy 2D-to-3D conversion.</p></div>
-    <div class="service-card"><div class="sn">02</div><h3>Precision Machining</h3><p>CNC and VMC machining, conventional lathe work, and reverse engineering of worn components.</p></div>
-    <div class="service-card"><div class="sn">03</div><h3>Tooling &amp; Fixtures</h3><p>Special purpose machines, checking fixtures, press tools, and progressive dies.</p></div>
-    <div class="service-card"><div class="sn">04</div><h3>Sheet Metal &amp; Fabrication</h3><p>Laser cutting, CNC bending, TIG/MIG welding, and pipe fabrication.</p></div>
-    <div class="service-card"><div class="sn">05</div><h3>Quality &amp; Metrology</h3><p>100% dimensional inspection against your drawings before every dispatch.</p></div>
-    <div class="service-card"><div class="sn">06</div><h3>Logistics &amp; Delivery</h3><p>Documented, inspected components shipped directly to your UK or EU facility.</p></div>
-  </div>
-</section>
+      <div class="hero-copy" data-hero-copy>
+        <p class="eyebrow"><span>UK</span> / Manufacturing coordination</p>
+        <h1 id="hero-title">From drawing<br>to delivered<br><em>component.</em></h1>
+        <p class="hero-intro">One UK-facing enquiry path for drawing-led machining, tooling and fabricated-component requirements. Manufacturing scope, inspection and documentation are defined for each quotation.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:sales@quantamorph.co.uk?subject=Drawing-led%20manufacturing%20enquiry">
+            <span>Send your drawing</span><span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="button button-quiet" href="#process"><span>Follow the route</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">Capability, inspection scope and required records are confirmed with the quotation.</p>
+      </div>
 
-<section class="sectors" id="sectors">
-  <div class="sectors-head"><div class="section-tag">Sectors Served</div></div>
-  <div class="marquee">
-    <span class="hi">Automotive</span><span>Electrical</span><span class="hi">Hydraulics</span><span>Construction</span><span class="hi">Agriculture</span><span>Specialist Equipment</span>
-    <span class="hi">Automotive</span><span>Electrical</span><span class="hi">Hydraulics</span><span>Construction</span><span class="hi">Agriculture</span><span>Specialist Equipment</span>
-  </div>
-</section>
+      <div class="hero-spec" aria-hidden="true">
+        <span>Route</span>
+        <strong>Requirement → delivery</strong>
+        <small>Controlled per enquiry</small>
+      </div>
 
-<section class="trust" id="trust">
-  <div class="section-head"><div class="section-tag">Why Manufacturers Trust Us</div><h2>Accountability isn't a slogan here.</h2></div>
-  <div class="trust-grid">
-    <div class="trust-list">
-      <div class="trust-item"><h4>Single UK Point of Contact</h4><p>Quantamorph Limited, registered in London, is your accountable legal partner — not an anonymous overseas factory.</p></div>
-      <div class="trust-item"><h4>ISO 9001 Quality System</h4><p>Every batch is produced and inspected under a certified quality management framework.</p></div>
-      <div class="trust-item"><h4>Confidentiality by Default</h4><p>NDAs available on every engagement. Your drawings are never reused beyond project scope.</p></div>
-      <div class="trust-item"><h4>Full Traceability</h4><p>Inspection documentation and first article reports provided with every shipment.</p></div>
-      <div class="trust-item"><h4>Built-in Continuity</h4><p>Multiple machining and fabrication capabilities reduce single-point-of-failure risk.</p></div>
+      <a class="scroll-start" href="#process">
+        <span class="scroll-line" aria-hidden="true"><i></i></span>
+        <span>Scroll to start production</span>
+      </a>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="process-intro section-shell">
+        <div>
+          <p class="section-index">00—07 / Representative route</p>
+          <h2 id="process-title">The requirement enters.<br>The component moves forward.</h2>
+        </div>
+        <div class="process-intro-copy">
+          <p>A component does not begin at the machine. It begins with a drawing, a material, a quantity and a clear definition of what must be accepted.</p>
+          <p>The route below is illustrative. Operations are selected to suit the part; not every component passes through every process.</p>
+        </div>
+      </div>
+
+      <ol class="sr-only" aria-label="Representative manufacturing route summary">
+        <li>Engineering requirement: drawings, CAD models or a component sample can establish the enquiry.</li>
+        <li>Material: grade, form and supporting-document requirements are considered against the drawing and application.</li>
+        <li>Preparation: stock is prepared for the selected manufacturing route.</li>
+        <li>Machining: operations create the geometry, interfaces and drawing-defined features required by the component.</li>
+        <li>Secondary operations: turning, tooling, fabrication or other supporting operations are considered where the requirement calls for them.</li>
+        <li>Inspection: specified characteristics are checked to the scope agreed for the order.</li>
+        <li>Finished component: the component is prepared for delivery in line with agreed project, packaging and documentation requirements.</li>
+        <li>Delivery and accountability: manufacturing route, location and delivery terms are defined for the quotation.</li>
+      </ol>
+
+      <div class="process-scroll" data-process-scroll>
+        <div class="process-pin" data-process-pin aria-hidden="true">
+          <div class="process-scenes">
+            <figure class="process-scene process-scene--cad is-visible" data-process-scene>
+              <picture>
+                <img src="assets/cad-requirement.svg" alt="" width="1536" height="865" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure class="process-scene" data-process-scene>
+              <picture>
+                <img src="assets/raw-material.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure class="process-scene" data-process-scene>
+              <picture>
+                <img src="assets/rough-machined.svg" alt="" width="1536" height="865" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure class="process-scene" data-process-scene>
+              <picture>
+                <img src="assets/cnc-milling.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure class="process-scene process-scene--secondary" data-process-scene>
+              <div class="secondary-stage">
+                <picture class="secondary-tile secondary-tile--turn" data-secondary-tile>
+                  <img src="assets/turning.svg" alt="" width="960" height="640" loading="lazy" decoding="async">
+                </picture>
+                <picture class="secondary-tile secondary-tile--tool" data-secondary-tile>
+                  <img src="assets/press-tool.svg" alt="" width="960" height="640" loading="lazy" decoding="async">
+                </picture>
+                <picture class="secondary-tile secondary-tile--parts" data-secondary-tile>
+                  <img src="assets/turned-components.svg" alt="" width="960" height="640" loading="lazy" decoding="async">
+                </picture>
+              </div>
+            </figure>
+            <figure class="process-scene process-scene--inspection" data-process-scene>
+              <picture>
+                <img src="assets/inspection.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="measure-line measure-line--a" data-measure-line></span>
+              <span class="measure-line measure-line--b" data-measure-line></span>
+            </figure>
+            <figure class="process-scene process-scene--finished" data-process-scene>
+              <picture>
+                <img src="assets/hero-finished.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure class="process-scene process-scene--delivery" data-process-scene>
+              <picture>
+                <img src="assets/delivery.svg" alt="" width="1536" height="865" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="process-shade"></div>
+          <div class="process-aperture" data-process-aperture></div>
+          <div class="process-grid-overlay"></div>
+
+          <div class="process-topline">
+            <span>Quantamorph / production route</span>
+            <span data-stage-readout>Stage 00 / 07</span>
+          </div>
+
+          <div class="process-captions">
+            <article class="process-caption is-visible" data-process-caption>
+              <p class="caption-kicker">00 / Engineering requirement</p>
+              <h3>You send<br>the requirement.</h3>
+              <p>Drawings, CAD models or a component sample can establish the starting point for an enquiry.</p>
+              <a href="mailto:sales@quantamorph.co.uk?subject=Drawing-led%20manufacturing%20enquiry">Send your drawing <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">01 / Material</p>
+              <h3>Every part<br>starts here.</h3>
+              <p>Material grade, form and supporting-document requirements are considered against the drawing and application.</p>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">02 / Preparation</p>
+              <h3>Prepared<br>for precision.</h3>
+              <p>Stock is prepared to create a controlled starting condition for the selected manufacturing route.</p>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">03 / Machining</p>
+              <h3>Precision<br>takes shape.</h3>
+              <p>Machining operations create the geometry, interfaces and drawing-defined features required by the component.</p>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">04 / Secondary operations</p>
+              <h3>The process adapts<br>to the part.</h3>
+              <p>Turning, tooling, fabrication or other supporting operations are considered only where the requirement calls for them.</p>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">05 / Inspection</p>
+              <h3>Measure.<br>Verify. Release.</h3>
+              <p>Specified characteristics are checked against the approved requirement before release, to the inspection scope agreed for the order.</p>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">06 / Finished component</p>
+              <h3>Ready for<br>the real world.</h3>
+              <p>Finished components are prepared for delivery in line with agreed project, packaging and documentation requirements.</p>
+            </article>
+            <article class="process-caption" data-process-caption>
+              <p class="caption-kicker">07 / Delivery & accountability</p>
+              <h3>One UK-facing<br>enquiry path.</h3>
+              <p>Quantamorph coordinates commercial and technical communication while the manufacturing route, location and delivery terms are defined for the quotation.</p>
+            </article>
+          </div>
+
+          <div class="process-progress-wrap">
+            <div class="process-progress-track"><i data-process-fill></i><b data-process-cursor></b></div>
+            <ol class="process-progress">
+              <li class="is-active" data-process-step><b>00</b><span>Requirement</span></li>
+              <li data-process-step><b>01</b><span>Material</span></li>
+              <li data-process-step><b>02</b><span>Preparation</span></li>
+              <li data-process-step><b>03</b><span>Machining</span></li>
+              <li data-process-step><b>04</b><span>Secondary</span></li>
+              <li data-process-step><b>05</b><span>Inspection</span></li>
+              <li data-process-step><b>06</b><span>Finished</span></li>
+              <li data-process-step><b>07</b><span>Delivery</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <p class="sr-only" aria-live="polite" data-stage-live>Stage 00 of 07: Engineering requirement.</p>
+
+        <ol class="process-fallback" aria-label="Representative manufacturing route">
+          <li>
+            <picture><source type="image/avif" srcset="assets/cad-requirement.svg"><img src="assets/cad-requirement.svg" alt="Illustrative CAD view of a machined component" width="960" height="540" loading="lazy" decoding="async"></picture>
+            <div><span>00 / Requirement</span><h3>You send the requirement.</h3><p>Drawings, CAD models or a component sample can establish the starting point for an enquiry.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/raw-material.svg"><img src="assets/raw-material.svg" alt="Raw metal billet at the start of manufacture" width="960" height="640" loading="lazy" decoding="async"></picture>
+            <div><span>01 / Material</span><h3>Every part starts here.</h3><p>Material grade, form and supporting-document requirements are considered against the drawing and application.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/rough-machined.svg"><img src="assets/rough-machined.svg" alt="Illustrative component emerging from an aluminium billet" width="960" height="540" loading="lazy" decoding="async"></picture>
+            <div><span>02 / Preparation</span><h3>Prepared for precision.</h3><p>Stock is prepared to create a controlled starting condition for the selected manufacturing route.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/cnc-milling.svg"><img src="assets/cnc-milling.svg" alt="CNC milling operation on an aluminium component" width="960" height="640" loading="lazy" decoding="async"></picture>
+            <div><span>03 / Machining</span><h3>Precision takes shape.</h3><p>Machining operations create the geometry, interfaces and drawing-defined features required by the component.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/press-tool.svg"><img src="assets/press-tool.svg" alt="Illustrative precision production tooling" width="960" height="640" loading="lazy" decoding="async"></picture>
+            <div><span>04 / Secondary operations</span><h3>The process adapts to the part.</h3><p>Turning, tooling, fabrication or other supporting operations are considered only where the requirement calls for them.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/inspection.svg"><img src="assets/inspection.svg" alt="Inspector checking a machined component with measuring equipment" width="960" height="640" loading="lazy" decoding="async"></picture>
+            <div><span>05 / Inspection</span><h3>Measure. Verify. Release.</h3><p>Specified characteristics are checked against the approved requirement before release, to the inspection scope agreed for the order.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/hero-finished.svg"><img src="assets/hero-finished.svg" alt="Finished precision-machined aluminium component" width="960" height="640" loading="lazy" decoding="async"></picture>
+            <div><span>06 / Finished component</span><h3>Ready for the real world.</h3><p>Finished components are prepared for delivery in line with agreed project, packaging and documentation requirements.</p></div>
+          </li>
+          <li>
+            <picture><source type="image/avif" srcset="assets/delivery.svg"><img src="assets/delivery.svg" alt="Illustrative finished component protected for delivery" width="960" height="540" loading="lazy" decoding="async"></picture>
+            <div><span>07 / Delivery</span><h3>One UK-facing enquiry path.</h3><p>Manufacturing route, location and delivery terms are defined for the quotation.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="capabilities section-shell" id="capabilities" aria-labelledby="capabilities-title">
+      <header class="section-heading section-heading--split">
+        <div>
+          <p class="section-index">Capabilities / Route selection</p>
+          <h2 id="capabilities-title">Select the process<br>around the part.</h2>
+        </div>
+        <p>Support for drawing-led component and tooling enquiries. Available processes, capacity and lead time are confirmed against the specific requirement.</p>
+      </header>
+
+      <div class="capability-switcher">
+        <figure class="capability-media" id="capability-panel" role="tabpanel" aria-labelledby="capability-tab-0" tabindex="0">
+          <picture data-capability-picture>
+            <img data-capability-image src="assets/cad-requirement.svg" alt="Illustrative CAD view for engineering requirement review" width="1536" height="865" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="capability-caption">
+            <span data-capability-kicker>01 / Define</span>
+            <h3 data-capability-title>Engineering &amp; DFM</h3>
+            <p data-capability-copy>Drawing and requirement review, with manufacturability questions raised before a route is agreed.</p>
+          </figcaption>
+          <small>Illustrative process imagery</small>
+        </figure>
+
+        <div class="capability-tabs" role="tablist" aria-orientation="vertical" aria-label="Manufacturing capabilities">
+          <button id="capability-tab-0" type="button" role="tab" aria-selected="true" aria-controls="capability-panel" tabindex="0" data-capability data-base="cad-requirement" data-image="assets/cad-requirement.svg" data-ratio="1536 865" data-alt="Illustrative CAD view for engineering requirement review" data-kicker="01 / Define" data-title="Engineering & DFM" data-copy="Drawing and requirement review, with manufacturability questions raised before a route is agreed."><b>01</b><span>Engineering &amp; DFM</span><i>Define</i></button>
+          <button id="capability-tab-1" type="button" role="tab" aria-selected="false" aria-controls="capability-panel" tabindex="-1" data-capability data-base="cnc-milling" data-image="assets/cnc-milling.svg" data-ratio="1536 1024" data-alt="Illustrative CNC milling operation" data-kicker="02 / Shape" data-title="CNC machining" data-copy="Milled-component routes considered against geometry, material and drawing-defined features."><b>02</b><span>CNC machining</span><i>Shape</i></button>
+          <button id="capability-tab-2" type="button" role="tab" aria-selected="false" aria-controls="capability-panel" tabindex="-1" data-capability data-base="turning" data-image="assets/turning.svg" data-ratio="1536 1024" data-alt="Illustrative CNC turning operation" data-kicker="03 / Rotate" data-title="Turned components" data-copy="Turning routes for shafts, sleeves and rotational features, subject to confirmed capacity and tolerances."><b>03</b><span>Turned components</span><i>Rotate</i></button>
+          <button id="capability-tab-3" type="button" role="tab" aria-selected="false" aria-controls="capability-panel" tabindex="-1" data-capability data-base="press-tool" data-image="assets/press-tool.svg" data-ratio="1536 1024" data-alt="Illustrative precision production tooling" data-kicker="04 / Enable" data-title="Tooling & fixtures" data-copy="Production tooling, checking fixtures and workholding requirements considered around the intended process."><b>04</b><span>Tooling &amp; fixtures</span><i>Enable</i></button>
+          <button id="capability-tab-4" type="button" role="tab" aria-selected="false" aria-controls="capability-panel" tabindex="-1" data-capability data-base="inspection" data-image="assets/inspection.svg" data-ratio="1536 1024" data-alt="Illustrative dimensional inspection of a machined component" data-kicker="05 / Verify" data-title="Inspection planning" data-copy="Acceptance characteristics, checking scope and required records defined before manufacture."><b>05</b><span>Inspection planning</span><i>Verify</i></button>
+          <button id="capability-tab-5" type="button" role="tab" aria-selected="false" aria-controls="capability-panel" tabindex="-1" data-capability data-base="delivery" data-image="assets/delivery.svg" data-ratio="1536 865" data-alt="Illustrative component protected for delivery" data-kicker="06 / Coordinate" data-title="Supply coordination" data-copy="One UK-facing route for enquiry review, technical communication and delivery coordination."><b>06</b><span>Supply coordination</span><i>Coordinate</i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="component-scope" id="components" aria-labelledby="components-title">
+      <div class="component-scope-grid section-shell">
+        <figure class="component-visual reveal-item">
+          <picture>
+            <img src="assets/turned-components.svg" alt="Illustrative group of precision turned components and gears" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>Illustrative component range / capability subject to enquiry review</figcaption>
+        </figure>
+        <div class="component-copy">
+          <p class="section-index">What we can assess</p>
+          <h2 id="components-title">Work defined by geometry.<br>Not a stock catalogue.</h2>
+          <p class="component-lead">The useful question is not “which card fits?”. It is whether the drawing, material, volume and acceptance requirements point to a viable route.</p>
+          <ol class="component-list">
+            <li class="reveal-item"><b>01</b><div><h3>Machined components</h3><p>Parts with milled geometry, interfaces, pockets, bores and drawing-defined features.</p></div></li>
+            <li class="reveal-item"><b>02</b><div><h3>Turned components</h3><p>Shafts, sleeves and rotational parts where the available turning route is suitable.</p></div></li>
+            <li class="reveal-item"><b>03</b><div><h3>Tooling &amp; fixtures</h3><p>Production aids, checking fixtures and workholding requirements developed around use.</p></div></li>
+            <li class="reveal-item"><b>04</b><div><h3>Fabricated assemblies</h3><p>Cut, formed or joined assemblies where the process and inspection route can be confirmed.</p></div></li>
+            <li class="reveal-item"><b>05</b><div><h3>Prototype &amp; repeat parts</h3><p>One-off and recurring requirements reviewed against quantity, capacity and programme needs.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="systems" id="systems" aria-labelledby="systems-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading--split">
+          <div>
+            <p class="section-index">Partner-supported engineering / Beyond the component</p>
+            <h2 id="systems-title">From component<br>to production system.</h2>
+          </div>
+          <p>The supplied Fort Automation capability profile adds specialist engineering routes for CAD development, reverse engineering, special-purpose machines and production fixtures. These are assessed as distinct project scopes—not implied as part of every component order.</p>
+        </header>
+
+        <div class="systems-grid">
+          <div class="systems-gallery" aria-label="Examples from the supplied Fort Automation capability profile">
+            <figure class="system-visual system-visual--tall reveal-item">
+              <picture>
+                <img src="assets/fort-spm.svg" alt="Special-purpose machine example supplied in the Fort Automation capability profile" width="485" height="927" loading="lazy" decoding="async">
+              </picture>
+              <figcaption><span>01</span>Special-purpose machine</figcaption>
+            </figure>
+            <figure class="system-visual reveal-item">
+              <picture>
+                <img src="assets/fort-checking-fixture.svg" alt="Checking fixture with dedicated locators and clamps" width="960" height="754" loading="lazy" decoding="async">
+              </picture>
+              <figcaption><span>02</span>Checking fixture</figcaption>
+            </figure>
+            <figure class="system-visual reveal-item">
+              <picture>
+                <img src="assets/fort-application-fixture.svg" alt="CAD model of an application-specific production fixture" width="960" height="696" loading="lazy" decoding="async">
+              </picture>
+              <figcaption><span>03</span>Application fixture</figcaption>
+            </figure>
+            <figure class="system-visual reveal-item">
+              <picture>
+                <img src="assets/fort-reverse-engineering.svg" alt="Machined component shown as a reverse-engineering project example" width="781" height="646" loading="lazy" decoding="async">
+              </picture>
+              <figcaption><span>04</span>Reverse engineering</figcaption>
+            </figure>
+          </div>
+
+          <div class="systems-copy">
+            <p class="systems-lead">Where the requirement extends beyond a single manufactured part, the enquiry can be reviewed around function, interfaces, acceptance criteria and the responsibilities required to take it forward.</p>
+            <ol class="systems-list">
+              <li class="reveal-item"><b>01</b><div><h3>CAD &amp; design development</h3><p>2D and 3D modelling, conceptual design, legacy 2D conversion, manufacturing drafting with GD&amp;T and progressive-tool detailing are described in the supplied partner profile.</p></div></li>
+              <li class="reveal-item"><b>02</b><div><h3>Special-purpose machines</h3><p>Bespoke production or checking equipment can be assessed against the required operation, interfaces, cycle expectations and safety responsibilities.</p></div></li>
+              <li class="reveal-item"><b>03</b><div><h3>Checking fixtures &amp; gauges</h3><p>Dedicated checking fixtures, gauges and CMM part-holding fixtures can be scoped around the approved part definition and intended inspection method.</p></div></li>
+              <li class="reveal-item"><b>04</b><div><h3>Application &amp; welding fixtures</h3><p>Workholding can be developed around the manufacturing or assembly operation, including application-specific and welding-fixture enquiries.</p></div></li>
+              <li class="reveal-item"><b>05</b><div><h3>Reverse engineering</h3><p>Sample-led reconstruction can be reviewed where ownership, design intent, acceptance basis and permitted use of the original component are clear.</p></div></li>
+              <li class="reveal-item"><b>06</b><div><h3>Press tools &amp; metrology furniture</h3><p>Press tools, dies and metrology workstations are additional project types evidenced in the profile and remain subject to requirement-specific confirmation.</p></div></li>
+            </ol>
+            <p class="systems-source"><span>Source evidence</span> Fort Automation profile supplied to Quantamorph, September 2026. Images show partner portfolio examples. Availability, design responsibility, standards, validation and delivery scope are confirmed for each RFQ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quality" id="quality" aria-labelledby="quality-title">
+      <div class="quality-grid section-shell">
+        <figure class="quality-visual reveal-item">
+          <picture>
+            <img src="assets/inspection.svg" alt="Inspector checking a machined component with dimensional measuring equipment" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
+          <div class="quality-reticle" aria-hidden="true"><i></i><i></i></div>
+          <figcaption><span>Release gate</span><strong>Requirement / Check / Record</strong></figcaption>
+        </figure>
+        <div class="quality-copy">
+          <p class="section-index">Quality / Define before manufacture</p>
+          <h2 id="quality-title">Precision means little<br>until it is verified.</h2>
+          <p class="quality-lead">The inspection route should be part of the commercial scope—not an assumption made after production.</p>
+          <ol class="quality-steps">
+            <li class="reveal-item"><span>01</span><div><h3>Drawing revision</h3><p>Identify the approved requirement and the features that govern acceptance.</p></div></li>
+            <li class="reveal-item"><span>02</span><div><h3>Acceptance criteria</h3><p>Clarify specified characteristics, standards and any project-specific conditions.</p></div></li>
+            <li class="reveal-item"><span>03</span><div><h3>Inspection scope</h3><p>Agree checking level, equipment needs and any reporting requirement at quotation.</p></div></li>
+            <li class="reveal-item"><span>04</span><div><h3>Release records</h3><p>Supply inspection, material or delivery records where they form part of the agreed order.</p></div></li>
+          </ol>
+          <p class="quality-caveat">No universal tolerance, inspection level or documentation package is implied. These are defined for each quotation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="applications section-shell" id="applications" aria-labelledby="applications-title">
+      <header class="section-heading section-heading--split">
+        <div>
+          <p class="section-index">Applications / Enquiries considered</p>
+          <h2 id="applications-title">Built around<br>the application.</h2>
+        </div>
+        <p>Geometry is only part of the brief. End use, quantity, documentation and acceptance requirements shape the route. Relevant sector experience and compliance needs should be confirmed for the project.</p>
+      </header>
+      <ul class="application-list">
+        <li class="reveal-item"><span>01</span>Automotive</li>
+        <li class="reveal-item"><span>02</span>Industrial equipment</li>
+        <li class="reveal-item"><span>03</span>Hydraulics</li>
+        <li class="reveal-item"><span>04</span>Construction equipment</li>
+        <li class="reveal-item"><span>05</span>Agricultural machinery</li>
+        <li class="reveal-item"><span>06</span>Electrical equipment</li>
+        <li class="reveal-item"><span>07</span>Special-purpose machinery</li>
+      </ul>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-title">
+      <div class="why-grid section-shell">
+        <div class="why-statement">
+          <p class="section-index">Why Quantamorph / Commercial clarity</p>
+          <h2 id="why-title">One enquiry.<br>A coordinated route.</h2>
+        </div>
+        <div class="why-model reveal-item">
+          <div class="model-node model-node--start"><span>UK-facing</span><strong>Communication</strong></div>
+          <div class="model-line" aria-hidden="true"><i></i></div>
+          <div class="model-node"><span>Defined per RFQ</span><strong>Manufacturing route</strong></div>
+          <div class="model-line" aria-hidden="true"><i></i></div>
+          <div class="model-node"><span>Agreed scope</span><strong>Inspection & delivery</strong></div>
+        </div>
+        <div class="why-copy reveal-item">
+          <p>Quantamorph Limited provides the UK-facing commercial and technical interface. A manufacturing route may involve partner capability selected for the enquiry.</p>
+          <p>Manufacturing location, process capacity, inspection scope, documentation and delivery terms are made explicit in the quotation. The advantage is coordination without disguising where or how the component will be produced.</p>
+        </div>
+        <div class="why-points">
+          <article class="reveal-item"><span>01</span><h3>One RFQ path</h3><p>Drawing, quantity, material and acceptance needs enter through one enquiry.</p></article>
+          <article class="reveal-item"><span>02</span><h3>Technical coordination</h3><p>Manufacturability questions and production communication are kept against the requirement.</p></article>
+          <article class="reveal-item"><span>03</span><h3>Scope before promise</h3><p>Capability and records are confirmed for the order rather than implied by generic claims.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rfq section-shell" id="rfq" aria-labelledby="rfq-title">
+      <header class="section-heading section-heading--split">
+        <div>
+          <p class="section-index">RFQ / What happens next</p>
+          <h2 id="rfq-title">A clear route<br>from enquiry.</h2>
+        </div>
+        <p>Share the drawing, sample or functional brief. Confidentiality and file-transfer needs can be agreed before sensitive information is exchanged.</p>
+      </header>
+      <ol class="rfq-route">
+        <li class="reveal-item"><span>01</span><h3>Send requirement</h3><p>Drawing revision, sample or functional brief, plus quantity and target date.</p></li>
+        <li class="reveal-item"><span>02</span><h3>Review</h3><p>Geometry, acceptance needs, documentation and open questions.</p></li>
+        <li class="reveal-item"><span>03</span><h3>Quote</h3><p>Proposed route, commercial scope and stated assumptions.</p></li>
+        <li class="reveal-item"><span>04</span><h3>Coordinate</h3><p>Manufacture and technical communication against the agreed order.</p></li>
+        <li class="reveal-item"><span>05</span><h3>Inspect</h3><p>Checks and records follow the quoted inspection scope.</p></li>
+        <li class="reveal-item"><span>06</span><h3>Deliver</h3><p>Packaging, documentation and delivery as agreed.</p></li>
+      </ol>
+    </section>
+
+    <section class="final-cta" id="contact" aria-labelledby="contact-title">
+      <div class="final-cta-grid" aria-hidden="true"></div>
+      <div class="final-cta-inner section-shell">
+        <p class="section-index">Start an enquiry / sales@quantamorph.co.uk</p>
+        <h2 id="contact-title">Have a part, fixture or system requirement?<br><em>Send the brief.</em></h2>
+        <p>Share your drawing, CAD file, sample details or functional requirement. Include the revision, material, quantity, target date and any inspection, validation or documentation needs that affect the quotation.</p>
+        <a class="button button-primary button-large" href="mailto:sales@quantamorph.co.uk?subject=Drawing-led%20manufacturing%20enquiry"><span>Send your drawing</span><span aria-hidden="true">↗</span></a>
+        <small>Prefer to agree confidentiality or file transfer first? Email the requirement summary without attachments.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid section-shell">
+      <div class="footer-brand">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>QUANTA<span>MORPH</span></span></a>
+        <p>Drawing-led manufacturing coordination from requirement review to delivery.</p>
+      </div>
+      <div>
+        <h2>Navigate</h2>
+        <a href="#process">Process</a><a href="#capabilities">Capabilities</a><a href="#systems">Engineering systems</a><a href="#quality">Quality</a><a href="#why">Why Quantamorph</a><a href="#rfq">RFQ route</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:sales@quantamorph.co.uk">sales@quantamorph.co.uk</a>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <p>Quantamorph Limited</p>
+        <p>Registered in England and Wales</p>
+        <p>Company No. 17389114</p>
+        <p>Registered office:<br>71–75 Shelton Street, Covent Garden,<br>London WC2H 9JQ, United Kingdom</p>
+      </div>
+      <p class="footer-legal">Manufacturing capability, location, inspection scope, documentation and delivery terms are confirmed for each quotation. Process imagery is illustrative unless identified otherwise.</p>
     </div>
-    <div class="trust-visual"><img src="assets/stage4_inspect.jpg" alt="Quality inspection"></div>
-  </div>
-</section>
-
-<section class="gallery">
-  <div class="section-head" style="padding:0 5% 50px;"><div class="section-tag">In Production</div><h2>Real parts. Real precision.</h2></div>
-  <div class="gallery-track" id="galleryTrack"></div>
-</section>
-
-<section class="mission">
-  <blockquote>"To give UK and European businesses a trusted, single point of accountability for precision manufacturing — so our clients can focus on their core business while we deliver parts that are right first time, on time, every time."</blockquote>
-  <cite>— Our Mission</cite>
-</section>
-
-<section class="cta" id="contact">
-  <div class="section-tag" style="justify-content:center;display:flex;">Let's Build Something Precise</div>
-  <h2>Send us your drawing.</h2>
-  <a href="mailto:sales@quantamorph.co.uk" class="cta-btn">Start a Project</a>
-</section>
-
-<footer>
-  <div class="fcol">
-    <h5>Quantamorph Limited</h5>
-    <p>Company No. 17389114</p>
-    <p>71-75 Shelton Street, Covent Garden<br>London, WC2H 9JQ, United Kingdom</p>
-  </div>
-  <div class="fcol">
-    <h5>Navigate</h5>
-    <a href="#services">Services</a>
-    <a href="#sectors">Sectors</a>
-    <a href="#trust">Why Us</a>
-  </div>
-  <div class="fcol">
-    <h5>Contact</h5>
-    <a href="mailto:sales@quantamorph.co.uk">sales@quantamorph.co.uk</a>
-  </div>
-</footer>
-
-<script>
-gsap.registerPlugin(ScrollTrigger);
-
-const storyData = [
-  {img:'assets/stage1_raw.jpg', num:'01 / RAW MATERIAL', title:'It starts<br>as raw metal.', text:'Every component begins as certified bar stock or billet — inspected for material grade before it ever touches a machine.'},
-  {img:'assets/stage2_cutting.jpg', num:'02 / CUTTING', title:'Cut to<br>size, fast.', text:'Bandsaw and lathe operations bring raw stock down to workable dimensions, ready for precision machining.'},
-  {img:'assets/stage3_milling.jpg', num:'03 / MACHINING', title:'Precision,<br>cut to tolerance.', text:'5-axis CNC and VMC machining shape every feature to within microns of your engineering drawing.'},
-  {img:'assets/stage4_inspect.jpg', num:'04 / INSPECTION', title:'Nothing ships<br>unchecked.', text:'100% dimensional inspection against your drawing tolerances — every batch, every time, fully documented.'},
-  {img:'assets/stage5_finished.jpg', num:'05 / FINISHED PART', title:'Right first time.<br>On time.', text:'A finished, traceable component — ready to ship directly to your UK or European production line.'}
-];
-
-const stage = document.getElementById('storyStage');
-const caption = document.getElementById('storyCaption');
-const progress = document.getElementById('storyProgress');
-
-const imgEls = storyData.map(d=>{
-  const im = document.createElement('img');
-  im.src = d.img; im.className='story-img';
-  stage.appendChild(im);
-  return im;
-});
-storyData.forEach((d,i)=>{
-  const dot = document.createElement('div');
-  dot.className='dot'+(i===0?' active':'');
-  progress.appendChild(dot);
-});
-function renderCaption(idx){
-  const d = storyData[idx];
-  caption.innerHTML = `<div class="num">${d.num}</div><h2>${d.title}</h2><p>${d.text}</p>`;
-  gsap.fromTo(caption, {opacity:0, y:20}, {opacity:1, y:0, duration:0.5});
-  document.querySelectorAll('.story-progress .dot').forEach((el,i)=>el.classList.toggle('active', i===idx));
-}
-renderCaption(0);
-gsap.set(imgEls[0], {opacity:1});
-
-ScrollTrigger.create({
-  trigger:"#storyPin",
-  start:"top top",
-  end:"+=450%",
-  pin:true,
-  scrub:1,
-  onUpdate:(self)=>{
-    const idx = Math.min(storyData.length-1, Math.floor(self.progress * storyData.length));
-    imgEls.forEach((el,i)=>{
-      gsap.to(el, {opacity: i===idx?1:0, scale: i===idx?1:1.04, duration:0.5, overwrite:true});
-    });
-    if(caption.dataset.idx != idx){
-      caption.dataset.idx = idx;
-      renderCaption(idx);
-    }
-  }
-});
-
-const galleryData = [
-  {img:'assets/stage1_raw.jpg', label:'Raw Material Intake'},
-  {img:'assets/stage3_milling.jpg', label:'CNC Precision Machining'},
-  {img:'assets/turned_gears.jpg', label:'Precision Turned Components'},
-  {img:'assets/stage4_inspect.jpg', label:'Inspection & Metrology'},
-  {img:'assets/press_tool.jpg', label:'Press Tools & Dies'},
-  {img:'assets/welding.jpg', label:'Fabrication & Welding'},
-  {img:'assets/stage5_finished.jpg', label:'Finished Component'},
-];
-const track = document.getElementById('galleryTrack');
-galleryData.forEach(g=>{
-  const item = document.createElement('div');
-  item.className='gallery-item';
-  item.innerHTML = `<img src="${g.img}"><div class="gallery-label">${g.label}</div>`;
-  track.appendChild(item);
-});
-
-gsap.utils.toArray('.service-card').forEach((el,i)=>{
-  gsap.fromTo(el, {opacity:0, y:40}, {opacity:1, y:0, duration:0.8, delay:i*0.05,
-    scrollTrigger:{trigger:el, start:'top 90%'}});
-});
-gsap.utils.toArray('.trust-item').forEach((el,i)=>{
-  gsap.fromTo(el, {opacity:0, x:-30}, {opacity:1, x:0, duration:0.7, delay:i*0.08,
-    scrollTrigger:{trigger:el, start:'top 90%'}});
-});
-</script>
+  </footer>
 </body>
 </html>
