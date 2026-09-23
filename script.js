@@ -117,32 +117,25 @@
   const stageLive = document.querySelector('[data-stage-live]');
   const stageReadout = document.querySelector('[data-stage-readout]');
   const aperture = document.querySelector('[data-process-aperture]');
-  const partCarrier = document.querySelector('[data-part-carrier]');
-  const partStates = gsap.utils.toArray('[data-part-state]');
-  const partScan = document.querySelector('[data-part-scan]');
+  const secondaryTiles = gsap.utils.toArray('[data-secondary-tile]');
   const measureLines = gsap.utils.toArray('[data-measure-line]');
   const stageNames = [
-    'Enquiry received',
-    'Technical review',
-    'Quotation',
-    'Approval and optional design',
-    'Raw material',
-    'Cut to size',
-    'CNC and VMC machining',
-    'In-process check',
-    'Quality inspection',
-    'Packing',
-    'Supply'
+    'Engineering requirement',
+    'Material',
+    'Preparation',
+    'Machining',
+    'Secondary operations',
+    'Inspection',
+    'Finished component',
+    'Delivery and accountability'
   ];
 
-  if (processScroll && processPin && scenes.length === 11 && captions.length === 11 && partStates.length === 6) {
+  if (processScroll && processPin && scenes.length === 8 && captions.length === 8) {
     gsap.set(scenes, { autoAlpha: 0, scale: 1.035, clipPath: 'inset(0% 0% 0% 0%)' });
     gsap.set(scenes[0], { autoAlpha: 1, scale: 1.015 });
     gsap.set(captions, { autoAlpha: 0, y: 30 });
     gsap.set(captions[0], { autoAlpha: 1, y: 0 });
-    gsap.set(partStates, { autoAlpha: 0, scale: 0.92, rotate: -1.5 });
-    gsap.set(partStates[0], { autoAlpha: 1, scale: 1, rotate: 0 });
-    gsap.set(partScan, { yPercent: -120, autoAlpha: 0 });
+    gsap.set(secondaryTiles, { autoAlpha: 0, y: 34, scale: 0.96 });
     gsap.set(measureLines, { scaleX: 0 });
 
     let activeStage = 0;
@@ -150,8 +143,8 @@
       if (nextStage === activeStage) return;
       activeStage = nextStage;
       const padded = String(nextStage).padStart(2, '0');
-      if (stageLive) stageLive.textContent = `Stage ${padded} of 10: ${stageNames[nextStage]}.`;
-      if (stageReadout) stageReadout.textContent = `Stage ${padded} / 10`;
+      if (stageLive) stageLive.textContent = `Stage ${padded} of 07: ${stageNames[nextStage]}.`;
+      if (stageReadout) stageReadout.textContent = `Stage ${padded} / 07`;
       steps.forEach((step, index) => {
         step.classList.toggle('is-active', index === nextStage);
         step.classList.toggle('is-complete', index < nextStage);
@@ -165,10 +158,7 @@
       'inset(0% 0% 0% 100%)',
       'inset(100% 0% 0% 0%)',
       'inset(0% 100% 0% 0%)',
-      'inset(0% 0% 100% 0%)',
-      'inset(100% 0% 0% 0%)',
-      'inset(0% 100% 0% 0%)',
-      'inset(0% 0% 0% 100%)'
+      'inset(0% 0% 100% 0%)'
     ];
 
     const isCompact = matchMedia('(max-width: 780px)').matches;
@@ -177,19 +167,19 @@
       scrollTrigger: {
         trigger: processScroll,
         start: 'top top',
-        end: () => `+=${Math.max(innerHeight * (isCompact ? 5.1 : 6.8), isCompact ? 3300 : 4700)}`,
+        end: () => `+=${Math.max(innerHeight * (isCompact ? 4.35 : 6.35), isCompact ? 2800 : 4300)}`,
         pin: processPin,
         pinSpacing: true,
         scrub: isCompact ? 0.36 : 0.7,
         anticipatePin: 1,
         invalidateOnRefresh: true,
-        onUpdate: (self) => updateStage(Math.min(10, Math.floor(self.progress * 11)))
+        onUpdate: (self) => updateStage(Math.min(7, Math.floor(self.progress * 8)))
       }
     });
 
     journey.to(scenes[0], { scale: 1.065, duration: 0.72 }, 0);
-    journey.to(progressFill, { scaleX: 1, duration: 10.72 }, 0);
-    journey.to(progressCursor, { left: '100%', duration: 10.72 }, 0);
+    journey.to(progressFill, { scaleX: 1, duration: 7.72 }, 0);
+    journey.to(progressCursor, { left: '100%', duration: 7.72 }, 0);
 
     for (let index = 1; index < scenes.length; index += 1) {
       const at = index;
@@ -198,44 +188,30 @@
         .to(scenes[index - 1], { autoAlpha: 0.13, scale: 0.985, duration: 0.66 }, at - 0.46)
         .fromTo(
           scenes[index],
-          { autoAlpha: 0, scale: index === 8 ? 1.025 : 1.07, clipPath: masks[index - 1] },
-          { autoAlpha: 1, scale: index === 8 ? 1.008 : 1.018, clipPath: 'inset(0% 0% 0% 0%)', duration: index === 8 ? 0.92 : 0.74 },
+          { autoAlpha: 0, scale: index === 5 ? 1.025 : 1.07, clipPath: masks[index - 1] },
+          { autoAlpha: 1, scale: index === 5 ? 1.008 : 1.018, clipPath: 'inset(0% 0% 0% 0%)', duration: index === 5 ? 0.92 : 0.74 },
           at - 0.42
         )
         .fromTo(
           captions[index],
           { autoAlpha: 0, y: 30 },
-          { autoAlpha: 1, y: 0, duration: index === 8 ? 0.52 : 0.36, ease: 'power2.out' },
-          at - 0.34
+          { autoAlpha: 1, y: 0, duration: index === 5 ? 0.52 : 0.36, ease: 'power2.out' },
+          at - 0.12
         )
         .set(scenes[index - 1], { autoAlpha: 0 }, at + 0.22)
         .fromTo(aperture, { scaleY: 0, left: index % 2 ? '34%' : '66%' }, { scaleY: 1, duration: 0.12 }, at - 0.43)
         .to(aperture, { scaleY: 0, duration: 0.16 }, at - 0.05);
     }
 
-    const partChanges = [
-      { at: 3.62, from: 0, to: 1 },
-      { at: 4.62, from: 1, to: 2 },
-      { at: 5.62, from: 2, to: 3 },
-      { at: 6.62, from: 3, to: 4 },
-      { at: 8.62, from: 4, to: 5 }
-    ];
-
-    partChanges.forEach(({ at, from, to }) => {
-      journey
-        .to(partStates[from], { autoAlpha: 0, scale: 0.88, rotate: 1.2, duration: 0.34 }, at)
-        .fromTo(partStates[to], { autoAlpha: 0, scale: 1.1, rotate: -1.2 }, { autoAlpha: 1, scale: 1, rotate: 0, duration: 0.52, ease: 'power2.out' }, at + 0.08);
-    });
-
     journey
-      .fromTo(partCarrier, { xPercent: 4 }, { xPercent: -4, duration: 10.72 }, 0)
-      .to(partScan, { autoAlpha: 0.78, duration: 0.08 }, 0.4)
-      .to(partScan, { yPercent: 120, duration: 2.1 }, 0.45)
-      .to(partScan, { autoAlpha: 0, duration: 0.14 }, 2.48)
-      .to(measureLines[0], { scaleX: 1, duration: 0.4, ease: 'power1.inOut' }, 6.82)
-      .to(measureLines[1], { scaleX: 1, duration: 0.36, ease: 'power1.inOut' }, 7.02)
-      .to(measureLines, { autoAlpha: 0, duration: 0.28 }, 8.46)
-      .to(scenes[10], { scale: 1, duration: 0.54 }, 10.18);
+      .to(secondaryTiles[0], { autoAlpha: 1, y: 0, scale: 1, duration: 0.34, ease: 'power2.out' }, 3.62)
+      .to(secondaryTiles[1], { autoAlpha: 1, y: 0, scale: 1, duration: 0.34, ease: 'power2.out' }, 3.75)
+      .to(secondaryTiles[2], { autoAlpha: 1, y: 0, scale: 1, duration: 0.34, ease: 'power2.out' }, 3.88)
+      .to(secondaryTiles, { autoAlpha: 0.45, scale: 0.985, duration: 0.28 }, 4.44)
+      .to(measureLines[0], { scaleX: 1, duration: 0.4, ease: 'power1.inOut' }, 4.76)
+      .to(measureLines[1], { scaleX: 1, duration: 0.36, ease: 'power1.inOut' }, 4.92)
+      .to(measureLines, { autoAlpha: 0, duration: 0.28 }, 5.45)
+      .to(scenes[7], { scale: 1, duration: 0.54 }, 7.18);
 
     const heroMotion = gsap.timeline({
       scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.7 }
