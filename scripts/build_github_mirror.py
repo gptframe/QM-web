@@ -25,6 +25,7 @@ STANDARD_BASES = (
     "cad-requirement",
     "cnc-milling",
     "delivery",
+    "fabrication",
     "hero-finished",
     "inspection",
     "press-tool",
@@ -34,11 +35,13 @@ STANDARD_BASES = (
     "turning",
 )
 
-PARTNER_BASES = (
-    "fort-application-fixture",
-    "fort-checking-fixture",
-    "fort-reverse-engineering",
-    "fort-spm",
+PART_STATE_BASES = (
+    "part-blank",
+    "part-cad",
+    "part-finished",
+    "part-packed",
+    "part-rough",
+    "part-stock",
 )
 
 
@@ -61,7 +64,7 @@ def main() -> None:
 
     for name in STANDARD_BASES:
         write_svg_asset(DIST / "assets" / f"{name}-1536.webp", assets / f"{name}.svg")
-    for name in PARTNER_BASES:
+    for name in PART_STATE_BASES:
         write_svg_asset(DIST / "assets" / f"{name}.webp", assets / f"{name}.svg")
 
     source_html = (DIST / "index.html").read_text(encoding="utf-8")
@@ -73,7 +76,7 @@ def main() -> None:
             f"assets/{name}.svg",
             source_html,
         )
-    for name in PARTNER_BASES:
+    for name in PART_STATE_BASES:
         source_html = re.sub(
             rf"assets/{re.escape(name)}\.(?:avif|webp)",
             f"assets/{name}.svg",

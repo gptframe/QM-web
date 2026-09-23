@@ -68,7 +68,7 @@ for (const [name, width, height] of viewports) {
   if (name === "desktop-1440") {
     await page.locator("[data-process-scroll]").scrollIntoViewIfNeeded();
     const processTop = await page.evaluate(() => document.querySelector("[data-process-scroll]").getBoundingClientRect().top + scrollY);
-    await page.evaluate(({ processTop, height }) => scrollTo(0, processTop + height * 3.1), { processTop, height });
+    await page.evaluate(({ processTop, height }) => scrollTo(0, processTop + height * 3.4), { processTop, height });
     await page.waitForTimeout(900);
     state.processSample = await page.evaluate(() => ({
       readout: document.querySelector("[data-stage-readout]")?.textContent,

@@ -183,13 +183,19 @@ All imagery should belong to one coherent family: premium realistic industrial p
 - Produce 1536px and 960px WebP/AVIF derivatives; preserve originals outside the public web bundle.
 - Do not put readable tolerance values, inspection results, drawing numbers, customer marks or confidential geometry into illustrative assets.
 
-## Supplied partner-profile imagery added 22 September 2026
+## Same-part animation artwork added 22 September 2026
 
-The Fort Automation profile introduced four portfolio images now used in the partner-supported engineering section:
+The production story now uses a coherent six-state image family generated specifically for the website:
 
-- **Special-purpose machine:** KEEP CONDITIONALLY - page 8; confirm publication rights and the exact operation represented.
-- **Checking fixture:** KEEP CONDITIONALLY - page 14; describe only as a checking-fixture example, without inferring measurement capability or acceptance results.
-- **Application fixture CAD:** KEEP CONDITIONALLY - page 19; confirm ownership of the CAD imagery and whether the end component is confidential.
-- **Reverse-engineering component:** KEEP CONDITIONALLY - page 21; confirm image rights and that the geometry may be shown publicly.
+- **CAD wireframe:** the final flanged-shaft geometry before production.
+- **Raw round stock:** believable steel bar as the procurement state.
+- **Cut blank:** the same stock prepared to machining length.
+- **Rough-turned form:** stepped geometry with visible machining allowance.
+- **Finished component:** the same part after turning and secondary machining.
+- **Packed component:** the finished part protected in fitted foam.
 
-These images are identified as partner portfolio examples rather than Quantamorph-owned machinery or Quantamorph customer work. Replace them if publication permission cannot be confirmed.
+The master contact sheet is stored as `assets/part-evolution-master.png`. Optimized AVIF and WebP crops are created by `scripts/process_part_sequence.py`. Replace the generated sequence with matched photography of a real Quantamorph project when publication-approved images become available.
+
+**Image generation prompt used**
+
+> Use case: product-mockup. Asset type: website scroll-animation manufacturing state sequence. Create a six-panel contact sheet showing the same believable cylindrical flanged-shaft component evolving from CAD wireframe to raw round bar, cut blank, rough-turned form, finish-machined component and fitted protective packaging. Use identical three-quarter camera angle, scale and orientation, a seamless near-black charcoal studio background, controlled cool industrial rim lighting, realistic steel and machining marks. No text, numbers, arrows, logos, people, factory background, impossible geometry or bright colours.

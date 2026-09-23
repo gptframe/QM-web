@@ -26,13 +26,21 @@ SOURCES = {
     "delivery": GENERATED / "exec-bc2f2759-9e5d-490f-a9f4-3868cac01bad.png",
     "turned-components": ATTACHMENTS / "2-turned_gears.jpg",
     "press-tool": ATTACHMENTS / "5-press_tool.jpg",
+    "fabrication": ATTACHMENTS / "8-welding.jpg",
 }
 
 WIDTHS = (960, 1536)
+CROPS = {
+    # Keep the supplied welding scene focused on the process and remove the
+    # unrelated machine-brand panel at the far right.
+    "fabrication": (0, 0, 1220, 1024),
+}
 
 
 def render(source: Path, name: str) -> None:
     image = ImageOps.exif_transpose(Image.open(source)).convert("RGB")
+    if name in CROPS:
+        image = image.crop(CROPS[name])
     for width in WIDTHS:
         if image.width <= width:
             resized = image.copy()

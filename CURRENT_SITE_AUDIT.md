@@ -35,7 +35,7 @@ The current page has the right dark-industrial ingredients, cautious copy and a 
 - Capabilities: an image-led indexed selector, not a card wall.
 - Product scope: show component/tooling/fabrication types in procurement language.
 - Quality: present drawing revision, acceptance criteria, inspection scope and records as a controlled release gate.
-- Commercial model: explain the UK-facing interface and coordinated manufacturing route without disguising production location or implying “Made in Britain”.
+- Operating model: explain Quantamorph’s end-to-end design, manufacturing, inspection and supply route without implying unverified certifications, locations or machine limits.
 - RFQ: show exactly what happens after an enquiry is sent.
 - Navigation and mobile menu: persistent RFQ action, clearer active states, Escape/outside-click handling and robust contrast.
 
@@ -100,8 +100,8 @@ The current page has the right dark-industrial ingredients, cautious copy and a 
 
 ## Claims requiring owner confirmation
 
-1. Whether Quantamorph manufactures directly, coordinates approved partners, or uses a hybrid model.
-2. Manufacturing locations and the wording permitted for the UK-facing commercial relationship.
+1. RESOLVED 22 September 2026: the owner confirmed Quantamorph provides design, CNC, VMC, conventional toolroom, tools and dies, fabrication, SPM, inspection, packing and supply capability.
+2. Manufacturing locations and which Quantamorph facilities or machines may be identified publicly.
 3. Image ownership, licences and whether the images depict Quantamorph work/facilities.
 4. ISO 9001 status, certified entity, scope, issuing body and expiry date.
 5. Available CNC processes, axis counts, machine list and work envelopes.
@@ -122,4 +122,4 @@ Until confirmed, homepage copy should stay process-specific but conditional: cap
 
 ## Administrative facts checked
 
-The public [Companies House record](https://find-and-update.company-information.service.gov.uk/company/17389114) currently confirms the Quantamorph Limited name, company number 17389114, active private-company status and 71–75 Shelton Street registered office. It also lists agency/wholesale and engineering-design SIC activities, which supports using careful “manufacturing coordination” language rather than implying that the registered office is a factory. The footer now includes the registered number, registered-office label and place of registration in line with [GOV.UK website disclosure guidance](https://www.gov.uk/running-a-limited-company/signs-stationery-and-promotional-material).
+The public [Companies House record](https://find-and-update.company-information.service.gov.uk/company/17389114) currently confirms the Quantamorph Limited name, company number 17389114, active private-company status and 71–75 Shelton Street registered office. It does not establish machine inventory, facility location or process limits; those remain owner-controlled operating claims. The footer includes the registered number, registered-office label and place of registration in line with [GOV.UK website disclosure guidance](https://www.gov.uk/running-a-limited-company/signs-stationery-and-promotional-material).

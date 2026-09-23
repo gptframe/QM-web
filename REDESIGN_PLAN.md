@@ -2,24 +2,24 @@
 
 ## Visual thesis
 
-**A controlled production line in the browser.** The page begins with a finished component and its drawing intent. Scrolling moves the visitor through material, preparation, machining, optional operations, inspection, release and delivery. The interface borrows from engineering documentation—revision rails, stage IDs, crosshairs, measured spacing and restrained status red—without presenting invented engineering data.
+**A controlled production line in the browser.** The page begins with the customer enquiry and a finished-component outcome. Scrolling follows one cylindrical part through review, quotation, approval, optional design, material, cutting, machining, checking, inspection, packing and supply. The interface borrows from engineering documentation—revision rails, stage IDs, crosshairs, measured spacing and restrained status red—without presenting invented engineering data.
 
 ## Audience and primary task
 
 Primary visitors are design engineers, manufacturing engineers, procurement managers, operations managers and owner-managers with a component requirement. The page must answer, in order:
 
-1. What does Quantamorph coordinate?
+1. What does Quantamorph design and manufacture?
 2. How does a requirement become a delivered component?
 3. Which manufacturing routes can be considered?
 4. How are inspection and documentation defined?
-5. Why use a UK-facing coordinator?
+5. Why use one accountable Quantamorph engineering team?
 6. What should I send for an RFQ?
 
 ## New homepage structure
 
-### 01 — Hero: From drawing to delivered component
+### 01 — Hero: From enquiry to supplied component
 
-- Clear H1 and UK-facing manufacturing-coordination qualifier.
+- Clear H1 and an end-to-end design, manufacture, inspection and supply qualifier.
 - Finished component on the right; subtle drawing grid and coordinate motifs.
 - Primary CTA: **Send your drawing**.
 - Secondary CTA: **Follow the production route**.
@@ -27,16 +27,19 @@ Primary visitors are design engineers, manufacturing engineers, procurement mana
 
 ### 02 — Pinned manufacturing journey
 
-Approximately 620vh desktop / 430vh mobile. A full-height scene stays pinned while a production rail advances through eight chapters:
+Approximately 680vh desktop / 510vh mobile. A full-height scene stays pinned while a production rail advances through eleven chapters:
 
-0. **Requirement** — drawings, CAD models or samples establish the enquiry.
-1. **Material** — grade, form and documentation needs are defined for the quotation.
-2. **Preparation** — stock is prepared for the selected route.
-3. **Machining** — geometry, interfaces and drawing-defined features take shape.
-4. **Secondary operations** — optional routes appear around the part; the process adapts to the requirement.
-5. **Inspection** — movement slows; agreed characteristics and records become the release gate.
-6. **Finished component** — the visual resolves into a quiet premium product image.
-7. **Delivery / accountability** — the route transitions into UK-facing communication and delivery coordination.
+0. **Enquiry** — drawing, CAD file, sample or functional brief enters the route.
+1. **Review** — geometry, material, quantity and acceptance requirements are assessed.
+2. **Quotation** — process, scope, assumptions and delivery basis are defined.
+3. **Approval & optional design** — design is added when required; drawing-ready work advances directly.
+4. **Material** — the specified round stock enters production.
+5. **Cut** — stock becomes a controlled machining blank.
+6. **CNC/VMC machining** — the blank develops into the required geometry.
+7. **In-process check** — key features are checked at the machine.
+8. **Final inspection** — specified characteristics are checked before release.
+9. **Packing** — the finished part is protected and identified.
+10. **Supply** — documentation, packing and delivery complete the route.
 
 The story is explicitly presented as a **representative route**, not a claim that every part receives every process.
 
@@ -64,7 +67,7 @@ The story is explicitly presented as a **representative route**, not a claim tha
 
 ### 07 — Why Quantamorph
 
-- Explain the commercial model directly: UK-facing communication plus coordinated manufacturing routes and one enquiry path.
+- Explain the operating model directly: design, CNC/VMC machining, conventional toolroom, fabrication, SPM capability, inspection and supply through one enquiry path.
 - Avoid “Made in Britain” implications and avoid disparaging overseas factories.
 
 ### 08 — RFQ process
@@ -72,9 +75,10 @@ The story is explicitly presented as a **representative route**, not a claim tha
 1. Send drawing / describe requirement.
 2. Review material, quantity, revision and acceptance needs.
 3. Define route and quotation.
-4. Coordinate manufacture.
-5. Inspect to the agreed scope.
-6. Prepare documentation and delivery.
+4. Approve the order and complete design where required.
+5. Manufacture.
+6. Inspect and pack to the agreed scope.
+7. Supply with the agreed documentation.
 
 ### 09 — Final CTA and footer
 
@@ -91,9 +95,9 @@ The story is explicitly presented as a **representative route**, not a claim tha
 - Requirement → material uses a CAD-grid dissolve.
 - Material → preparation uses a vertical machine-door wipe.
 - Preparation → machining uses a horizontal aperture and matched component scale.
-- Secondary processes orbit as brief supporting panels, then clear away.
-- Inspection reduces velocity and contrast movement before the release state.
-- Finished → delivery pulls back from product detail into packaged handover.
+- A matched part-state sequence remains centred through CAD, stock, blank, rough-turn, finished and packed states.
+- Inspection introduces measured overlays and slower transitions before release.
+- Finished → packing → supply resolves into a protected component handover.
 - Below the story, reveal motion is sparse and batched.
 - Reduced motion receives the full semantic sequence as stacked cards with no pinning or parallax.
 
@@ -126,11 +130,11 @@ The story is explicitly presented as a **representative route**, not a claim tha
 ## SEO and trust
 
 - One descriptive H1, crawlable H2s and process copy.
-- Conservative title and meta description focused on drawing-led manufacturing coordination.
+- Specific title and meta description focused on design, manufacture, inspection and supply.
 - Basic Open Graph title/description without an invented preview image.
 - Registered-office wording and England/Wales registration disclosure.
 - No ISO, tolerance, machine-axis, traceability, FAI, CMM, lead-time or sector-certification claims until confirmed.
 
 ## Success test
 
-The redesign succeeds when a visitor can say: “I have a drawing. Quantamorph can review the requirement, coordinate an appropriate manufacturing route, define inspection and documentation with the quotation, and give me one UK-facing enquiry path.”
+The redesign succeeds when a visitor can say: “I have a drawing or functional requirement. Quantamorph can review it, quote it, design where needed, manufacture it, inspect it, pack it and supply it through one accountable route.”
