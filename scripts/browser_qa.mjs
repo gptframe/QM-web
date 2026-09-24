@@ -10,14 +10,16 @@ const browser = await chromium.launch({
   headless: true,
   executablePath: "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
 });
+const viewportFilter = process.env.QA_VIEWPORT;
 const viewports = [
   ["desktop-1920", 1920, 1080],
   ["desktop-1440", 1440, 900],
   ["tablet-1024", 1024, 768],
+  ["tablet-768", 768, 1024],
   ["mobile-430", 430, 932],
   ["mobile-390", 390, 844],
   ["mobile-375", 375, 812],
-];
+].filter(([name]) => !viewportFilter || name === viewportFilter);
 
 const report = [];
 
@@ -42,6 +44,7 @@ for (const [name, width, height] of viewports) {
     const missingAnchors = [...new Set(anchors)].filter((href) => !document.querySelector(href));
     const images = [...document.images];
     const h1 = document.querySelector("h1")?.getBoundingClientRect();
+    const resources = performance.getEntriesByType("resource");
     return {
       title: document.title,
       h1Visible: Boolean(h1 && h1.width > 0 && h1.height > 0),
@@ -54,21 +57,41 @@ for (const [name, width, height] of viewports) {
       processPinDisplay: getComputedStyle(document.querySelector("[data-process-pin]")).display,
       fallbackDisplay: getComputedStyle(document.querySelector(".process-fallback")).display,
       mainHeading: document.querySelector("h1")?.innerText.trim(),
+      primaryCtaVisible: (() => {
+        const button = document.querySelector('.hero .button-primary');
+        if (!button) return false;
+        const rect = button.getBoundingClientRect();
+        return rect.width >= 44 && rect.height >= 44;
+      })(),
+      loadedResources: resources.length,
+      encodedResourceBytes: Math.round(resources.reduce((sum, item) => sum + (item.encodedBodySize || 0), 0)),
     };
   });
 
   if (width <= 1080) {
     await page.click("[data-menu-button]");
     const opened = await page.getAttribute("[data-menu-button]", "aria-expanded");
+    await page.focus("[data-menu-button]");
+    await page.keyboard.press("Shift+Tab");
+    const backwardTrap = await page.evaluate(() => document.activeElement?.getAttribute("href") || document.activeElement?.tagName);
+    await page.keyboard.press("Tab");
+    const forwardTrap = await page.evaluate(() => document.activeElement?.hasAttribute("data-menu-button"));
     await page.keyboard.press("Escape");
     const closed = await page.getAttribute("[data-menu-button]", "aria-expanded");
-    state.mobileMenu = { opened, closed };
+    const focusReturned = await page.evaluate(() => document.activeElement?.hasAttribute("data-menu-button"));
+    state.mobileMenu = { opened, closed, backwardTrap, forwardTrap, focusReturned };
   }
 
   if (name === "desktop-1440") {
-    await page.locator("[data-process-scroll]").scrollIntoViewIfNeeded();
+    await page.evaluate(() => scrollTo(0, 0));
+    await page.keyboard.press("Tab");
+    state.keyboardFocus = await page.evaluate(() => {
+      const element = document.activeElement;
+      const style = getComputedStyle(element);
+      return { text: element?.textContent?.trim(), outlineWidth: style.outlineWidth, outlineStyle: style.outlineStyle };
+    });
     const processTop = await page.evaluate(() => document.querySelector("[data-process-scroll]").getBoundingClientRect().top + scrollY);
-    await page.evaluate(({ processTop, height }) => scrollTo(0, processTop + height * 3.4), { processTop, height });
+    await page.evaluate(({ processTop, height }) => scrollTo(0, processTop + height * 3.1), { processTop, height });
     await page.waitForTimeout(900);
     state.processSample = await page.evaluate(() => ({
       readout: document.querySelector("[data-stage-readout]")?.textContent,
@@ -91,8 +114,11 @@ for (const [name, width, height] of viewports) {
   }
 
   if (name === "mobile-390") {
-    const processTop = await page.evaluate(() => document.querySelector("[data-process-scroll]").getBoundingClientRect().top + scrollY);
-    await page.evaluate(({ processTop, height }) => scrollTo(0, processTop + height * 2.6), { processTop, height });
+    const stageTop = await page.evaluate(() => {
+      const stage = document.querySelectorAll(".process-fallback > li")[3];
+      return stage.getBoundingClientRect().top + scrollY;
+    });
+    await page.evaluate((top) => scrollTo(0, top - 68), stageTop);
     await page.waitForTimeout(800);
     await page.screenshot({ path: path.join(output, "mobile-390-process.png"), fullPage: false });
     await page.locator("#quality").scrollIntoViewIfNeeded();
@@ -131,6 +157,20 @@ const reduced = await reducedPage.evaluate(() => ({
 reduced.pageErrors = reducedErrors;
 report.push({ name: "reduced-motion", ...reduced });
 await reducedContext.close();
+
+const noJsContext = await browser.newContext({ viewport: { width: 1440, height: 900 }, javaScriptEnabled: false });
+const noJsPage = await noJsContext.newPage();
+await noJsPage.goto(url, { waitUntil: "networkidle", timeout: 30000 });
+const noJs = await noJsPage.evaluate(() => ({
+  h1Visible: Boolean(document.querySelector("h1")?.getBoundingClientRect().height),
+  primaryCtaVisible: Boolean(document.querySelector('.hero .button-primary')?.getBoundingClientRect().height),
+  processPinDisplay: getComputedStyle(document.querySelector("[data-process-pin]")).display,
+  fallbackDisplay: getComputedStyle(document.querySelector(".process-fallback")).display,
+  fallbackItems: document.querySelectorAll(".process-fallback > li").length,
+  horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
+}));
+report.push({ name: "no-javascript", ...noJs });
+await noJsContext.close();
 
 console.log(JSON.stringify(report, null, 2));
 await browser.close();

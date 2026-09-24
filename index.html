@@ -13,13 +13,10 @@
   <meta name="twitter:description" content="From enquiry and design through machining, inspection, packing and delivery—one accountable manufacturing route.">
   <title>Quantamorph Limited | From Drawing to Delivered Component</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero-finished.svg" type="image/svg+xml" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/part-finished.avif" type="image/avif" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/gsap-3.12.5.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger-3.12.5.min.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -49,7 +46,8 @@
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-image-wrap" aria-hidden="true" data-hero-image>
         <picture>
-          <img src="assets/hero-finished.svg" alt="" width="1536" height="1024" fetchpriority="high">
+          <source type="image/avif" srcset="assets/part-finished.avif">
+          <img src="assets/part-finished.webp" alt="" width="512" height="512" fetchpriority="high">
         </picture>
       </div>
       <div class="hero-vignette" aria-hidden="true"></div>
@@ -59,7 +57,7 @@
       </div>
 
       <div class="hero-copy" data-hero-copy>
-        <p class="eyebrow"><span>UK</span> / Design &amp; manufacturing</p>
+        <p class="eyebrow"><span>UK-facing</span> / Design &amp; manufacturing</p>
         <h1 id="hero-title">From drawing<br>to delivered<br><em>component.</em></h1>
         <p class="hero-intro">Design, CNC and VMC machining, conventional toolmaking, fabrication and special-purpose machines—from one enquiry through inspection and delivery.</p>
         <div class="hero-actions">
@@ -111,56 +109,65 @@
           <div class="process-scenes">
             <figure class="process-scene process-scene--cad is-visible" data-process-scene>
               <picture>
-                <img src="assets/cad-requirement.svg" alt="" width="1536" height="865" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-cad.avif">
+                <img src="assets/part-cad.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
             </figure>
             <figure class="process-scene" data-process-scene>
               <picture>
-                <img src="assets/raw-material.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-stock.avif">
+                <img src="assets/part-stock.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
             </figure>
             <figure class="process-scene" data-process-scene>
               <picture>
-                <img src="assets/rough-machined.svg" alt="" width="1536" height="865" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-blank.avif">
+                <img src="assets/part-blank.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
             </figure>
-            <figure class="process-scene" data-process-scene>
+            <figure class="process-scene process-scene--machining" data-process-scene>
               <picture>
-                <img src="assets/cnc-milling.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-rough.avif">
+                <img src="assets/part-rough.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
+              <span class="machine-ring" data-machine-ring></span>
             </figure>
             <figure class="process-scene process-scene--secondary" data-process-scene>
-              <div class="secondary-stage">
-                <picture class="secondary-tile secondary-tile--turn" data-secondary-tile>
-                  <img src="assets/turning.svg" alt="" width="960" height="640" loading="lazy" decoding="async">
-                </picture>
-                <picture class="secondary-tile secondary-tile--tool" data-secondary-tile>
-                  <img src="assets/press-tool.svg" alt="" width="960" height="640" loading="lazy" decoding="async">
-                </picture>
-                <picture class="secondary-tile secondary-tile--parts" data-secondary-tile>
-                  <img src="assets/turned-components.svg" alt="" width="960" height="640" loading="lazy" decoding="async">
-                </picture>
+              <picture>
+                <source type="image/avif" srcset="assets/part-finished.avif">
+                <img src="assets/part-finished.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+              </picture>
+              <div class="route-orbit">
+                <span data-route-node>Turning</span>
+                <span data-route-node>Tooling</span>
+                <span data-route-node>Fabrication</span>
               </div>
             </figure>
             <figure class="process-scene process-scene--inspection" data-process-scene>
               <picture>
-                <img src="assets/inspection.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-finished.avif">
+                <img src="assets/part-finished.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
               <span class="measure-line measure-line--a" data-measure-line></span>
               <span class="measure-line measure-line--b" data-measure-line></span>
+              <span class="inspection-reticle" data-inspection-reticle></span>
             </figure>
             <figure class="process-scene process-scene--finished" data-process-scene>
               <picture>
-                <img src="assets/hero-finished.svg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-finished.avif">
+                <img src="assets/part-finished.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
+              <span class="release-mark" data-release-mark>Released to scope</span>
             </figure>
             <figure class="process-scene process-scene--delivery" data-process-scene>
               <picture>
-                <img src="assets/delivery.svg" alt="" width="1536" height="865" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/part-packed.avif">
+                <img src="assets/part-packed.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
               </picture>
             </figure>
           </div>
 
+          <div class="process-carrier" aria-hidden="true"><i></i><b></b></div>
           <div class="process-shade"></div>
           <div class="process-aperture" data-process-aperture></div>
           <div class="process-grid-overlay"></div>
@@ -173,44 +180,44 @@
           <div class="process-captions">
             <article class="process-caption is-visible" data-process-caption>
               <p class="caption-kicker">00 / Engineering requirement</p>
-              <h3>You send<br>the requirement.</h3>
-              <p>Drawings, CAD models or a component sample can establish the starting point for an enquiry.</p>
+              <h3>Define<br>the part.</h3>
+              <p>A drawing, CAD model or authorised sample establishes the enquiry.</p>
               <a href="mailto:sales@quantamorph.co.uk?subject=Drawing-led%20manufacturing%20enquiry">Send your drawing <span aria-hidden="true">↗</span></a>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">01 / Material</p>
-              <h3>Every part<br>starts here.</h3>
-              <p>Material grade, form and supporting-document requirements are considered against the drawing and application.</p>
+              <h3>Material<br>enters.</h3>
+              <p>Grade, form and any required supporting records are reviewed for the quotation.</p>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">02 / Preparation</p>
-              <h3>Prepared<br>for precision.</h3>
-              <p>Stock is prepared to create a controlled starting condition for the selected manufacturing route.</p>
+              <h3>Blank<br>controlled.</h3>
+              <p>Stock is prepared for the selected manufacturing route.</p>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">03 / Machining</p>
-              <h3>Precision<br>takes shape.</h3>
-              <p>Machining operations create the geometry, interfaces and drawing-defined features required by the component.</p>
+              <h3>Geometry<br>emerges.</h3>
+              <p>Machining develops the drawing-defined form, interfaces and features.</p>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">04 / Secondary operations</p>
-              <h3>The process adapts<br>to the part.</h3>
-              <p>Turning, tooling, fabrication or other supporting operations are considered only where the requirement calls for them.</p>
+              <h3>The route<br>adapts.</h3>
+              <p>Additional operations are included only where the requirement calls for them.</p>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">05 / Inspection</p>
-              <h3>Measure.<br>Verify. Release.</h3>
-              <p>Specified characteristics are checked against the approved requirement before release, to the inspection scope agreed for the order.</p>
+              <h3>Measure.<br>Verify.</h3>
+              <p>Specified characteristics are checked to the inspection scope agreed for the order.</p>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">06 / Finished component</p>
-              <h3>Ready for<br>the real world.</h3>
-              <p>Finished components are prepared for delivery in line with agreed project, packaging and documentation requirements.</p>
+              <h3>Released<br>to scope.</h3>
+              <p>The finished component resolves only after the agreed checks are complete.</p>
             </article>
             <article class="process-caption" data-process-caption>
               <p class="caption-kicker">07 / Delivery & accountability</p>
-              <h3>One UK-facing<br>enquiry path.</h3>
-              <p>Quantamorph coordinates commercial and technical communication while the manufacturing route, location and delivery terms are defined for the quotation.</p>
+              <h3>Protected.<br>Supplied.</h3>
+              <p>Packaging, documentation and delivery follow the agreed order scope.</p>
             </article>
           </div>
 
@@ -233,36 +240,36 @@
 
         <ol class="process-fallback" aria-label="Representative manufacturing route">
           <li>
-            <picture><source type="image/avif" srcset="assets/cad-requirement.svg"><img src="assets/cad-requirement.svg" alt="Illustrative CAD view of a machined component" width="960" height="540" loading="lazy" decoding="async"></picture>
-            <div><span>00 / Requirement</span><h3>You send the requirement.</h3><p>Drawings, CAD models or a component sample can establish the starting point for an enquiry.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-cad.avif"><img src="assets/part-cad.webp" alt="Illustrative CAD state of the representative component" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>00 / Requirement</span><h3>Define the part.</h3><p>A drawing, CAD model or authorised sample establishes the enquiry.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/raw-material.svg"><img src="assets/raw-material.svg" alt="Raw metal billet at the start of manufacture" width="960" height="640" loading="lazy" decoding="async"></picture>
-            <div><span>01 / Material</span><h3>Every part starts here.</h3><p>Material grade, form and supporting-document requirements are considered against the drawing and application.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-stock.avif"><img src="assets/part-stock.webp" alt="Representative round stock before preparation" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>01 / Material</span><h3>Material enters.</h3><p>Grade, form and any required supporting records are reviewed for the quotation.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/rough-machined.svg"><img src="assets/rough-machined.svg" alt="Illustrative component emerging from an aluminium billet" width="960" height="540" loading="lazy" decoding="async"></picture>
-            <div><span>02 / Preparation</span><h3>Prepared for precision.</h3><p>Stock is prepared to create a controlled starting condition for the selected manufacturing route.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-blank.avif"><img src="assets/part-blank.webp" alt="Representative cut blank prepared for machining" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>02 / Preparation</span><h3>Blank controlled.</h3><p>Stock is prepared for the selected manufacturing route.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/cnc-milling.svg"><img src="assets/cnc-milling.svg" alt="CNC milling operation on an aluminium component" width="960" height="640" loading="lazy" decoding="async"></picture>
-            <div><span>03 / Machining</span><h3>Precision takes shape.</h3><p>Machining operations create the geometry, interfaces and drawing-defined features required by the component.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-rough.avif"><img src="assets/part-rough.webp" alt="The representative component in a rough-machined state" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>03 / Machining</span><h3>Geometry emerges.</h3><p>Machining develops the drawing-defined form, interfaces and features.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/press-tool.svg"><img src="assets/press-tool.svg" alt="Illustrative precision production tooling" width="960" height="640" loading="lazy" decoding="async"></picture>
-            <div><span>04 / Secondary operations</span><h3>The process adapts to the part.</h3><p>Turning, tooling, fabrication or other supporting operations are considered only where the requirement calls for them.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-finished.avif"><img src="assets/part-finished.webp" alt="The representative component after its selected manufacturing route" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>04 / Secondary operations</span><h3>The route adapts.</h3><p>Additional operations are included only where the requirement calls for them.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/inspection.svg"><img src="assets/inspection.svg" alt="Inspector checking a machined component with measuring equipment" width="960" height="640" loading="lazy" decoding="async"></picture>
-            <div><span>05 / Inspection</span><h3>Measure. Verify. Release.</h3><p>Specified characteristics are checked against the approved requirement before release, to the inspection scope agreed for the order.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-finished.avif"><img src="assets/part-finished.webp" alt="The same finished component presented for the agreed inspection stage" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>05 / Inspection</span><h3>Measure. Verify.</h3><p>Specified characteristics are checked to the inspection scope agreed for the order.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/hero-finished.svg"><img src="assets/hero-finished.svg" alt="Finished precision-machined aluminium component" width="960" height="640" loading="lazy" decoding="async"></picture>
-            <div><span>06 / Finished component</span><h3>Ready for the real world.</h3><p>Finished components are prepared for delivery in line with agreed project, packaging and documentation requirements.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-finished.avif"><img src="assets/part-finished.webp" alt="Released state of the representative finished component" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>06 / Finished component</span><h3>Released to scope.</h3><p>The finished component resolves only after the agreed checks are complete.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/delivery.svg"><img src="assets/delivery.svg" alt="Illustrative finished component protected for delivery" width="960" height="540" loading="lazy" decoding="async"></picture>
-            <div><span>07 / Delivery</span><h3>One UK-facing enquiry path.</h3><p>Manufacturing route, location and delivery terms are defined for the quotation.</p></div>
+            <picture><source type="image/avif" srcset="assets/part-packed.avif"><img src="assets/part-packed.webp" alt="The same finished component protected in illustrative delivery packaging" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <div><span>07 / Delivery</span><h3>Protected. Supplied.</h3><p>Packaging, documentation and delivery follow the agreed order scope.</p></div>
           </li>
         </ol>
       </div>

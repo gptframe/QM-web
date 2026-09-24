@@ -22,8 +22,19 @@
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && menuButton?.getAttribute('aria-expanded') === 'true') {
-      closeMenu(true);
+    if (menuButton?.getAttribute('aria-expanded') !== 'true') return;
+    if (event.key === 'Escape') closeMenu(true);
+    if (event.key !== 'Tab' || !menu) return;
+
+    const focusable = [menuButton, ...menu.querySelectorAll('a[href]')].filter(Boolean);
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
     }
   });
 
@@ -117,8 +128,11 @@
   const stageLive = document.querySelector('[data-stage-live]');
   const stageReadout = document.querySelector('[data-stage-readout]');
   const aperture = document.querySelector('[data-process-aperture]');
-  const secondaryTiles = gsap.utils.toArray('[data-secondary-tile]');
+  const routeNodes = gsap.utils.toArray('[data-route-node]');
   const measureLines = gsap.utils.toArray('[data-measure-line]');
+  const machineRing = document.querySelector('[data-machine-ring]');
+  const inspectionReticle = document.querySelector('[data-inspection-reticle]');
+  const releaseMark = document.querySelector('[data-release-mark]');
   const stageNames = [
     'Engineering requirement',
     'Material',
@@ -130,13 +144,19 @@
     'Delivery and accountability'
   ];
 
-  if (processScroll && processPin && scenes.length === 8 && captions.length === 8) {
-    gsap.set(scenes, { autoAlpha: 0, scale: 1.035, clipPath: 'inset(0% 0% 0% 0%)' });
-    gsap.set(scenes[0], { autoAlpha: 1, scale: 1.015 });
+  const desktopJourney = matchMedia('(min-width: 781px)').matches;
+
+  if (desktopJourney && processScroll && processPin && scenes.length === 8 && captions.length === 8) {
+    document.documentElement.classList.add('process-cinematic-ready');
+    gsap.set(scenes, { autoAlpha: 0, scale: 1.028, clipPath: 'circle(82% at 72% 50%)' });
+    gsap.set(scenes[0], { autoAlpha: 1, scale: 1.005 });
     gsap.set(captions, { autoAlpha: 0, y: 30 });
     gsap.set(captions[0], { autoAlpha: 1, y: 0 });
-    gsap.set(secondaryTiles, { autoAlpha: 0, y: 34, scale: 0.96 });
+    gsap.set(routeNodes, { autoAlpha: 0, y: 18 });
     gsap.set(measureLines, { scaleX: 0 });
+    gsap.set(machineRing, { autoAlpha: 0, rotation: -40, scale: 0.68 });
+    gsap.set(inspectionReticle, { autoAlpha: 0, scale: 0.34 });
+    gsap.set(releaseMark, { autoAlpha: 0, y: 12 });
 
     let activeStage = 0;
     const updateStage = (nextStage) => {
@@ -151,52 +171,41 @@
       });
     };
 
-    const masks = [
-      'inset(0% 0% 0% 100%)',
-      'inset(0% 100% 0% 0%)',
-      'inset(0% 0% 100% 0%)',
-      'inset(0% 0% 0% 100%)',
-      'inset(100% 0% 0% 0%)',
-      'inset(0% 100% 0% 0%)',
-      'inset(0% 0% 100% 0%)'
-    ];
-
-    const isCompact = matchMedia('(max-width: 780px)').matches;
     const journey = gsap.timeline({
       defaults: { ease: 'none' },
       scrollTrigger: {
         trigger: processScroll,
         start: 'top top',
-        end: () => `+=${Math.max(innerHeight * (isCompact ? 4.35 : 6.35), isCompact ? 2800 : 4300)}`,
+        end: () => `+=${Math.max(innerHeight * 6.2, 4400)}`,
         pin: processPin,
         pinSpacing: true,
-        scrub: isCompact ? 0.36 : 0.7,
+        scrub: 0.72,
         anticipatePin: 1,
         invalidateOnRefresh: true,
         onUpdate: (self) => updateStage(Math.min(7, Math.floor(self.progress * 8)))
       }
     });
 
-    journey.to(scenes[0], { scale: 1.065, duration: 0.72 }, 0);
-    journey.to(progressFill, { scaleX: 1, duration: 7.72 }, 0);
-    journey.to(progressCursor, { left: '100%', duration: 7.72 }, 0);
+    journey.to(scenes[0], { scale: 1.018, duration: 0.72 }, 0);
+    journey.to(progressFill, { scaleX: 1, duration: 7.8 }, 0);
+    journey.to(progressCursor, { left: '100%', duration: 7.8 }, 0);
 
     for (let index = 1; index < scenes.length; index += 1) {
       const at = index;
       journey
-        .to(captions[index - 1], { autoAlpha: 0, y: -24, duration: 0.3 }, at - 0.38)
-        .to(scenes[index - 1], { autoAlpha: 0.13, scale: 0.985, duration: 0.66 }, at - 0.46)
+        .to(captions[index - 1], { autoAlpha: 0, y: -22, duration: 0.18 }, at - 0.48)
+        .to(scenes[index - 1], { autoAlpha: 0.12, scale: 0.992, duration: 0.66 }, at - 0.46)
         .fromTo(
           scenes[index],
-          { autoAlpha: 0, scale: index === 5 ? 1.025 : 1.07, clipPath: masks[index - 1] },
-          { autoAlpha: 1, scale: index === 5 ? 1.008 : 1.018, clipPath: 'inset(0% 0% 0% 0%)', duration: index === 5 ? 0.92 : 0.74 },
+          { autoAlpha: 0, scale: index === 5 ? 1.018 : 1.035, clipPath: 'circle(7% at 72% 50%)' },
+          { autoAlpha: 1, scale: 1.005, clipPath: 'circle(82% at 72% 50%)', duration: index === 5 ? 0.98 : 0.76 },
           at - 0.42
         )
         .fromTo(
           captions[index],
           { autoAlpha: 0, y: 30 },
-          { autoAlpha: 1, y: 0, duration: index === 5 ? 0.52 : 0.36, ease: 'power2.out' },
-          at - 0.12
+          { autoAlpha: 1, y: 0, duration: index === 5 ? 0.34 : 0.22, ease: 'power2.out' },
+          at - 0.26
         )
         .set(scenes[index - 1], { autoAlpha: 0 }, at + 0.22)
         .fromTo(aperture, { scaleY: 0, left: index % 2 ? '34%' : '66%' }, { scaleY: 1, duration: 0.12 }, at - 0.43)
@@ -204,13 +213,19 @@
     }
 
     journey
-      .to(secondaryTiles[0], { autoAlpha: 1, y: 0, scale: 1, duration: 0.34, ease: 'power2.out' }, 3.62)
-      .to(secondaryTiles[1], { autoAlpha: 1, y: 0, scale: 1, duration: 0.34, ease: 'power2.out' }, 3.75)
-      .to(secondaryTiles[2], { autoAlpha: 1, y: 0, scale: 1, duration: 0.34, ease: 'power2.out' }, 3.88)
-      .to(secondaryTiles, { autoAlpha: 0.45, scale: 0.985, duration: 0.28 }, 4.44)
+      .to(machineRing, { autoAlpha: 0.72, rotation: 90, scale: 0.76, duration: 0.58 }, 2.62)
+      .to(machineRing, { rotation: 205, duration: 0.72 }, 3.18)
+      .to(machineRing, { autoAlpha: 0, scale: 0.82, duration: 0.28 }, 3.65)
+      .to(routeNodes[0], { autoAlpha: 1, y: 0, duration: 0.26, ease: 'power2.out' }, 3.64)
+      .to(routeNodes[1], { autoAlpha: 1, y: 0, duration: 0.26, ease: 'power2.out' }, 3.76)
+      .to(routeNodes[2], { autoAlpha: 1, y: 0, duration: 0.26, ease: 'power2.out' }, 3.88)
+      .to(routeNodes, { autoAlpha: 0, y: -10, duration: 0.24 }, 4.5)
       .to(measureLines[0], { scaleX: 1, duration: 0.4, ease: 'power1.inOut' }, 4.76)
       .to(measureLines[1], { scaleX: 1, duration: 0.36, ease: 'power1.inOut' }, 4.92)
-      .to(measureLines, { autoAlpha: 0, duration: 0.28 }, 5.45)
+      .to(inspectionReticle, { autoAlpha: 0.65, scale: 0.46, duration: 0.7, ease: 'power1.inOut' }, 4.72)
+      .to([measureLines, inspectionReticle], { autoAlpha: 0, duration: 0.32 }, 5.55)
+      .to(releaseMark, { autoAlpha: 1, y: 0, duration: 0.42, ease: 'power2.out' }, 5.82)
+      .to(releaseMark, { autoAlpha: 0, y: -8, duration: 0.24 }, 6.58)
       .to(scenes[7], { scale: 1, duration: 0.54 }, 7.18);
 
     const heroMotion = gsap.timeline({
