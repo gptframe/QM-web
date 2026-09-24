@@ -10,7 +10,7 @@ A static, GitHub Pages-compatible homepage for Quantamorph Limited. The central 
 - `assets/vendor/` contains pinned local copies of GSAP 3.12.5 and ScrollTrigger 3.12.5, removing the runtime dependency on a public CDN.
 - `assets/part-*.avif|webp` are six aligned states of the same representative component. They are generated from `part-evolution-master.png` by `scripts/process_part_sequence.py`.
 
-No build step or framework runtime is required. The page uses relative URLs and can be served directly from a GitHub Pages branch or repository root.
+No build step, Node.js runtime or framework runtime is required for the production website. The page uses relative URLs and can be served directly from a GitHub Pages branch or repository root. Node.js is used only for local browser QA.
 
 ## Local preview
 
@@ -37,11 +37,19 @@ Regenerate the aligned part states after replacing the contact sheet:
 python scripts/process_part_sequence.py
 ```
 
-The current sequence is illustrative. A higher-fidelity reel-like transformation requires publication-approved imagery of the same component with:
+The current six images are temporary, illustrative states rather than production-fidelity process evidence. The next asset pass must meet all of these requirements:
 
-- one fixed camera, focal length, crop and lighting setup;
-- approximately 40–80 optimized frames spanning stock, preparation, machining, inspection, finished and packed states; or
-- a clean GLB/GLTF model with approved materials and camera direction.
+- Every state must use the same optical axis, perspective/camera direction, crop and lighting family.
+- The raw and cut material envelopes must physically contain the finished component envelope.
+- The cut blank must be long enough and large enough for the finished component.
+- Machining stages must only remove material.
+- The CAD, rough, finished and packed states must represent the same geometry.
+- Inspection and packing states must preserve that exact component.
+- Final desktop imagery must not rely on 512px source images when displayed near 800–950 CSS px.
+- Final sources must support high-DPI displays through suitable responsive dimensions.
+- Imagery remains illustrative unless its provenance permits stronger wording.
+
+A higher-fidelity reel-like transformation additionally requires approximately 40–80 optimised frames of that same component under the controlled setup above, or a clean GLB/GLTF model with approved materials and camera direction. This asset constraint is the remaining blocker; it must not be disguised with invented tolerances, dimensions, machining data, certification marks, logos or machine specifications.
 
 Any future frame sequence should use responsive AVIF/WebP sources, staged preloading, a measured transfer/decode budget and the current static sequence as its fallback. A 3D runtime should only be introduced when an approved model and a requirement for genuine camera or geometry control exist.
 
@@ -51,10 +59,14 @@ Any future frame sequence should use responsive AVIF/WebP sources, staged preloa
 
 ## QA
 
-Run the automated browser pass while the local server is active:
+Install the dev-only QA dependency and run the self-hosting browser pass:
 
 ```powershell
-node scripts/browser_qa.mjs
+npm ci
+npm run qa:install
+npm run qa
 ```
 
-The check covers 375, 390, 430, 768, 1024, 1440 and 1920 CSS-pixel widths, image and anchor failures, console/page errors, horizontal overflow, navigation behaviour, capability keyboard control, the desktop story and reduced motion.
+`npm run qa:install` installs Playwright's portable Chromium build once; `npm run qa` starts a temporary local static server and executes the assertions. `QA_URL` may be supplied to test an already-running preview instead. The package is a development tool only and is not part of the deployed website.
+
+The assertions cover 375, 390, 430, 768, 780, 1024, 1440 and 1920 CSS-pixel widths; desktop cinematic activation; the mobile, reduced-motion and no-JavaScript eight-stage route; keyboard navigation and focus; interactive descendants inside `aria-hidden` subtrees; internal anchors; image loading; console and page errors; failed requests; and horizontal overflow. Screenshots and a machine-readable report are written to the ignored `qa-output/` directory.
