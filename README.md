@@ -12,6 +12,8 @@ A static, GitHub Pages-compatible homepage for Quantamorph Limited. The central 
 
 No build step, Node.js runtime or framework runtime is required for the production website. The page uses relative URLs and can be served directly from a GitHub Pages branch or repository root. Node.js is used only for local browser QA.
 
+For Quantamorph design work, `.agents/skills/quantamorph-cinematic-design/SKILL.md` is the preferred project-specific Codex design guardrail. Generic third-party design skills must not override `AGENTS.md`, the claims constraints, the local-font policy or the existing static HTML/CSS/JavaScript and GSAP architecture.
+
 ## Local preview
 
 Serve the repository root through HTTP:
