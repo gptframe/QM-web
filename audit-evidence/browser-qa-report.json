@@ -1,0 +1,1070 @@
+{
+  "generatedAt": "2026-09-24T22:15:53.045Z",
+  "target": "http://127.0.0.1:57341/",
+  "scenarios": [
+    {
+      "name": "desktop-1920",
+      "width": 1920,
+      "height": 1080,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 1920,
+      "clientWidth": 1920,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": true,
+      "processPinDisplay": "block",
+      "fallbackDisplay": "none",
+      "fallbackVisible": false,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 0,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 18,
+      "encodedResourceBytes": 1105258,
+      "imageAssetFailures": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\desktop-1920-hero.png"
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": true,
+      "processPinDisplay": "block",
+      "fallbackDisplay": "none",
+      "fallbackVisible": false,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 0,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "keyboardFocus": {
+        "text": "Skip to content",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid"
+      },
+      "processSample": {
+        "readout": "Stage 04 / 07",
+        "activeStep": "04Secondary",
+        "visibleScenes": 2,
+        "pinnedTop": 0
+      },
+      "capabilityKeyboard": {
+        "selected": "capability-tab-1",
+        "title": "CNC machining",
+        "image": "assets/cnc-milling.svg"
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\desktop-1440-hero.png"
+    },
+    {
+      "name": "desktop-1024",
+      "width": 1024,
+      "height": 768,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": true,
+      "processPinDisplay": "block",
+      "fallbackDisplay": "none",
+      "fallbackVisible": false,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 0,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "mobileMenuKeyboard": {
+        "opened": "true",
+        "focusMovedIntoMenu": true,
+        "closed": "false",
+        "focusReturned": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\desktop-1024-hero.png"
+    },
+    {
+      "name": "boundary-780",
+      "width": 780,
+      "height": 900,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 780,
+      "clientWidth": 780,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "mobileMenuKeyboard": {
+        "opened": "true",
+        "focusMovedIntoMenu": true,
+        "closed": "false",
+        "focusReturned": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\boundary-780-hero.png"
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "mobileMenuKeyboard": {
+        "opened": "true",
+        "focusMovedIntoMenu": true,
+        "closed": "false",
+        "focusReturned": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\tablet-768-hero.png"
+    },
+    {
+      "name": "mobile-430",
+      "width": 430,
+      "height": 932,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 430,
+      "clientWidth": 430,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "mobileMenuKeyboard": {
+        "opened": "true",
+        "focusMovedIntoMenu": true,
+        "closed": "false",
+        "focusReturned": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\mobile-430-hero.png"
+    },
+    {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "mobileMenuKeyboard": {
+        "opened": "true",
+        "focusMovedIntoMenu": true,
+        "closed": "false",
+        "focusReturned": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\mobile-390-hero.png"
+    },
+    {
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": true,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "mobileMenuKeyboard": {
+        "opened": "true",
+        "focusMovedIntoMenu": true,
+        "closed": "false",
+        "focusReturned": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshotPath": "C:\\Prasad\\forge manufacturing\\code x\\QM-web-github\\qa-output\\mobile-375-hero.png"
+    },
+    {
+      "name": "reduced-motion",
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": true,
+      "scrollTriggerAvailable": true,
+      "motionReady": false,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 1093577,
+      "imageAssetFailures": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "name": "no-javascript",
+      "title": "Quantamorph Limited | From Drawing to Delivered Component",
+      "h1Visible": true,
+      "primaryCtaVisible": true,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hiddenInteractive": [],
+      "gsapAvailable": false,
+      "scrollTriggerAvailable": false,
+      "motionReady": false,
+      "cinematicReady": false,
+      "processPinDisplay": "none",
+      "fallbackDisplay": "grid",
+      "fallbackVisible": true,
+      "fallbackItems": 8,
+      "visibleFallbackItems": 8,
+      "bodyFontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
+      "displayFontFamily": "\"Arial Narrow\", \"Roboto Condensed\", \"Liberation Sans Narrow\", \"Nimbus Sans Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "loadedResources": 17,
+      "encodedResourceBytes": 966208,
+      "imageAssetFailures": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    }
+  ],
+  "assertions": [
+    {
+      "name": "typography: no legacy Archivo or Inter declarations remain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "typography: display and body tokens are defined",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: manufacturing cinematic is active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: cinematic pin is displayed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: stacked fallback is hidden while the cinematic is active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: no horizontal overflow",
+      "passed": true,
+      "detail": "1920/1920"
+    },
+    {
+      "name": "desktop-1920: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1920: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: manufacturing cinematic is active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: cinematic pin is displayed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: stacked fallback is hidden while the cinematic is active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: keyboard focus is visibly styled",
+      "passed": true,
+      "detail": "{\"text\":\"Skip to content\",\"outlineWidth\":\"2px\",\"outlineStyle\":\"solid\"}"
+    },
+    {
+      "name": "desktop-1440: cinematic stage status advances",
+      "passed": true,
+      "detail": "{\"readout\":\"Stage 04 / 07\",\"activeStep\":\"04Secondary\",\"visibleScenes\":2,\"pinnedTop\":0}"
+    },
+    {
+      "name": "desktop-1440: capability tabs respond to keyboard navigation",
+      "passed": true,
+      "detail": "{\"selected\":\"capability-tab-1\",\"title\":\"CNC machining\",\"image\":\"assets/cnc-milling.svg\"}"
+    },
+    {
+      "name": "desktop-1440: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: no horizontal overflow",
+      "passed": true,
+      "detail": "1440/1440"
+    },
+    {
+      "name": "desktop-1440: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1440: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: manufacturing cinematic is active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: cinematic pin is displayed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: stacked fallback is hidden while the cinematic is active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: mobile menu works with keyboard only",
+      "passed": true,
+      "detail": "{\"opened\":\"true\",\"focusMovedIntoMenu\":true,\"closed\":\"false\",\"focusReturned\":true}"
+    },
+    {
+      "name": "desktop-1024: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: no horizontal overflow",
+      "passed": true,
+      "detail": "1024/1024"
+    },
+    {
+      "name": "desktop-1024: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop-1024: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: manufacturing cinematic is disabled at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: cinematic pin is hidden at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: complete stacked route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "boundary-780: mobile menu works with keyboard only",
+      "passed": true,
+      "detail": "{\"opened\":\"true\",\"focusMovedIntoMenu\":true,\"closed\":\"false\",\"focusReturned\":true}"
+    },
+    {
+      "name": "boundary-780: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: no horizontal overflow",
+      "passed": true,
+      "detail": "780/780"
+    },
+    {
+      "name": "boundary-780: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "boundary-780: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: manufacturing cinematic is disabled at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: cinematic pin is hidden at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: complete stacked route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "tablet-768: mobile menu works with keyboard only",
+      "passed": true,
+      "detail": "{\"opened\":\"true\",\"focusMovedIntoMenu\":true,\"closed\":\"false\",\"focusReturned\":true}"
+    },
+    {
+      "name": "tablet-768: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: no horizontal overflow",
+      "passed": true,
+      "detail": "768/768"
+    },
+    {
+      "name": "tablet-768: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tablet-768: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: manufacturing cinematic is disabled at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: cinematic pin is hidden at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: complete stacked route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "mobile-430: mobile menu works with keyboard only",
+      "passed": true,
+      "detail": "{\"opened\":\"true\",\"focusMovedIntoMenu\":true,\"closed\":\"false\",\"focusReturned\":true}"
+    },
+    {
+      "name": "mobile-430: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: no horizontal overflow",
+      "passed": true,
+      "detail": "430/430"
+    },
+    {
+      "name": "mobile-430: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-430: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: manufacturing cinematic is disabled at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: cinematic pin is hidden at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: complete stacked route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "mobile-390: mobile menu works with keyboard only",
+      "passed": true,
+      "detail": "{\"opened\":\"true\",\"focusMovedIntoMenu\":true,\"closed\":\"false\",\"focusReturned\":true}"
+    },
+    {
+      "name": "mobile-390: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: no horizontal overflow",
+      "passed": true,
+      "detail": "390/390"
+    },
+    {
+      "name": "mobile-390: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-390: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: local GSAP and ScrollTrigger are available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: manufacturing cinematic is disabled at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: cinematic pin is hidden at 780px and below",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: complete stacked route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "mobile-375: mobile menu works with keyboard only",
+      "passed": true,
+      "detail": "{\"opened\":\"true\",\"focusMovedIntoMenu\":true,\"closed\":\"false\",\"focusReturned\":true}"
+    },
+    {
+      "name": "mobile-375: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: no horizontal overflow",
+      "passed": true,
+      "detail": "375/375"
+    },
+    {
+      "name": "mobile-375: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile-375: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: cinematic enhancement is disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: cinematic pin is hidden",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: complete stacked route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "reduced-motion: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: no horizontal overflow",
+      "passed": true,
+      "detail": "1440/1440"
+    },
+    {
+      "name": "reduced-motion: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: no failed requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: cinematic enhancement is inactive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: cinematic pin is hidden",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: complete eight-stage route is visible",
+      "passed": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "no-javascript: main heading is visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: primary CTA meets the visible 44px target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: no horizontal overflow",
+      "passed": true,
+      "detail": "1440/1440"
+    },
+    {
+      "name": "no-javascript: all internal anchors resolve",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: all visible and declared images load",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: aria-hidden subtrees contain no interactive descendants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: no console errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: no page errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-javascript: no failed requests",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": true
+}
