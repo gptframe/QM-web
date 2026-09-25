@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "rule": "raw stock \u2287 cut blank \u2287 rough \u2287 semi-finished \u2287 finished",
+  "method": "analytic constraints plus deterministic 161\u00d7121\u00d7121 occupancy sampling",
+  "checks": [
+    {
+      "type": "analytic",
+      "check": "stock radius contains blank",
+      "passed": true
+    },
+    {
+      "type": "analytic",
+      "check": "stock length contains blank",
+      "passed": true
+    },
+    {
+      "type": "analytic",
+      "check": "blank radius contains rough",
+      "passed": true
+    },
+    {
+      "type": "analytic",
+      "check": "blank length contains rough",
+      "passed": true
+    },
+    {
+      "type": "analytic",
+      "check": "rough allowance contains semi-finished",
+      "passed": true
+    },
+    {
+      "type": "analytic",
+      "check": "semi-finished allowance contains finished",
+      "passed": true
+    },
+    {
+      "type": "analytic",
+      "check": "semi-finished bore removes no more than finished",
+      "passed": true
+    },
+    {
+      "type": "voxel",
+      "check": "stock contains blank",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2357201,
+      "grid": [
+        161,
+        121,
+        121
+      ]
+    },
+    {
+      "type": "voxel",
+      "check": "blank contains rough",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2357201,
+      "grid": [
+        161,
+        121,
+        121
+      ]
+    },
+    {
+      "type": "voxel",
+      "check": "rough contains semi-finished",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2357201,
+      "grid": [
+        161,
+        121,
+        121
+      ]
+    },
+    {
+      "type": "voxel",
+      "check": "semi-finished contains finished",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2357201,
+      "grid": [
+        161,
+        121,
+        121
+      ]
+    },
+    {
+      "type": "identity",
+      "check": "cad geometry equals finished",
+      "passed": true
+    },
+    {
+      "type": "identity",
+      "check": "inspection geometry equals finished",
+      "passed": true
+    },
+    {
+      "type": "identity",
+      "check": "packed geometry equals finished",
+      "passed": true
+    }
+  ],
+  "geometry_units": "dimensionless illustrative model units"
+}

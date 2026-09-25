@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-09-25T06:54:33.108603+00:00",
+  "generator": "scripts/render_cinematic_proof.py",
+  "rendering": {
+    "approach": "deterministic NumPy/Pillow signed-distance-field CPU ray marcher",
+    "output_dimensions": [
+      1600,
+      1600
+    ],
+    "internal_render_dimensions": [
+      800,
+      800
+    ],
+    "upscale_filter": "Lanczos",
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "shared_camera_lighting_crop": true,
+    "randomness": "none"
+  },
+  "provenance": "Repository-authored illustrative procedural geometry; no customer geometry or third-party visual assets",
+  "validation": {
+    "passed": true,
+    "rule": "raw stock \u2287 cut blank \u2287 rough \u2287 semi-finished \u2287 finished",
+    "method": "analytic constraints plus deterministic 161\u00d7121\u00d7121 occupancy sampling",
+    "checks": [
+      {
+        "type": "analytic",
+        "check": "stock radius contains blank",
+        "passed": true
+      },
+      {
+        "type": "analytic",
+        "check": "stock length contains blank",
+        "passed": true
+      },
+      {
+        "type": "analytic",
+        "check": "blank radius contains rough",
+        "passed": true
+      },
+      {
+        "type": "analytic",
+        "check": "blank length contains rough",
+        "passed": true
+      },
+      {
+        "type": "analytic",
+        "check": "rough allowance contains semi-finished",
+        "passed": true
+      },
+      {
+        "type": "analytic",
+        "check": "semi-finished allowance contains finished",
+        "passed": true
+      },
+      {
+        "type": "analytic",
+        "check": "semi-finished bore removes no more than finished",
+        "passed": true
+      },
+      {
+        "type": "voxel",
+        "check": "stock contains blank",
+        "passed": true,
+        "violations": 0,
+        "sample_count": 2357201,
+        "grid": [
+          161,
+          121,
+          121
+        ]
+      },
+      {
+        "type": "voxel",
+        "check": "blank contains rough",
+        "passed": true,
+        "violations": 0,
+        "sample_count": 2357201,
+        "grid": [
+          161,
+          121,
+          121
+        ]
+      },
+      {
+        "type": "voxel",
+        "check": "rough contains semi-finished",
+        "passed": true,
+        "violations": 0,
+        "sample_count": 2357201,
+        "grid": [
+          161,
+          121,
+          121
+        ]
+      },
+      {
+        "type": "voxel",
+        "check": "semi-finished contains finished",
+        "passed": true,
+        "violations": 0,
+        "sample_count": 2357201,
+        "grid": [
+          161,
+          121,
+          121
+        ]
+      },
+      {
+        "type": "identity",
+        "check": "cad geometry equals finished",
+        "passed": true
+      },
+      {
+        "type": "identity",
+        "check": "inspection geometry equals finished",
+        "passed": true
+      },
+      {
+        "type": "identity",
+        "check": "packed geometry equals finished",
+        "passed": true
+      }
+    ],
+    "geometry_units": "dimensionless illustrative model units"
+  },
+  "assets": [
+    {
+      "state": "proof-00-cad",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-00-cad.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 420555,
+      "human_size": "410.70 KiB",
+      "sha256": "f622b87d4c00ca11b43f19c5925659618f292595f326fff5f92830f81d59b614"
+    },
+    {
+      "state": "proof-01-stock",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-01-stock.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 183153,
+      "human_size": "178.86 KiB",
+      "sha256": "3a7dcf54b826035dcd6f050d7b911b91bf7d567f307f05af98d1edd3a3e26608"
+    },
+    {
+      "state": "proof-02-blank",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-02-blank.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 172044,
+      "human_size": "168.01 KiB",
+      "sha256": "05854672868df4b12b8d062e82def5616eae3cad329f2a78148eb5b6ee65f4d7"
+    },
+    {
+      "state": "proof-03-rough",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-03-rough.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 206152,
+      "human_size": "201.32 KiB",
+      "sha256": "4e8fa34ecaeaa699760f1520194610a6d4b95f2e5e9b154c36b5fb6389b8a11b"
+    },
+    {
+      "state": "proof-04-semi-finished",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-04-semi-finished.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 198258,
+      "human_size": "193.61 KiB",
+      "sha256": "89c83226b2a13836a38c674832715da0e9f08a287a94115910949763ed149002"
+    },
+    {
+      "state": "proof-05-finished",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-05-finished.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 200936,
+      "human_size": "196.23 KiB",
+      "sha256": "870426b903b8a64deed3d56e381a9711c1bd5922172e6967e800923d5fe2e44c"
+    },
+    {
+      "state": "proof-06-inspection",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-06-inspection.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 225477,
+      "human_size": "220.19 KiB",
+      "sha256": "0917267ab09c428b93a98c7a95c46c14868d4de9a9533f6af048d90d2d0d78d2"
+    },
+    {
+      "state": "proof-07-packed",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-07-packed.png",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 197517,
+      "human_size": "192.89 KiB",
+      "sha256": "1fe06427ca69065da514862b7efc0293fb64c122cd1d68447625899c6bec686f"
+    },
+    {
+      "state": "contact-sheet",
+      "path": "asset-lab/phase-3-cinematic-proof/proof-contact-sheet.png",
+      "width": 3200,
+      "height": 1600,
+      "bytes": 746962,
+      "human_size": "729.46 KiB",
+      "sha256": "2ce3d0479e52c3e2307d49c3b9c321380935d6facf7d9830a7ece0f32bda8aa7"
+    }
+  ],
+  "sequence_estimates": {
+    "basis": "Mean encoded size of the eight proof keyframes using AVIF quality 63 at 1536px and quality 60 at 960px",
+    "planning_basis": "Conservative 90-180 KiB desktop and 40-85 KiB mobile per frame to account for future photoreal surface entropy",
+    "average_desktop_frame_bytes": 16003,
+    "average_mobile_frame_bytes": 8329,
+    "frames": {
+      "40": {
+        "measured_proof_extrapolation": {
+          "desktop_1536_avif": "625.12 KiB",
+          "mobile_960_avif": "325.35 KiB"
+        },
+        "production_planning_range": {
+          "desktop_1536_avif": [
+            "3.52 MiB",
+            "7.03 MiB"
+          ],
+          "mobile_960_avif": [
+            "1.56 MiB",
+            "3.32 MiB"
+          ],
+          "delivery_note": "A viewport receives one responsive tier, not both; excludes HTTP overhead and any separately loaded fallback"
+        }
+      },
+      "60": {
+        "measured_proof_extrapolation": {
+          "desktop_1536_avif": "937.68 KiB",
+          "mobile_960_avif": "488.03 KiB"
+        },
+        "production_planning_range": {
+          "desktop_1536_avif": [
+            "5.27 MiB",
+            "10.55 MiB"
+          ],
+          "mobile_960_avif": [
+            "2.34 MiB",
+            "4.98 MiB"
+          ],
+          "delivery_note": "A viewport receives one responsive tier, not both; excludes HTTP overhead and any separately loaded fallback"
+        }
+      },
+      "80": {
+        "measured_proof_extrapolation": {
+          "desktop_1536_avif": "1.22 MiB",
+          "mobile_960_avif": "650.70 KiB"
+        },
+        "production_planning_range": {
+          "desktop_1536_avif": [
+            "7.03 MiB",
+            "14.06 MiB"
+          ],
+          "mobile_960_avif": [
+            "3.12 MiB",
+            "6.64 MiB"
+          ],
+          "delivery_note": "A viewport receives one responsive tier, not both; excludes HTTP overhead and any separately loaded fallback"
+        }
+      }
+    }
+  }
+}
