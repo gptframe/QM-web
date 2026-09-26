@@ -13,7 +13,7 @@
   <meta name="twitter:description" content="From enquiry and design through machining, inspection, packing and delivery—one accountable manufacturing route.">
   <title>Quantamorph Limited | From Drawing to Delivered Component</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="assets/part-finished.avif" type="image/avif" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/cinematic/key-finished-1536.avif" imagesrcset="assets/cinematic/key-finished-960.avif 960w, assets/cinematic/key-finished-1536.avif 1536w" imagesizes="(max-width: 780px) 100vw, 70vw" type="image/avif" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script src="assets/vendor/gsap-3.12.5.min.js" defer></script>
   <script src="assets/vendor/ScrollTrigger-3.12.5.min.js" defer></script>
@@ -46,8 +46,8 @@
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-image-wrap" aria-hidden="true" data-hero-image>
         <picture>
-          <source type="image/avif" srcset="assets/part-finished.avif">
-          <img src="assets/part-finished.webp" alt="" width="512" height="512" fetchpriority="high">
+          <source type="image/avif" srcset="assets/cinematic/key-finished-960.avif 960w, assets/cinematic/key-finished-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 70vw">
+          <img src="assets/cinematic/key-finished-960.avif" alt="" width="1600" height="1600" fetchpriority="high">
         </picture>
       </div>
       <div class="hero-vignette" aria-hidden="true"></div>
@@ -84,7 +84,7 @@
     <section class="process" id="process" aria-labelledby="process-title">
       <div class="process-intro section-shell">
         <div>
-          <p class="section-index">00—07 / Representative route</p>
+          <p class="section-index">00—07 / 8-state representative route</p>
           <h2 id="process-title">The requirement enters.<br>The component moves forward.</h2>
         </div>
         <div class="process-intro-copy">
@@ -109,33 +109,34 @@
           <div class="process-scenes">
             <figure class="process-scene process-scene--cad is-visible" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-cad.avif">
-                <img src="assets/part-cad.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-cad-960.avif 960w, assets/cinematic/key-cad-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-cad-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
             </figure>
             <figure class="process-scene" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-stock.avif">
-                <img src="assets/part-stock.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-stock-960.avif 960w, assets/cinematic/key-stock-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-stock-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
             </figure>
             <figure class="process-scene" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-blank.avif">
-                <img src="assets/part-blank.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-blank-960.avif 960w, assets/cinematic/key-blank-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-blank-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
             </figure>
             <figure class="process-scene process-scene--machining" data-process-scene>
-              <picture>
-                <source type="image/avif" srcset="assets/part-rough.avif">
-                <img src="assets/part-rough.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+              <picture data-machining-fallback>
+                <source type="image/avif" srcset="assets/cinematic/key-rough-960.avif 960w, assets/cinematic/key-rough-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-rough-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
+              <canvas class="machining-sequence" width="1536" height="1536" data-machining-sequence data-frame-count="32"></canvas>
               <span class="machine-ring" data-machine-ring></span>
             </figure>
             <figure class="process-scene process-scene--secondary" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-finished.avif">
-                <img src="assets/part-finished.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-finished-960.avif 960w, assets/cinematic/key-finished-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-finished-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
               <div class="route-orbit">
                 <span data-route-node>Turning</span>
@@ -145,8 +146,8 @@
             </figure>
             <figure class="process-scene process-scene--inspection" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-finished.avif">
-                <img src="assets/part-finished.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-inspection-960.avif 960w, assets/cinematic/key-inspection-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-inspection-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
               <span class="measure-line measure-line--a" data-measure-line></span>
               <span class="measure-line measure-line--b" data-measure-line></span>
@@ -154,15 +155,15 @@
             </figure>
             <figure class="process-scene process-scene--finished" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-finished.avif">
-                <img src="assets/part-finished.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-finished-960.avif 960w, assets/cinematic/key-finished-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-finished-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
               <span class="release-mark" data-release-mark>Released to scope</span>
             </figure>
             <figure class="process-scene process-scene--delivery" data-process-scene>
               <picture>
-                <source type="image/avif" srcset="assets/part-packed.avif">
-                <img src="assets/part-packed.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+                <source type="image/avif" srcset="assets/cinematic/key-packed-960.avif 960w, assets/cinematic/key-packed-1536.avif 1536w" sizes="57vw">
+                <img src="assets/cinematic/key-packed-960.avif" alt="" width="1600" height="1600" loading="lazy" decoding="async">
               </picture>
             </figure>
           </div>
@@ -174,7 +175,7 @@
 
           <div class="process-topline">
             <span>Quantamorph / production route</span>
-            <span data-stage-readout>Stage 00 / 07</span>
+            <span data-stage-readout>Stage 00 · 8 states</span>
           </div>
 
           <div class="process-captions">
@@ -235,39 +236,39 @@
           </div>
         </div>
 
-        <p class="sr-only" aria-live="polite" data-stage-live>Stage 00 of 07: Engineering requirement.</p>
+        <p class="sr-only" aria-live="polite" data-stage-live>Stage 00 of 8: Engineering requirement.</p>
 
         <ol class="process-fallback" aria-label="Representative manufacturing route">
           <li>
-            <picture><source type="image/avif" srcset="assets/part-cad.avif"><img src="assets/part-cad.webp" alt="Illustrative CAD state of the representative component" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-cad-960.avif 960w, assets/cinematic/key-cad-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-cad-960.avif" alt="Illustrative CAD state of the representative component" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>00 / Requirement</span><h3>Define the part.</h3><p>A drawing, CAD model or authorised sample establishes the enquiry.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-stock.avif"><img src="assets/part-stock.webp" alt="Representative round stock before preparation" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-stock-960.avif 960w, assets/cinematic/key-stock-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-stock-960.avif" alt="Representative round stock before preparation" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>01 / Material</span><h3>Material enters.</h3><p>Grade, form and any required supporting records are reviewed for the quotation.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-blank.avif"><img src="assets/part-blank.webp" alt="Representative cut blank prepared for machining" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-blank-960.avif 960w, assets/cinematic/key-blank-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-blank-960.avif" alt="Representative cut blank prepared for machining" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>02 / Preparation</span><h3>Blank controlled.</h3><p>Stock is prepared for the selected manufacturing route.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-rough.avif"><img src="assets/part-rough.webp" alt="The representative component in a rough-machined state" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-rough-960.avif 960w, assets/cinematic/key-rough-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-rough-960.avif" alt="The representative component in a rough-machined state" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>03 / Machining</span><h3>Geometry emerges.</h3><p>Machining develops the drawing-defined form, interfaces and features.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-finished.avif"><img src="assets/part-finished.webp" alt="The representative component after its selected manufacturing route" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-finished-960.avif 960w, assets/cinematic/key-finished-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-finished-960.avif" alt="The representative component after its selected manufacturing route" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>04 / Secondary operations</span><h3>The route adapts.</h3><p>Additional operations are included only where the requirement calls for them.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-finished.avif"><img src="assets/part-finished.webp" alt="The same finished component presented for the agreed inspection stage" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-inspection-960.avif 960w, assets/cinematic/key-inspection-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-inspection-960.avif" alt="The same finished component presented for the agreed inspection stage" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>05 / Inspection</span><h3>Measure. Verify.</h3><p>Specified characteristics are checked to the inspection scope agreed for the order.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-finished.avif"><img src="assets/part-finished.webp" alt="Released state of the representative finished component" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-finished-960.avif 960w, assets/cinematic/key-finished-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-finished-960.avif" alt="Released state of the representative finished component" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>06 / Finished component</span><h3>Released to scope.</h3><p>The finished component resolves only after the agreed checks are complete.</p></div>
           </li>
           <li>
-            <picture><source type="image/avif" srcset="assets/part-packed.avif"><img src="assets/part-packed.webp" alt="The same finished component protected in illustrative delivery packaging" width="512" height="512" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/cinematic/key-packed-960.avif 960w, assets/cinematic/key-packed-1536.avif 1536w" sizes="(max-width: 780px) 100vw, 50vw"><img src="assets/cinematic/key-packed-960.avif" alt="The same finished component protected in illustrative delivery packaging" width="1600" height="1600" loading="lazy" decoding="async"></picture>
             <div><span>07 / Delivery</span><h3>Protected. Supplied.</h3><p>Packaging, documentation and delivery follow the agreed order scope.</p></div>
           </li>
         </ol>

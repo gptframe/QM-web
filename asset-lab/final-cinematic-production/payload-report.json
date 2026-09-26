@@ -1,0 +1,32 @@
+{
+  "sequence": {
+    "1536": {
+      "files": 32,
+      "bytes": 446152,
+      "human_size": "435.70 KiB"
+    },
+    "960": {
+      "files": 32,
+      "bytes": 212951,
+      "human_size": "207.96 KiB"
+    }
+  },
+  "key_states_total": {
+    "files": 14,
+    "bytes": 153240,
+    "human_size": "149.65 KiB"
+  },
+  "mobile_sequence_payload": {
+    "bytes": 0,
+    "human_size": "0 B",
+    "reason": "sequence URLs are not initialized at 780px and below"
+  },
+  "encoding": {
+    "1536": {
+      "quality": 63
+    },
+    "960": {
+      "quality": 60
+    }
+  }
+}

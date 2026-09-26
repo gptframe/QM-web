@@ -226,7 +226,7 @@ button { color: inherit; font: inherit; }
 .hero-image-wrap img {
   object-fit: contain;
   object-position: center;
-  filter: saturate(0.72) contrast(1.08) brightness(0.82);
+  filter: none;
   scale: 0.97;
   animation: hero-breathe 8s cubic-bezier(.2, .7, .25, 1) both;
 }
@@ -496,7 +496,8 @@ button { color: inherit; font: inherit; }
   height: 100%;
 }
 
-.process-scene > picture {
+.process-scene > picture,
+.machining-sequence {
   position: absolute;
   top: 50%;
   right: clamp(24px, 5vw, 96px);
@@ -504,6 +505,17 @@ button { color: inherit; font: inherit; }
   aspect-ratio: 1;
   transform: translateY(-50%);
 }
+
+.machining-sequence {
+  display: block;
+  height: auto;
+  opacity: 0;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.process-scene--machining.is-sequence-ready [data-machining-fallback] { opacity: 0; }
+.process-scene--machining.is-sequence-ready .machining-sequence { opacity: 1; }
 
 .process-scene {
   margin: 0;
@@ -521,13 +533,13 @@ button { color: inherit; font: inherit; }
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: saturate(0.7) brightness(0.82) contrast(1.08);
+  filter: none;
 }
 
-.process-scene--cad img { filter: saturate(.36) brightness(.82) contrast(1.18); }
-.process-scene--finished img { filter: saturate(0.58) brightness(0.9) contrast(1.1); }
-.process-scene--inspection img { filter: saturate(0.48) brightness(0.72) contrast(1.15); }
-.process-scene--delivery img { filter: saturate(.55) brightness(.76) contrast(1.1); }
+.process-scene--cad img,
+.process-scene--finished img,
+.process-scene--inspection img,
+.process-scene--delivery img { filter: none; }
 
 .process-carrier {
   position: absolute;
@@ -881,7 +893,7 @@ button { color: inherit; font: inherit; }
 .process-fallback li { background: var(--ink); }
 .process-fallback picture,
 .process-fallback img { display: block; width: 100%; }
-.process-fallback img { height:auto; aspect-ratio: 1; object-fit: cover; filter: saturate(0.68) brightness(0.84); }
+.process-fallback img { height:auto; aspect-ratio: 1; object-fit: cover; filter: none; }
 .process-fallback li > div { padding: 28px clamp(22px, 3vw, 44px) 38px; }
 .process-fallback span { color: var(--red-bright); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
 .process-fallback h3 { margin: 12px 0 0; font: 800 clamp(1.8rem, 3vw, 3.2rem)/0.95 var(--font-display); letter-spacing: -0.04em; text-transform: uppercase; }

@@ -133,6 +133,8 @@
   const machineRing = document.querySelector('[data-machine-ring]');
   const inspectionReticle = document.querySelector('[data-inspection-reticle]');
   const releaseMark = document.querySelector('[data-release-mark]');
+  const machiningCanvas = document.querySelector('[data-machining-sequence]');
+  const machiningScene = machiningCanvas?.closest('[data-process-scene]');
   const stageNames = [
     'Engineering requirement',
     'Material',
@@ -163,8 +165,8 @@
       if (nextStage === activeStage) return;
       activeStage = nextStage;
       const padded = String(nextStage).padStart(2, '0');
-      if (stageLive) stageLive.textContent = `Stage ${padded} of 07: ${stageNames[nextStage]}.`;
-      if (stageReadout) stageReadout.textContent = `Stage ${padded} / 07`;
+      if (stageLive) stageLive.textContent = `Stage ${padded} of 8: ${stageNames[nextStage]}.`;
+      if (stageReadout) stageReadout.textContent = `Stage ${padded} · 8 states`;
       steps.forEach((step, index) => {
         step.classList.toggle('is-active', index === nextStage);
         step.classList.toggle('is-complete', index < nextStage);
@@ -186,9 +188,100 @@
       }
     });
 
+    const machiningSequence = (() => {
+      if (!machiningCanvas || !machiningScene) return null;
+      const frameCount = Number(machiningCanvas.dataset.frameCount) || 32;
+      const tier = innerWidth >= 1280 ? 1536 : 960;
+      const context = machiningCanvas.getContext('2d', { alpha: false });
+      if (!context) return null;
+
+      machiningCanvas.width = tier;
+      machiningCanvas.height = tier;
+      machiningCanvas.dataset.sequenceTier = String(tier);
+      machiningCanvas.dataset.sequenceStatus = 'idle';
+      machiningCanvas.dataset.requestedFrame = '0';
+      const frames = new Array(frameCount);
+      let requestedFrame = 0;
+      let started = false;
+
+      const drawRequested = () => {
+        if (!frames[0]) return;
+        let selected = requestedFrame;
+        if (!frames[selected]) {
+          const loaded = frames
+            .map((image, index) => image ? index : -1)
+            .filter((index) => index >= 0);
+          selected = loaded.reduce((closest, index) => (
+            Math.abs(index - requestedFrame) < Math.abs(closest - requestedFrame) ? index : closest
+          ), loaded[0]);
+        }
+        context.clearRect(0, 0, tier, tier);
+        context.drawImage(frames[selected], 0, 0, tier, tier);
+        machiningCanvas.dataset.sequenceFrame = String(selected);
+        machiningScene.classList.add('is-sequence-ready');
+      };
+
+      const loadFrame = (index) => new Promise((resolve) => {
+        if (frames[index]) {
+          resolve(true);
+          return;
+        }
+        const image = new Image();
+        image.decoding = 'async';
+        image.onload = async () => {
+          try { await image.decode(); } catch { /* onload confirms a usable fallback decode path */ }
+          frames[index] = image;
+          drawRequested();
+          resolve(true);
+        };
+        image.onerror = () => resolve(false);
+        image.src = `assets/cinematic/machining/${tier}/frame-${String(index).padStart(2, '0')}.avif`;
+      });
+
+      const start = async () => {
+        if (started) return;
+        started = true;
+        machiningCanvas.dataset.sequenceStatus = 'loading';
+        await loadFrame(0);
+        await loadFrame(frameCount - 1);
+        const queue = Array.from({ length: frameCount - 2 }, (_, index) => index + 1);
+        const workers = Array.from({ length: 4 }, async () => {
+          while (queue.length) await loadFrame(queue.shift());
+        });
+        await Promise.all(workers);
+        const loadedCount = frames.filter(Boolean).length;
+        machiningCanvas.dataset.loadedFrames = String(loadedCount);
+        machiningCanvas.dataset.sequenceStatus = loadedCount === frameCount ? 'complete' : 'degraded';
+        drawRequested();
+      };
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          observer.disconnect();
+          start();
+        }, { rootMargin: '20% 0px', threshold: 0 });
+        observer.observe(processScroll);
+      }
+
+      return {
+        setFrame(value) {
+          requestedFrame = Math.max(0, Math.min(frameCount - 1, Math.round(value)));
+          machiningCanvas.dataset.requestedFrame = String(requestedFrame);
+          drawRequested();
+        }
+      };
+    })();
+
     journey.to(scenes[0], { scale: 1.018, duration: 0.72 }, 0);
     journey.to(progressFill, { scaleX: 1, duration: 7.8 }, 0);
     journey.to(progressCursor, { left: '100%', duration: 7.8 }, 0);
+    const machiningFrame = { value: 0 };
+    journey.to(machiningFrame, {
+      value: 31,
+      duration: 0.86,
+      onUpdate: () => machiningSequence?.setFrame(machiningFrame.value)
+    }, 2.60);
 
     for (let index = 1; index < scenes.length; index += 1) {
       const at = index;

@@ -5,6 +5,7 @@ import path from "node:path";
 
 const repositoryRoot = process.cwd();
 const output = path.resolve(process.env.QA_OUTPUT || "qa-output");
+const evidenceOutput = path.resolve("asset-lab/final-cinematic-production/evidence");
 const viewportFilter = process.env.QA_VIEWPORT;
 const mimeTypes = new Map([
   [".avif", "image/avif"],
@@ -41,13 +42,18 @@ function check(condition, name, detail = "") {
 }
 
 function observePage(page) {
-  const events = { consoleErrors: [], pageErrors: [], failedRequests: [] };
+  const events = { consoleErrors: [], pageErrors: [], failedRequests: [], sequenceRequests: [] };
   page.on("console", (message) => {
     if (message.type() === "error") events.consoleErrors.push(message.text());
   });
   page.on("pageerror", (error) => events.pageErrors.push(error.message));
   page.on("requestfailed", (request) => {
     events.failedRequests.push(`${request.url()} :: ${request.failure()?.errorText || "unknown failure"}`);
+  });
+  page.on("request", (request) => {
+    if (/\/assets\/cinematic\/machining\/(?:1536|960)\/frame-\d{2}\.avif(?:\?|$)/.test(request.url())) {
+      events.sequenceRequests.push(request.url());
+    }
   });
   return events;
 }
@@ -189,6 +195,8 @@ async function inspectPage(page, options) {
     const h1 = document.querySelector("h1");
     const primaryCta = document.querySelector(".hero .button-primary");
     const resources = performance.getEntriesByType("resource");
+    const sequenceCanvas = document.querySelector("[data-machining-sequence]");
+    const sequenceFallback = document.querySelector("[data-machining-fallback]");
 
     return {
       title: document.title,
@@ -213,8 +221,27 @@ async function inspectPage(page, options) {
       displayFontFamily: getComputedStyle(document.querySelector(".brand")).fontFamily,
       loadedResources: resources.length,
       encodedResourceBytes: Math.round(resources.reduce((sum, item) => sum + (item.encodedBodySize || 0), 0)),
+      sequence: sequenceCanvas ? {
+        tier: sequenceCanvas.dataset.sequenceTier || "",
+        status: sequenceCanvas.dataset.sequenceStatus || "",
+        requestedFrame: sequenceCanvas.dataset.requestedFrame || "",
+        renderedFrame: sequenceCanvas.dataset.sequenceFrame || "",
+        loadedFrames: sequenceCanvas.dataset.loadedFrames || "",
+        fallbackOpacity: sequenceFallback ? getComputedStyle(sequenceFallback).opacity : "",
+        sceneReady: Boolean(sequenceCanvas.closest("[data-process-scene]")?.classList.contains("is-sequence-ready")),
+      } : null,
     };
   });
+}
+
+async function setCinematicTime(page, timelineTime) {
+  await page.evaluate((time) => {
+    const trigger = window.ScrollTrigger?.getAll().find((candidate) => candidate.trigger?.matches?.("[data-process-scroll]"));
+    if (!trigger) throw new Error("Manufacturing ScrollTrigger was not found");
+    const journeyDuration = 7.8;
+    scrollTo(0, trigger.start + (trigger.end - trigger.start) * (time / journeyDuration));
+  }, timelineTime);
+  await page.waitForTimeout(1200);
 }
 
 function assertSharedState(name, state, events) {
@@ -231,6 +258,7 @@ function assertSharedState(name, state, events) {
 }
 
 await mkdir(output, { recursive: true });
+await mkdir(evidenceOutput, { recursive: true });
 const stylesSource = await readFile(path.join(repositoryRoot, "styles.css"), "utf8");
 check(!/\b(?:Archivo|Inter)\b/i.test(stylesSource), "typography: no legacy Archivo or Inter declarations remain");
 check(stylesSource.includes("--font-display:") && stylesSource.includes("--font-body:"), "typography: display and body tokens are defined");
@@ -242,6 +270,66 @@ try {
   const target = process.env.QA_URL ? { url: process.env.QA_URL } : await startStaticServer();
   localServer = target.server;
   browser = await chromium.launch({ headless: true });
+
+  console.log("Running staged-loading performance probe...");
+  const performanceContext = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const performancePage = await performanceContext.newPage();
+  const performanceEvents = observePage(performancePage);
+  await performancePage.goto(target.url, { waitUntil: "networkidle", timeout: 30000 });
+  await performancePage.waitForTimeout(350);
+  const beforeManufacturing = await performancePage.evaluate(() => {
+    const resources = performance.getEntriesByType("resource");
+    return {
+      resourceCount: resources.length,
+      encodedBytes: Math.round(resources.reduce((sum, item) => sum + (item.encodedBodySize || 0), 0)),
+      urls: resources.map((item) => item.name),
+    };
+  });
+  check(performanceEvents.sequenceRequests.length === 0, "loading: machining sequence is absent from initial page load", `${performanceEvents.sequenceRequests.length} requests`);
+  await performancePage.evaluate(() => {
+    const element = document.querySelector("[data-process-scroll]");
+    scrollTo(0, element.getBoundingClientRect().top + scrollY - innerHeight * 0.65);
+  });
+  await performancePage.waitForFunction(
+    () => document.querySelector("[data-machining-sequence]")?.dataset.sequenceStatus === "complete",
+    undefined,
+    { timeout: 30000 },
+  );
+  const afterActivation = await performancePage.evaluate(() => {
+    const resources = performance.getEntriesByType("resource");
+    const sequence = resources.filter((item) => item.name.includes("/assets/cinematic/machining/"));
+    return {
+      resourceCount: resources.length,
+      encodedBytes: Math.round(resources.reduce((sum, item) => sum + (item.encodedBodySize || 0), 0)),
+      sequenceResourceCount: sequence.length,
+      sequenceEncodedBytes: Math.round(sequence.reduce((sum, item) => sum + (item.encodedBodySize || 0), 0)),
+      sequenceTier: document.querySelector("[data-machining-sequence]")?.dataset.sequenceTier,
+    };
+  });
+  check(afterActivation.sequenceResourceCount === 32, "loading: approach activation requests the complete 32-frame sequence", `${afterActivation.sequenceResourceCount}/32`);
+  check(afterActivation.sequenceTier === "1536", "loading: 1440px desktop selects the 1536 tier", afterActivation.sequenceTier);
+  const tierPayloads = {};
+  for (const tier of ["1536", "960"]) {
+    let bytes = 0;
+    for (let index = 0; index < 32; index += 1) {
+      bytes += (await stat(path.join(repositoryRoot, "assets", "cinematic", "machining", tier, `frame-${String(index).padStart(2, "0")}.avif`))).size;
+    }
+    tierPayloads[tier] = { frameCount: 32, bytes };
+  }
+  const runtimePerformance = {
+    generatedAt: new Date().toISOString(),
+    viewport: { width: 1440, height: 900 },
+    beforeManufacturing,
+    afterActivation,
+    activationDeltaBytes: afterActivation.encodedBytes - beforeManufacturing.encodedBytes,
+    encodedSequencePayloads: tierPayloads,
+    mobileSequencePayloadBytes: 0,
+    note: "The mobile and reduced-motion assertions below verify that no machining-frame request is made.",
+  };
+  await writeFile(path.join(repositoryRoot, "asset-lab", "final-cinematic-production", "runtime-performance.json"), `${JSON.stringify(runtimePerformance, null, 2)}\n`, "utf8");
+  report.push({ name: "staged-loading-performance", ...runtimePerformance, ...performanceEvents });
+  await performanceContext.close();
+  console.log("Completed staged-loading performance probe.");
 
   for (const [name, width, height] of viewports) {
     console.log(`Running ${name} (${width}x${height})...`);
@@ -258,10 +346,22 @@ try {
       check(state.cinematicReady, `${name}: manufacturing cinematic is active`);
       check(state.processPinDisplay !== "none", `${name}: cinematic pin is displayed`);
       check(!state.fallbackVisible, `${name}: stacked fallback is hidden while the cinematic is active`);
+      await page.waitForFunction(
+        () => document.querySelector("[data-machining-sequence]")?.dataset.sequenceStatus === "complete",
+        undefined,
+        { timeout: 30000 },
+      );
+      state.sequence = await page.evaluate(() => {
+        const canvas = document.querySelector("[data-machining-sequence]");
+        return { tier: canvas?.dataset.sequenceTier, status: canvas?.dataset.sequenceStatus, loadedFrames: canvas?.dataset.loadedFrames };
+      });
+      check(state.sequence.status === "complete" && state.sequence.loadedFrames === "32", `${name}: all machining frames load after activation`, JSON.stringify(state.sequence));
+      check(state.sequence.tier === (width >= 1280 ? "1536" : "960"), `${name}: responsive sequence tier is correct`, JSON.stringify(state.sequence));
     } else {
       check(!state.cinematicReady, `${name}: manufacturing cinematic is disabled at 780px and below`);
       check(state.processPinDisplay === "none", `${name}: cinematic pin is hidden at 780px and below`);
       check(state.fallbackVisible && state.fallbackItems === 8 && state.visibleFallbackItems === 8, `${name}: complete stacked route is visible`, `${state.visibleFallbackItems}/${state.fallbackItems}`);
+      check(events.sequenceRequests.length === 0, `${name}: mobile route makes no machining-sequence requests`, `${events.sequenceRequests.length} requests`);
     }
 
     if (width <= 1080) {
@@ -288,9 +388,19 @@ try {
       check(state.keyboardFocus.outlineStyle !== "none" && state.keyboardFocus.outlineWidth !== "0px", `${name}: keyboard focus is visibly styled`, JSON.stringify(state.keyboardFocus));
       await page.evaluate(() => document.activeElement?.blur());
 
-      const processTop = await page.evaluate(() => document.querySelector("[data-process-scroll]").getBoundingClientRect().top + scrollY);
-      await page.evaluate(({ top, viewportHeight }) => scrollTo(0, top + viewportHeight * 3.1), { top: processTop, viewportHeight: height });
-      await page.waitForTimeout(500);
+      await setCinematicTime(page, 2.60);
+      const sequenceStart = await page.getAttribute("[data-machining-sequence]", "data-sequence-frame");
+      check(sequenceStart === "0", `${name}: first machining frame is reachable`, sequenceStart || "missing");
+      await page.screenshot({ path: path.join(evidenceOutput, "machining-sequence-begin.png"), fullPage: false });
+      await setCinematicTime(page, 3.03);
+      const sequenceMiddle = await page.getAttribute("[data-machining-sequence]", "data-sequence-frame");
+      check(Number(sequenceMiddle) >= 10 && Number(sequenceMiddle) <= 21, `${name}: machining frame changes through the middle`, sequenceMiddle || "missing");
+      await page.screenshot({ path: path.join(evidenceOutput, "machining-sequence-middle.png"), fullPage: false });
+      await setCinematicTime(page, 3.46);
+      const sequenceEnd = await page.getAttribute("[data-machining-sequence]", "data-sequence-frame");
+      check(sequenceEnd === "31", `${name}: last machining frame is reachable`, sequenceEnd || "missing");
+      await page.screenshot({ path: path.join(evidenceOutput, "machining-sequence-finished.png"), fullPage: false });
+      await setCinematicTime(page, 5.15);
       state.processSample = await page.evaluate(() => ({
         readout: document.querySelector("[data-stage-readout]")?.textContent,
         activeStep: document.querySelector("[data-process-step].is-active")?.textContent.trim(),
@@ -299,6 +409,7 @@ try {
       }));
       check(Boolean(state.processSample.readout && state.processSample.activeStep) && state.processSample.visibleScenes >= 1, `${name}: cinematic stage status advances`, JSON.stringify(state.processSample));
       await page.screenshot({ path: path.join(output, "desktop-1440-process.png"), fullPage: false });
+      await page.screenshot({ path: path.join(evidenceOutput, "inspection-state.png"), fullPage: false });
 
       await page.locator("#capabilities").scrollIntoViewIfNeeded();
       await page.focus("#capability-tab-0");
@@ -321,12 +432,14 @@ try {
       await page.evaluate((top) => scrollTo(0, top - 68), stageTop);
       await page.waitForTimeout(250);
       await page.screenshot({ path: path.join(output, "mobile-390-process.png"), fullPage: false });
+      await page.screenshot({ path: path.join(evidenceOutput, "mobile-stacked-route.png"), fullPage: false });
     }
 
     await page.evaluate(() => scrollTo(0, 0));
-    await page.waitForTimeout(100);
+    await page.waitForTimeout(900);
     const screenshotPath = path.join(output, `${name}-hero.png`);
     await page.screenshot({ path: screenshotPath, fullPage: false });
+    if (name === "desktop-1440") await page.screenshot({ path: path.join(evidenceOutput, "desktop-hero.png"), fullPage: false });
 
     assertSharedState(name, state, events);
     report.push({ name, width, height, ...state, ...events, screenshotPath });
@@ -344,6 +457,7 @@ try {
   check(!reduced.motionReady && !reduced.cinematicReady, "reduced-motion: cinematic enhancement is disabled");
   check(reduced.processPinDisplay === "none", "reduced-motion: cinematic pin is hidden");
   check(reduced.fallbackVisible && reduced.fallbackItems === 8 && reduced.visibleFallbackItems === 8, "reduced-motion: complete stacked route is visible", `${reduced.visibleFallbackItems}/${reduced.fallbackItems}`);
+  check(reducedEvents.sequenceRequests.length === 0, "reduced-motion: no machining-sequence requests are made", `${reducedEvents.sequenceRequests.length} requests`);
   assertSharedState("reduced-motion", reduced, reducedEvents);
   report.push({ name: "reduced-motion", ...reduced, ...reducedEvents });
   await reducedContext.close();
@@ -359,10 +473,41 @@ try {
   check(!noJs.cinematicReady, "no-javascript: cinematic enhancement is inactive");
   check(noJs.processPinDisplay === "none", "no-javascript: cinematic pin is hidden");
   check(noJs.fallbackVisible && noJs.fallbackItems === 8 && noJs.visibleFallbackItems === 8, "no-javascript: complete eight-stage route is visible", `${noJs.visibleFallbackItems}/${noJs.fallbackItems}`);
+  check(noJsEvents.sequenceRequests.length === 0, "no-javascript: no machining-sequence requests are made", `${noJsEvents.sequenceRequests.length} requests`);
   assertSharedState("no-javascript", noJs, noJsEvents);
   report.push({ name: "no-javascript", ...noJs, ...noJsEvents });
   await noJsContext.close();
   console.log("Completed no-javascript.");
+
+  console.log("Running machining-sequence failure fallback...");
+  const failureContext = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const failurePage = await failureContext.newPage();
+  await failurePage.route("**/assets/cinematic/machining/*/frame-00.avif", (route) => route.fulfill({ status: 503, contentType: "image/avif", body: "" }));
+  await failurePage.goto(target.url, { waitUntil: "networkidle", timeout: 30000 });
+  await failurePage.evaluate(() => {
+    const element = document.querySelector("[data-process-scroll]");
+    scrollTo(0, element.getBoundingClientRect().top + scrollY - innerHeight * 0.65);
+  });
+  await failurePage.waitForFunction(
+    () => ["degraded", "complete"].includes(document.querySelector("[data-machining-sequence]")?.dataset.sequenceStatus),
+    undefined,
+    { timeout: 30000 },
+  );
+  await setCinematicTime(failurePage, 3.03);
+  const failureFallback = await failurePage.evaluate(() => {
+    const canvas = document.querySelector("[data-machining-sequence]");
+    const picture = document.querySelector("[data-machining-fallback]");
+    return {
+      status: canvas?.dataset.sequenceStatus,
+      loadedFrames: canvas?.dataset.loadedFrames,
+      sceneReady: canvas?.closest("[data-process-scene]")?.classList.contains("is-sequence-ready"),
+      fallbackOpacity: picture ? getComputedStyle(picture).opacity : "",
+    };
+  });
+  check(failureFallback.status === "degraded" && failureFallback.loadedFrames === "31" && !failureFallback.sceneReady && failureFallback.fallbackOpacity === "1", "sequence failure: static rough fallback survives a failed first frame", JSON.stringify(failureFallback));
+  report.push({ name: "sequence-failure-fallback", ...failureFallback });
+  await failureContext.close();
+  console.log("Completed machining-sequence failure fallback.");
 
   const result = {
     generatedAt: new Date().toISOString(),

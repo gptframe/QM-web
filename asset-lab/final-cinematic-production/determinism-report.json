@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "method": "Independent native rerender and SHA-256 comparison of rough/finished endpoints, five dense-interval sequence samples, and every distinct key-state context at PNG/1536 AVIF/960 AVIF tiers",
+  "coverage": {
+    "sequence_indices": [
+      0,
+      10,
+      15,
+      18,
+      23,
+      27,
+      31
+    ],
+    "key_states": [
+      "cad",
+      "stock",
+      "blank",
+      "inspection",
+      "packed"
+    ],
+    "analytic_and_sampled_containment_report": "adjacent-containment.json"
+  },
+  "matched_assets": 36,
+  "total_assets": 36,
+  "comparisons": [
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-00.png",
+      "source_sha256": "e030ce9a9b4e5dadfc514125d9f03872e6b3f78a5f7d8d88d163c00fff632c73",
+      "rerender_sha256": "e030ce9a9b4e5dadfc514125d9f03872e6b3f78a5f7d8d88d163c00fff632c73",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-00.avif",
+      "source_sha256": "9e66298963670f5b8e1d49d0adcb5c29afd7b45876c6e0bb3d7bf541f9355a4d",
+      "rerender_sha256": "9e66298963670f5b8e1d49d0adcb5c29afd7b45876c6e0bb3d7bf541f9355a4d",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-00.avif",
+      "source_sha256": "cc4931275b834362b418e66bbcba43bebda3a3962e396aa531b6d4bb99bb0738",
+      "rerender_sha256": "cc4931275b834362b418e66bbcba43bebda3a3962e396aa531b6d4bb99bb0738",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-10.png",
+      "source_sha256": "0d3c59261cbd588870d905a9219937acef949368fdac3fbae8549c58248f113e",
+      "rerender_sha256": "0d3c59261cbd588870d905a9219937acef949368fdac3fbae8549c58248f113e",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-10.avif",
+      "source_sha256": "2289290f6219c98e599912b710f9b6aca3f853156523bdee8b4977161348d5bd",
+      "rerender_sha256": "2289290f6219c98e599912b710f9b6aca3f853156523bdee8b4977161348d5bd",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-10.avif",
+      "source_sha256": "7cacc482266fdba618bed1151ca1b29aa1bb592ba31e83aa3c4b93bef10ef935",
+      "rerender_sha256": "7cacc482266fdba618bed1151ca1b29aa1bb592ba31e83aa3c4b93bef10ef935",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-15.png",
+      "source_sha256": "8cc0afe6101a1d62ae96d1af34dd8a7a066e9671bad46b14a1ce9e478547f49a",
+      "rerender_sha256": "8cc0afe6101a1d62ae96d1af34dd8a7a066e9671bad46b14a1ce9e478547f49a",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-15.avif",
+      "source_sha256": "ff53a77d7f74d94a35ece32aee583b7ed246a6b83cbd6c108a6beaa32f52ff2c",
+      "rerender_sha256": "ff53a77d7f74d94a35ece32aee583b7ed246a6b83cbd6c108a6beaa32f52ff2c",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-15.avif",
+      "source_sha256": "7f49d30d6321b6787480a4a481e0676010d82c50eec41467389b53901fb6752c",
+      "rerender_sha256": "7f49d30d6321b6787480a4a481e0676010d82c50eec41467389b53901fb6752c",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-18.png",
+      "source_sha256": "bb01db56ffb7bb8c5c251978dc416a71a1fbd156d7c50a7d9678146bd7db13ea",
+      "rerender_sha256": "bb01db56ffb7bb8c5c251978dc416a71a1fbd156d7c50a7d9678146bd7db13ea",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-18.avif",
+      "source_sha256": "9a62afd41c3792deb3dc1dea642aee8641b8f0c9da245ccf7682462617e3e9f4",
+      "rerender_sha256": "9a62afd41c3792deb3dc1dea642aee8641b8f0c9da245ccf7682462617e3e9f4",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-18.avif",
+      "source_sha256": "d2a1df249ccd9a40bc6718ab5d8238ad4ec6c150ea7e6955bc532df21e05a7c4",
+      "rerender_sha256": "d2a1df249ccd9a40bc6718ab5d8238ad4ec6c150ea7e6955bc532df21e05a7c4",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-23.png",
+      "source_sha256": "587ca650ec9c5561007568d6bfd5d1ba8b7e2b12e1cb5b9fea35218510890c37",
+      "rerender_sha256": "587ca650ec9c5561007568d6bfd5d1ba8b7e2b12e1cb5b9fea35218510890c37",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-23.avif",
+      "source_sha256": "44638efd88a9c8b0c84214f86c2a948db912e04c674b095599d02d091750b43c",
+      "rerender_sha256": "44638efd88a9c8b0c84214f86c2a948db912e04c674b095599d02d091750b43c",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-23.avif",
+      "source_sha256": "a436241120a33ef70e0baeda752d964f276700eb80790a3dd2f9db1bc318b018",
+      "rerender_sha256": "a436241120a33ef70e0baeda752d964f276700eb80790a3dd2f9db1bc318b018",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-27.png",
+      "source_sha256": "68e1385f7a39bde439e55ed8f844182f09abf4383d1d65d60c94bcae437668e2",
+      "rerender_sha256": "68e1385f7a39bde439e55ed8f844182f09abf4383d1d65d60c94bcae437668e2",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-27.avif",
+      "source_sha256": "d32badf754f0300885825e4ca470446d00d24cd595025b6670c597b37c431f3e",
+      "rerender_sha256": "d32badf754f0300885825e4ca470446d00d24cd595025b6670c597b37c431f3e",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-27.avif",
+      "source_sha256": "4824df806e47b3268cd4feba4cfc1ac83c2b5b2dbb24c120cac50ae091d5152d",
+      "rerender_sha256": "4824df806e47b3268cd4feba4cfc1ac83c2b5b2dbb24c120cac50ae091d5152d",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-31.png",
+      "source_sha256": "64cb0086d0cffe47fe8d840410f1dc1fd238c4aceeacd8992d72a803e00fec48",
+      "rerender_sha256": "64cb0086d0cffe47fe8d840410f1dc1fd238c4aceeacd8992d72a803e00fec48",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-31.avif",
+      "source_sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1",
+      "rerender_sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-31.avif",
+      "source_sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6",
+      "rerender_sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/cad.png",
+      "source_sha256": "344b2381f2d969296f080c6d15b4c38231097bd672ef3cc9b3d0d68a6afcee8d",
+      "rerender_sha256": "344b2381f2d969296f080c6d15b4c38231097bd672ef3cc9b3d0d68a6afcee8d",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-cad-1536.avif",
+      "source_sha256": "da6f6da944333d63d671f3f5c56e780ba07ae7d12a7c4ac736c68ef408d2e7de",
+      "rerender_sha256": "da6f6da944333d63d671f3f5c56e780ba07ae7d12a7c4ac736c68ef408d2e7de",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-cad-960.avif",
+      "source_sha256": "ae1e82a38cdc414eb6d3f1e73bda20195d6a2a8c7de6bc8680f168d65624f007",
+      "rerender_sha256": "ae1e82a38cdc414eb6d3f1e73bda20195d6a2a8c7de6bc8680f168d65624f007",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/stock.png",
+      "source_sha256": "8a6e349e2b1dc53ffdca8eb1febb3b18946480ceef5f52c226188164bf0eeb77",
+      "rerender_sha256": "8a6e349e2b1dc53ffdca8eb1febb3b18946480ceef5f52c226188164bf0eeb77",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-stock-1536.avif",
+      "source_sha256": "7e11c36828a477310e307128b872e12c9e9af5adb88b40cbe8c79dd453275b87",
+      "rerender_sha256": "7e11c36828a477310e307128b872e12c9e9af5adb88b40cbe8c79dd453275b87",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-stock-960.avif",
+      "source_sha256": "f53b0469506fc527ae7f7901fc83aaeee4feeed3382610fda62367ff39ec61c0",
+      "rerender_sha256": "f53b0469506fc527ae7f7901fc83aaeee4feeed3382610fda62367ff39ec61c0",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/blank.png",
+      "source_sha256": "67f499f1d664a56a7de703842b7a33446745d52de1e44c8b7b993930c87e5c88",
+      "rerender_sha256": "67f499f1d664a56a7de703842b7a33446745d52de1e44c8b7b993930c87e5c88",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-blank-1536.avif",
+      "source_sha256": "a8f4a5a5ea60fc6e64b4ba20a8037ffa668941b12d24172a651523911d467741",
+      "rerender_sha256": "a8f4a5a5ea60fc6e64b4ba20a8037ffa668941b12d24172a651523911d467741",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-blank-960.avif",
+      "source_sha256": "8999e94893ff20a27be245980b1035efdc96a10e20dbd560e5c53dc305663d18",
+      "rerender_sha256": "8999e94893ff20a27be245980b1035efdc96a10e20dbd560e5c53dc305663d18",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/inspection.png",
+      "source_sha256": "0e9dd886b47a0395906b33c368ad81929acf78cf87127f0bd1d3878b2d59e4c1",
+      "rerender_sha256": "0e9dd886b47a0395906b33c368ad81929acf78cf87127f0bd1d3878b2d59e4c1",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-inspection-1536.avif",
+      "source_sha256": "41a7f6039a0ffbb43899a87401623d840f7b8feeedc184485528392c58db5794",
+      "rerender_sha256": "41a7f6039a0ffbb43899a87401623d840f7b8feeedc184485528392c58db5794",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-inspection-960.avif",
+      "source_sha256": "daf03b9467ef8662a527f59d1a41537f9be357ddd09673b3d10252e408d15cd9",
+      "rerender_sha256": "daf03b9467ef8662a527f59d1a41537f9be357ddd09673b3d10252e408d15cd9",
+      "matched": true
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/packed.png",
+      "source_sha256": "85b52465bebf16d8dab39cec499ee6b61079eb5479add51377bd2f530b22f9f0",
+      "rerender_sha256": "85b52465bebf16d8dab39cec499ee6b61079eb5479add51377bd2f530b22f9f0",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-packed-1536.avif",
+      "source_sha256": "d15aa554146bb3b8676d98962beef0635aee49eb72dd1857b7b11f04409bd756",
+      "rerender_sha256": "d15aa554146bb3b8676d98962beef0635aee49eb72dd1857b7b11f04409bd756",
+      "matched": true
+    },
+    {
+      "path": "assets/cinematic/key-packed-960.avif",
+      "source_sha256": "c10bf8ad3dab68f8abba1ca1f52c299b76a9a45a4ea84e88cb8914a662932cae",
+      "rerender_sha256": "c10bf8ad3dab68f8abba1ca1f52c299b76a9a45a4ea84e88cb8914a662932cae",
+      "matched": true
+    }
+  ]
+}

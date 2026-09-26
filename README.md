@@ -8,7 +8,8 @@ A static, GitHub Pages-compatible homepage for Quantamorph Limited. The central 
 - `styles.css` contains the responsive design system, component layouts and motion fallbacks.
 - `script.js` progressively enhances navigation, the capability tabs and the desktop manufacturing story.
 - `assets/vendor/` contains pinned local copies of GSAP 3.12.5 and ScrollTrigger 3.12.5, removing the runtime dependency on a public CDN.
-- `assets/part-*.avif|webp` are six aligned states of the same representative component. They are generated from `part-evolution-master.png` by `scripts/process_part_sequence.py`.
+- `assets/cinematic/key-*.avif` are seven responsive key states of the same illustrative representative component.
+- `assets/cinematic/machining/` contains the responsive 32-frame removal-only machining sequence. Review masters and validation evidence remain under `asset-lab/final-cinematic-production/`.
 
 No build step, Node.js runtime or framework runtime is required for the production website. The page uses relative URLs and can be served directly from a GitHub Pages branch or repository root. Node.js is used only for local browser QA.
 
@@ -26,20 +27,23 @@ Then open `http://127.0.0.1:4173/`. Opening `index.html` directly is not the sup
 
 ## Motion and responsive behaviour
 
-- At widths above 780px, one GSAP timeline owns the pinned production choreography. The part stays on a fixed optical axis while image state, aperture, scale, inspection overlays, captions and the progress rail advance together.
+- At widths above 780px, one GSAP timeline owns the pinned production choreography. A 32-frame canvas sequence is scrubbed only through the machining interval; the part stays on a fixed optical axis while image state, aperture, inspection overlays, captions and the progress rail advance together.
 - At 780px and below, the manufacturing route becomes a deliberate stacked sequence. This avoids fragile mobile pinning and keeps every stage readable with native scrolling.
 - With `prefers-reduced-motion: reduce`, the pinned scene is disabled and the same semantic stacked sequence is shown at every width.
 - If JavaScript fails, the complete stacked route remains available and the primary RFQ mail link remains reachable.
+- Machining frames begin staged loading only when the manufacturing section approaches the viewport. Mobile and reduced-motion modes do not request them; a static rough-state image remains in place if sequence loading fails.
 
 ## Asset generation
 
-Regenerate the aligned part states after replacing the contact sheet:
+Regenerate and validate the approved Variant B production family:
 
 ```powershell
-python scripts/process_part_sequence.py
+python scripts/render_final_cinematic.py
+python scripts/render_final_cinematic.py --verify-sampled
+python scripts/render_final_cinematic.py --verify-existing
 ```
 
-The current six images are temporary, illustrative states rather than production-fidelity process evidence. The next asset pass must meet all of these requirements:
+`--verify-sampled` independently rerenders both endpoints, the dense machining intervals and every distinct key-state context at all three media tiers. `--verify-existing` performs the exhaustive 118-file rerender when a full audit is required. The deterministic renderer enforces these requirements:
 
 - Every state must use the same optical axis, perspective/camera direction, crop and lighting family.
 - The raw and cut material envelopes must physically contain the finished component envelope.
@@ -47,13 +51,10 @@ The current six images are temporary, illustrative states rather than production
 - Machining stages must only remove material.
 - The CAD, rough, finished and packed states must represent the same geometry.
 - Inspection and packing states must preserve that exact component.
-- Final desktop imagery must not rely on 512px source images when displayed near 800–950 CSS px.
-- Final sources must support high-DPI displays through suitable responsive dimensions.
+- Production review masters are native 1600×1600 PNGs, with responsive 1536×1536 and 960×960 AVIF delivery tiers.
 - Imagery remains illustrative unless its provenance permits stronger wording.
 
-A higher-fidelity reel-like transformation additionally requires approximately 40–80 optimised frames of that same component under the controlled setup above, or a clean GLB/GLTF model with approved materials and camera direction. This asset constraint is the remaining blocker; it must not be disguised with invented tolerances, dimensions, machining data, certification marks, logos or machine specifications.
-
-Any future frame sequence should use responsive AVIF/WebP sources, staged preloading, a measured transfer/decode budget and the current static sequence as its fallback. A 3D runtime should only be introduced when an approved model and a requirement for genuine camera or geometry control exist.
+The live sequence uses 32 deterministic frames with denser sampling around final feature operations. It is illustrative and must not be presented as measured process evidence or disguised with invented tolerances, dimensions, machining data, certification marks, logos or machine specifications. A 3D runtime should only be introduced if a future approved model and a genuine camera or geometry-control requirement justify it.
 
 ## Claims and imagery
 
@@ -71,4 +72,4 @@ npm run qa
 
 `npm run qa:install` installs Playwright's portable Chromium build once; `npm run qa` starts a temporary local static server and executes the assertions. `QA_URL` may be supplied to test an already-running preview instead. The package is a development tool only and is not part of the deployed website.
 
-The assertions cover 375, 390, 430, 768, 780, 1024, 1440 and 1920 CSS-pixel widths; desktop cinematic activation; the mobile, reduced-motion and no-JavaScript eight-stage route; keyboard navigation and focus; interactive descendants inside `aria-hidden` subtrees; internal anchors; image loading; console and page errors; failed requests; and horizontal overflow. Screenshots and a machine-readable report are written to the ignored `qa-output/` directory.
+The assertions cover 375, 390, 430, 768, 780, 1024, 1440 and 1920 CSS-pixel widths; desktop cinematic activation; first/middle/final machining frames; responsive sequence tiers and staged loading; the static sequence-failure fallback; the mobile, reduced-motion and no-JavaScript eight-stage route; keyboard navigation and focus; interactive descendants inside `aria-hidden` subtrees; internal anchors; image loading; console and page errors; failed requests; and horizontal overflow. The detailed report is written to ignored `qa-output/`; committed release-review screenshots and runtime payload evidence are written under `asset-lab/final-cinematic-production/`.

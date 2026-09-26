@@ -1,0 +1,6984 @@
+{
+  "passed": true,
+  "rule": "rough \u2287 frame-01 \u2287 ... \u2287 frame-30 \u2287 finished",
+  "frame_count": 32,
+  "pilot_coordinates": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    10.2,
+    10.4,
+    10.6,
+    10.8,
+    11.0,
+    11.5,
+    12.0,
+    12.375,
+    12.75,
+    13.125,
+    13.5,
+    13.875,
+    14.125,
+    14.375,
+    14.625,
+    14.75,
+    14.85,
+    14.925,
+    14.97,
+    14.99,
+    15.0
+  ],
+  "analytic_checks": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_00",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_01",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_02",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_03",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_04",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_05",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_06",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_07",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_08",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "allowance_09",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.025,
+      "to": 0.026,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "bore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "parameter": "surface_progress",
+      "from": 0.0,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_00",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_01",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_02",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_03",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_04",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_05",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_06",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_07",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_08",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "allowance_09",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.026,
+      "to": 0.027,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "bore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "parameter": "surface_progress",
+      "from": 0.05,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_00",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_01",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_02",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_03",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_04",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_05",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_06",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_07",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_08",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "allowance_09",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.027,
+      "to": 0.028,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "bore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "parameter": "surface_progress",
+      "from": 0.1,
+      "to": 0.15,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_00",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_01",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_02",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_03",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_04",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_05",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_06",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_07",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_08",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "allowance_09",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.028,
+      "to": 0.0295,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "bore_radius",
+      "from": 0.0,
+      "to": 0.055,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "parameter": "surface_progress",
+      "from": 0.15,
+      "to": 0.22,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_00",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_01",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_02",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_03",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_04",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_05",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_06",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_07",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_08",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "allowance_09",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.0295,
+      "to": 0.031,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "bore_radius",
+      "from": 0.055,
+      "to": 0.105,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "parameter": "surface_progress",
+      "from": 0.22,
+      "to": 0.3,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_00",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_01",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_02",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_03",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_04",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_05",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_06",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_07",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_08",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "allowance_09",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.031,
+      "to": 0.033,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "bore_radius",
+      "from": 0.105,
+      "to": 0.165,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "parameter": "surface_progress",
+      "from": 0.3,
+      "to": 0.38,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_00",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_01",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_02",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_03",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_04",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_05",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_06",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_07",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_08",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "allowance_09",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.033,
+      "to": 0.035,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "bore_radius",
+      "from": 0.165,
+      "to": 0.245,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "parameter": "surface_progress",
+      "from": 0.38,
+      "to": 0.46,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_00",
+      "from": 0.065,
+      "to": 0.048,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_01",
+      "from": 0.065,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_02",
+      "from": 0.065,
+      "to": 0.054,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_03",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_04",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_05",
+      "from": 0.065,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_06",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_07",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_08",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "allowance_09",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.035,
+      "to": 0.038,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "bore_radius",
+      "from": 0.245,
+      "to": 0.26,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        7,
+        8
+      ],
+      "parameter": "surface_progress",
+      "from": 0.46,
+      "to": 0.54,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_00",
+      "from": 0.048,
+      "to": 0.03,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_01",
+      "from": 0.05,
+      "to": 0.034,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_02",
+      "from": 0.054,
+      "to": 0.04,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_03",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_04",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_05",
+      "from": 0.05,
+      "to": 0.034,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_06",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_07",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_08",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "allowance_09",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.038,
+      "to": 0.041,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "bore_radius",
+      "from": 0.26,
+      "to": 0.275,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "parameter": "surface_progress",
+      "from": 0.54,
+      "to": 0.62,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_00",
+      "from": 0.03,
+      "to": 0.014,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_01",
+      "from": 0.034,
+      "to": 0.02,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_02",
+      "from": 0.04,
+      "to": 0.028,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_03",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_04",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_05",
+      "from": 0.034,
+      "to": 0.02,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_06",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_07",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_08",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "allowance_09",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.041,
+      "to": 0.045,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "bore_radius",
+      "from": 0.275,
+      "to": 0.286,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "parameter": "surface_progress",
+      "from": 0.62,
+      "to": 0.7,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_00",
+      "from": 0.014,
+      "to": 0.01120000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_01",
+      "from": 0.02,
+      "to": 0.016000000000000014,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_02",
+      "from": 0.028,
+      "to": 0.02240000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_03",
+      "from": 0.032,
+      "to": 0.025600000000000022,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_04",
+      "from": 0.032,
+      "to": 0.025600000000000022,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_05",
+      "from": 0.02,
+      "to": 0.016000000000000014,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_06",
+      "from": 0.032,
+      "to": 0.025600000000000022,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_07",
+      "from": 0.032,
+      "to": 0.025600000000000022,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_08",
+      "from": 0.032,
+      "to": 0.025600000000000022,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "allowance_09",
+      "from": 0.032,
+      "to": 0.025600000000000022,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.045,
+      "to": 0.046,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "bore_radius",
+      "from": 0.286,
+      "to": 0.288,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        10,
+        11
+      ],
+      "parameter": "surface_progress",
+      "from": 0.7,
+      "to": 0.716,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_00",
+      "from": 0.01120000000000001,
+      "to": 0.008399999999999994,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_01",
+      "from": 0.016000000000000014,
+      "to": 0.011999999999999993,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_02",
+      "from": 0.02240000000000002,
+      "to": 0.01679999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_03",
+      "from": 0.025600000000000022,
+      "to": 0.019199999999999988,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_04",
+      "from": 0.025600000000000022,
+      "to": 0.019199999999999988,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_05",
+      "from": 0.016000000000000014,
+      "to": 0.011999999999999993,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_06",
+      "from": 0.025600000000000022,
+      "to": 0.019199999999999988,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_07",
+      "from": 0.025600000000000022,
+      "to": 0.019199999999999988,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_08",
+      "from": 0.025600000000000022,
+      "to": 0.019199999999999988,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "allowance_09",
+      "from": 0.025600000000000022,
+      "to": 0.019199999999999988,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.046,
+      "to": 0.047,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "bore_radius",
+      "from": 0.288,
+      "to": 0.29,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        11,
+        12
+      ],
+      "parameter": "surface_progress",
+      "from": 0.716,
+      "to": 0.732,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_00",
+      "from": 0.008399999999999994,
+      "to": 0.005600000000000004,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_01",
+      "from": 0.011999999999999993,
+      "to": 0.008000000000000007,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_02",
+      "from": 0.01679999999999999,
+      "to": 0.011200000000000009,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_03",
+      "from": 0.019199999999999988,
+      "to": 0.012800000000000013,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_04",
+      "from": 0.019199999999999988,
+      "to": 0.012800000000000013,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_05",
+      "from": 0.011999999999999993,
+      "to": 0.008000000000000007,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_06",
+      "from": 0.019199999999999988,
+      "to": 0.012800000000000013,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_07",
+      "from": 0.019199999999999988,
+      "to": 0.012800000000000013,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_08",
+      "from": 0.019199999999999988,
+      "to": 0.012800000000000013,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "allowance_09",
+      "from": 0.019199999999999988,
+      "to": 0.012800000000000013,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.047,
+      "to": 0.048,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "bore_radius",
+      "from": 0.29,
+      "to": 0.292,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        12,
+        13
+      ],
+      "parameter": "surface_progress",
+      "from": 0.732,
+      "to": 0.748,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_00",
+      "from": 0.005600000000000004,
+      "to": 0.00279999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_01",
+      "from": 0.008000000000000007,
+      "to": 0.003999999999999986,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_02",
+      "from": 0.011200000000000009,
+      "to": 0.00559999999999998,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_03",
+      "from": 0.012800000000000013,
+      "to": 0.006399999999999979,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_04",
+      "from": 0.012800000000000013,
+      "to": 0.006399999999999979,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_05",
+      "from": 0.008000000000000007,
+      "to": 0.003999999999999986,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_06",
+      "from": 0.012800000000000013,
+      "to": 0.006399999999999979,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_07",
+      "from": 0.012800000000000013,
+      "to": 0.006399999999999979,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_08",
+      "from": 0.012800000000000013,
+      "to": 0.006399999999999979,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "allowance_09",
+      "from": 0.012800000000000013,
+      "to": 0.006399999999999979,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.048,
+      "to": 0.049,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "bore_radius",
+      "from": 0.292,
+      "to": 0.294,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        13,
+        14
+      ],
+      "parameter": "surface_progress",
+      "from": 0.748,
+      "to": 0.764,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_00",
+      "from": 0.00279999999999999,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_01",
+      "from": 0.003999999999999986,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_02",
+      "from": 0.00559999999999998,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_03",
+      "from": 0.006399999999999979,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_04",
+      "from": 0.006399999999999979,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_05",
+      "from": 0.003999999999999986,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_06",
+      "from": 0.006399999999999979,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_07",
+      "from": 0.006399999999999979,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_08",
+      "from": 0.006399999999999979,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "allowance_09",
+      "from": 0.006399999999999979,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.049,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "bore_radius",
+      "from": 0.294,
+      "to": 0.296,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        14,
+        15
+      ],
+      "parameter": "surface_progress",
+      "from": 0.764,
+      "to": 0.78,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "bore_radius",
+      "from": 0.296,
+      "to": 0.3,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0,
+      "to": 0.0125,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.0,
+      "to": 0.1725,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.0,
+      "to": 0.02,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0,
+      "to": 0.004,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0,
+      "to": 0.0125,
+      "passed": true
+    },
+    {
+      "pair": [
+        15,
+        16
+      ],
+      "parameter": "surface_progress",
+      "from": 0.78,
+      "to": 0.81,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "bore_radius",
+      "from": 0.3,
+      "to": 0.304,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0125,
+      "to": 0.025,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.1725,
+      "to": 0.345,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.02,
+      "to": 0.04,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.004,
+      "to": 0.008,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0125,
+      "to": 0.025,
+      "passed": true
+    },
+    {
+      "pair": [
+        16,
+        17
+      ],
+      "parameter": "surface_progress",
+      "from": 0.81,
+      "to": 0.84,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "bore_radius",
+      "from": 0.304,
+      "to": 0.307,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.025,
+      "to": 0.034375,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.0,
+      "to": 0.031875,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0,
+      "to": 0.009375000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.0,
+      "to": 0.003,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.345,
+      "to": 0.36,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.04,
+      "to": 0.055,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.008,
+      "to": 0.011375,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.025,
+      "to": 0.035125,
+      "passed": true
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "parameter": "surface_progress",
+      "from": 0.84,
+      "to": 0.8625,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "bore_radius",
+      "from": 0.307,
+      "to": 0.31,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.034375,
+      "to": 0.043750000000000004,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.031875,
+      "to": 0.06375,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.009375000000000001,
+      "to": 0.018750000000000003,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.003,
+      "to": 0.006,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.36,
+      "to": 0.375,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.055,
+      "to": 0.07,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.011375,
+      "to": 0.014750000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.035125,
+      "to": 0.04525,
+      "passed": true
+    },
+    {
+      "pair": [
+        18,
+        19
+      ],
+      "parameter": "surface_progress",
+      "from": 0.8625,
+      "to": 0.885,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "bore_radius",
+      "from": 0.31,
+      "to": 0.312875,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.043750000000000004,
+      "to": 0.053125000000000006,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.06375,
+      "to": 0.08875000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.018750000000000003,
+      "to": 0.026875000000000003,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.006,
+      "to": 0.008625,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.375,
+      "to": 0.39,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.07,
+      "to": 0.085,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.014750000000000001,
+      "to": 0.018125000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.04525,
+      "to": 0.055375,
+      "passed": true
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "parameter": "surface_progress",
+      "from": 0.885,
+      "to": 0.90625,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "bore_radius",
+      "from": 0.312875,
+      "to": 0.3155,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.053125000000000006,
+      "to": 0.0625,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.08875000000000001,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.026875000000000003,
+      "to": 0.0325,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.008625,
+      "to": 0.010499999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.39,
+      "to": 0.405,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.085,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.018125000000000002,
+      "to": 0.0215,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.055375,
+      "to": 0.0655,
+      "passed": true
+    },
+    {
+      "pair": [
+        20,
+        21
+      ],
+      "parameter": "surface_progress",
+      "from": 0.90625,
+      "to": 0.925,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "bore_radius",
+      "from": 0.3155,
+      "to": 0.318125,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.0625,
+      "to": 0.071875,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.1,
+      "to": 0.11125,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.0325,
+      "to": 0.038125,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.010499999999999999,
+      "to": 0.012375,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.405,
+      "to": 0.42,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.1,
+      "to": 0.11499999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.0215,
+      "to": 0.024875,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0655,
+      "to": 0.075625,
+      "passed": true
+    },
+    {
+      "pair": [
+        21,
+        22
+      ],
+      "parameter": "surface_progress",
+      "from": 0.925,
+      "to": 0.94375,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "bore_radius",
+      "from": 0.318125,
+      "to": 0.31975,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.071875,
+      "to": 0.077875,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.11125,
+      "to": 0.11875000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.038125,
+      "to": 0.041875,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.012375,
+      "to": 0.013625,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.42,
+      "to": 0.429375,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.11499999999999999,
+      "to": 0.125,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.024875,
+      "to": 0.027125,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.075625,
+      "to": 0.08225,
+      "passed": true
+    },
+    {
+      "pair": [
+        22,
+        23
+      ],
+      "parameter": "surface_progress",
+      "from": 0.94375,
+      "to": 0.9562499999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "bore_radius",
+      "from": 0.31975,
+      "to": 0.32125000000000004,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.077875,
+      "to": 0.083625,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.11875000000000001,
+      "to": 0.12625,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.041875,
+      "to": 0.045625,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.013625,
+      "to": 0.014875,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.429375,
+      "to": 0.438125,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.125,
+      "to": 0.135,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.027125,
+      "to": 0.029375000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.08225,
+      "to": 0.08875,
+      "passed": true
+    },
+    {
+      "pair": [
+        23,
+        24
+      ],
+      "parameter": "surface_progress",
+      "from": 0.9562499999999999,
+      "to": 0.96875,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "bore_radius",
+      "from": 0.32125000000000004,
+      "to": 0.32275,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.083625,
+      "to": 0.089375,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.12625,
+      "to": 0.13374999999999998,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.045625,
+      "to": 0.049375,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.014875,
+      "to": 0.016125,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.438125,
+      "to": 0.446875,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.135,
+      "to": 0.145,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.029375000000000002,
+      "to": 0.031625,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.08875,
+      "to": 0.09525,
+      "passed": true
+    },
+    {
+      "pair": [
+        24,
+        25
+      ],
+      "parameter": "surface_progress",
+      "from": 0.96875,
+      "to": 0.98125,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "bore_radius",
+      "from": 0.32275,
+      "to": 0.3235,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.089375,
+      "to": 0.09225,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.13374999999999998,
+      "to": 0.13749999999999998,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.049375,
+      "to": 0.051250000000000004,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.016125,
+      "to": 0.016749999999999998,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.446875,
+      "to": 0.45125000000000004,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.145,
+      "to": 0.15,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.031625,
+      "to": 0.03275,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.09525,
+      "to": 0.0985,
+      "passed": true
+    },
+    {
+      "pair": [
+        25,
+        26
+      ],
+      "parameter": "surface_progress",
+      "from": 0.98125,
+      "to": 0.9875,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "bore_radius",
+      "from": 0.3235,
+      "to": 0.3241,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.09225,
+      "to": 0.09455,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.13749999999999998,
+      "to": 0.14049999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.051250000000000004,
+      "to": 0.05274999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.016749999999999998,
+      "to": 0.017249999999999998,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.45125000000000004,
+      "to": 0.45475,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.15,
+      "to": 0.154,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.03275,
+      "to": 0.03365,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.0985,
+      "to": 0.1011,
+      "passed": true
+    },
+    {
+      "pair": [
+        26,
+        27
+      ],
+      "parameter": "surface_progress",
+      "from": 0.9875,
+      "to": 0.9924999999999999,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "bore_radius",
+      "from": 0.3241,
+      "to": 0.32455,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.09455,
+      "to": 0.09627500000000003,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.14049999999999999,
+      "to": 0.14275000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.05274999999999999,
+      "to": 0.05387500000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.017249999999999998,
+      "to": 0.017625000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.45475,
+      "to": 0.45737500000000003,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.154,
+      "to": 0.15700000000000003,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.03365,
+      "to": 0.03432500000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.1011,
+      "to": 0.10305000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        27,
+        28
+      ],
+      "parameter": "surface_progress",
+      "from": 0.9924999999999999,
+      "to": 0.9962500000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "bore_radius",
+      "from": 0.32455,
+      "to": 0.32482,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.09627500000000003,
+      "to": 0.09731000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.14275000000000002,
+      "to": 0.1441,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.05387500000000001,
+      "to": 0.05455000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.017625000000000002,
+      "to": 0.01785,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.45737500000000003,
+      "to": 0.45895,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.15700000000000003,
+      "to": 0.15880000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.03432500000000001,
+      "to": 0.03473000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.10305000000000002,
+      "to": 0.10422000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        28,
+        29
+      ],
+      "parameter": "surface_progress",
+      "from": 0.9962500000000001,
+      "to": 0.9985,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "bore_radius",
+      "from": 0.32482,
+      "to": 0.32494,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.09731000000000002,
+      "to": 0.09777000000000001,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.1441,
+      "to": 0.1447,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.05455000000000001,
+      "to": 0.05485,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.01785,
+      "to": 0.01795,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.45895,
+      "to": 0.45965,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.15880000000000002,
+      "to": 0.15960000000000002,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.03473000000000001,
+      "to": 0.034910000000000004,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.10422000000000001,
+      "to": 0.10474,
+      "passed": true
+    },
+    {
+      "pair": [
+        29,
+        30
+      ],
+      "parameter": "surface_progress",
+      "from": 0.9985,
+      "to": 0.9995,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_00",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_01",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_02",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_03",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_04",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_05",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_06",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_07",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_08",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "allowance_09",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "outer_rounding",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "bore_radius",
+      "from": 0.32494,
+      "to": 0.325,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "bolt_hole_radius",
+      "from": 0.09777000000000001,
+      "to": 0.098,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "mouth_radius",
+      "from": 0.1447,
+      "to": 0.145,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "mouth_half_length",
+      "from": 0.05485,
+      "to": 0.055,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "mouth_rounding",
+      "from": 0.01795,
+      "to": 0.018,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "counterbore_radius",
+      "from": 0.45965,
+      "to": 0.46,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "counterbore_half_length",
+      "from": 0.15960000000000002,
+      "to": 0.16,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "counterbore_rounding",
+      "from": 0.034910000000000004,
+      "to": 0.035,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "cross_hole_radius",
+      "from": 0.10474,
+      "to": 0.105,
+      "passed": true
+    },
+    {
+      "pair": [
+        30,
+        31
+      ],
+      "parameter": "surface_progress",
+      "from": 0.9995,
+      "to": 1.0,
+      "passed": true
+    }
+  ],
+  "sampled_adjacent_checks": [
+    {
+      "parent": "frame-00",
+      "child": "frame-01",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-01",
+      "child": "frame-02",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-02",
+      "child": "frame-03",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-03",
+      "child": "frame-04",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-04",
+      "child": "frame-05",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-05",
+      "child": "frame-06",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-06",
+      "child": "frame-07",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-07",
+      "child": "frame-08",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-08",
+      "child": "frame-09",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-09",
+      "child": "frame-10",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-10",
+      "child": "frame-11",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-11",
+      "child": "frame-12",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-12",
+      "child": "frame-13",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-13",
+      "child": "frame-14",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-14",
+      "child": "frame-15",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-15",
+      "child": "frame-16",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-16",
+      "child": "frame-17",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-17",
+      "child": "frame-18",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-18",
+      "child": "frame-19",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-19",
+      "child": "frame-20",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-20",
+      "child": "frame-21",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-21",
+      "child": "frame-22",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-22",
+      "child": "frame-23",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-23",
+      "child": "frame-24",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-24",
+      "child": "frame-25",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-25",
+      "child": "frame-26",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-26",
+      "child": "frame-27",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-27",
+      "child": "frame-28",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-28",
+      "child": "frame-29",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-29",
+      "child": "frame-30",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "frame-30",
+      "child": "frame-31",
+      "violations": 0,
+      "passed": true,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    }
+  ],
+  "total_sampled_violations": 0,
+  "endpoint_checks": {
+    "rough_exact": true,
+    "finished_exact": true
+  },
+  "key_state_geometry": {
+    "sample_grid": [
+      81,
+      65,
+      65
+    ],
+    "hashes": {
+      "cad": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "stock": "d0ca556c260722504c70c7ed07c770e7958eec021eebdbd96bcb077d73abb662",
+      "blank": "d1559cfde71ad4bbe59be54b655cf55fbe2bda7fbdde31ae77edc278d9709165",
+      "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+      "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "inspection": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+    },
+    "cad_finished_inspection_packed_identical": true
+  },
+  "fixed_registration": {
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "fov_degrees": 31.0,
+    "light_key": [
+      -0.4264684319496155,
+      -0.5212392210960388,
+      0.7392119765281677
+    ],
+    "light_rim": [
+      0.6515001654624939,
+      0.5512694120407104,
+      0.5212001204490662
+    ],
+    "crop": [
+      1600,
+      1600
+    ],
+    "fixed_across_all_frames": true,
+    "camera_compensation": "none"
+  }
+}
