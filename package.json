@@ -1,0 +1,13 @@
+{
+  "name": "quantamorph-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Quantamorph homepage with local Playwright production-readiness QA.",
+  "scripts": {
+    "qa:install": "playwright install chromium",
+    "qa": "node scripts/browser_qa.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

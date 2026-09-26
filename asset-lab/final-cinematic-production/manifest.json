@@ -1,0 +1,1272 @@
+{
+  "generated_at": "2026-09-26T14:31:50.425754+00:00",
+  "generator": "scripts/render_final_cinematic.py",
+  "approved_treatment": {
+    "slug": "variant-b",
+    "label": "B \u00b7 CRISP DIRECTIONAL",
+    "description": "Brighter steel with a narrower directional highlight and stronger edge definition; highest contrast of the three.",
+    "finished_base": [
+      0.585,
+      0.63,
+      0.665
+    ],
+    "rough_base_factor": 0.73,
+    "ambient": 0.22,
+    "diffuse_strength": 0.52,
+    "specular_strength": 0.82,
+    "shininess": 104.0,
+    "panel_strength": 0.275,
+    "panel_width": 0.22,
+    "rim_strength": 0.2,
+    "lower_fill": 0.045,
+    "rough_turn_amplitude": 0.014,
+    "rough_coarse_amplitude": 0.005,
+    "semi_turn_amplitude": 0.007,
+    "finished_turn_amplitude": 0.0032
+  },
+  "frame_count": 32,
+  "rendering": {
+    "approach": "deterministic native-resolution NumPy/Pillow SDF CPU ray marcher",
+    "master_dimensions": [
+      1600,
+      1600
+    ],
+    "native_resolution": true,
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "randomness": "none",
+    "generative_enhancement": "none"
+  },
+  "provenance": "Repository-authored illustrative procedural geometry and shading; no customer geometry or third-party visual assets",
+  "containment_report": "asset-lab/final-cinematic-production/adjacent-containment.json",
+  "payload": {
+    "sequence": {
+      "1536": {
+        "files": 32,
+        "bytes": 446152,
+        "human_size": "435.70 KiB"
+      },
+      "960": {
+        "files": 32,
+        "bytes": 212951,
+        "human_size": "207.96 KiB"
+      }
+    },
+    "key_states_total": {
+      "files": 14,
+      "bytes": 153240,
+      "human_size": "149.65 KiB"
+    },
+    "mobile_sequence_payload": {
+      "bytes": 0,
+      "human_size": "0 B",
+      "reason": "sequence URLs are not initialized at 780px and below"
+    },
+    "encoding": {
+      "1536": {
+        "quality": 63
+      },
+      "960": {
+        "quality": 60
+      }
+    }
+  },
+  "assets": [
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-00.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 322363,
+      "human_size": "314.81 KiB",
+      "sha256": "e030ce9a9b4e5dadfc514125d9f03872e6b3f78a5f7d8d88d163c00fff632c73"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-01.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 317208,
+      "human_size": "309.77 KiB",
+      "sha256": "83e39f8558b515a808f08fd237b8281f9a92b2c80db0ebd7ded438073244de4d"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-02.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 309878,
+      "human_size": "302.62 KiB",
+      "sha256": "8cee16151c8c4f083512c44312a2aa0cb6da9f38608acff7f934637c76753e94"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-03.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 306437,
+      "human_size": "299.25 KiB",
+      "sha256": "e16f4887e87edd4fec6a34da5546d1f0b28ee28f60eed6e2e71eb4d30eac2a65"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-04.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 306683,
+      "human_size": "299.50 KiB",
+      "sha256": "b7ab395b39712b248d99f9c47b1ba38fceb4cdc005c25e4988aabfec2c98d40a"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-05.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 305697,
+      "human_size": "298.53 KiB",
+      "sha256": "a72bf54904a0b0edde47a057e16cdd27af99ec93c1ff251be1fc9c18356e9d4d"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-06.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 305784,
+      "human_size": "298.62 KiB",
+      "sha256": "e46119bf6846972fd9ec7b9fa78b58b7549eb3c39e511a2af449f4f7417ffef6"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-07.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 308129,
+      "human_size": "300.91 KiB",
+      "sha256": "1b8f31ce49967b113c7a9b9b41d9d77ebcdab56a95177f5cf559024e0c5f02f9"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-08.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 308453,
+      "human_size": "301.22 KiB",
+      "sha256": "e6ae3f29a116775ae914a6f60c0243b509dd03a9a2bd97991ed9eda6708c1cde"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-09.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 305171,
+      "human_size": "298.02 KiB",
+      "sha256": "02fce944a3f68c172789710dba58feb1e6bc6530019d6561a4846b6d9e04c5dd"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-10.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 299200,
+      "human_size": "292.19 KiB",
+      "sha256": "0d3c59261cbd588870d905a9219937acef949368fdac3fbae8549c58248f113e"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-11.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 298768,
+      "human_size": "291.77 KiB",
+      "sha256": "740fc3b0bfb9a0bf046e3204aa003c0c24fa975324e7b2ed8a1a1f94dc6130dd"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-12.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 297193,
+      "human_size": "290.23 KiB",
+      "sha256": "daa39769b7672145c8cf8efa8833b0230792fe815e14cdc6f0a7ef3cfe58a64c"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-13.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 295452,
+      "human_size": "288.53 KiB",
+      "sha256": "4e676d4b29278daa6adabb65a35d613154e45b205dcd4177b5f6a45c42ce68b6"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-14.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 293343,
+      "human_size": "286.47 KiB",
+      "sha256": "f2e0ccc9062dd1bb88b6c61d0e4b1e808a232d331623003eca3317fa759643b5"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-15.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 291958,
+      "human_size": "285.12 KiB",
+      "sha256": "8cc0afe6101a1d62ae96d1af34dd8a7a066e9671bad46b14a1ce9e478547f49a"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-16.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 292692,
+      "human_size": "285.83 KiB",
+      "sha256": "ca84ce849e5def6683e0e073e3db7c18e307abbf0f021c2aa5fcff7dd27080e9"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-17.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 298736,
+      "human_size": "291.73 KiB",
+      "sha256": "c04820f40f1101212a8fea0a0d83bbc33d04131d97f3787d532166da1449dd72"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-18.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 301119,
+      "human_size": "294.06 KiB",
+      "sha256": "bb01db56ffb7bb8c5c251978dc416a71a1fbd156d7c50a7d9678146bd7db13ea"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-19.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 302160,
+      "human_size": "295.08 KiB",
+      "sha256": "2287e036a25dc0e278a00a310d01dfc78835ea4716f4316f04d452b7a5dbbb87"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-20.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 305570,
+      "human_size": "298.41 KiB",
+      "sha256": "4cde767443e0d15d44085ba2517e9f0ba1531f9cf2d25b9295503c327ec9257c"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-21.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 304272,
+      "human_size": "297.14 KiB",
+      "sha256": "3ed4a5ed29246c03e783f7e9549c50f3479e01075a07703610a67ad085f86e6c"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-22.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 308884,
+      "human_size": "301.64 KiB",
+      "sha256": "bdd945d439daebfd1894e88ec326bbad14b24a4de5e21d3d47d48f27811dbae0"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-23.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 310517,
+      "human_size": "303.24 KiB",
+      "sha256": "587ca650ec9c5561007568d6bfd5d1ba8b7e2b12e1cb5b9fea35218510890c37"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-24.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 309604,
+      "human_size": "302.35 KiB",
+      "sha256": "6e13c40e4cbdb955c6da3a2061ca5d3e5df57703bb4c17767d331c2904cbb8c5"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-25.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 309584,
+      "human_size": "302.33 KiB",
+      "sha256": "89ebdb50e496a0f575b4c7c780ba70014beae54b7825d61c5b9071fc3c913820"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-26.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 310429,
+      "human_size": "303.15 KiB",
+      "sha256": "67e987431c9b4c313410a78e5c36a80af35deb86904f91a51307173ce75c6b4a"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-27.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 310938,
+      "human_size": "303.65 KiB",
+      "sha256": "68e1385f7a39bde439e55ed8f844182f09abf4383d1d65d60c94bcae437668e2"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-28.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 312133,
+      "human_size": "304.82 KiB",
+      "sha256": "eee3d033f1535b636ec5c4f1854ac17cce09e4fa6644690604911e191051c608"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-29.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 311742,
+      "human_size": "304.44 KiB",
+      "sha256": "dcdebd00a35a2cb97dd4502e112181d46f98dcf21c83ff9e6e9e99fe981e36b3"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-30.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 311865,
+      "human_size": "304.56 KiB",
+      "sha256": "e3697869e30cf2ee94c9d9b4575ad544ca581ee7b7f66dd813579e0a2f7184b1"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/machining/frame-31.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 312258,
+      "human_size": "304.94 KiB",
+      "sha256": "64cb0086d0cffe47fe8d840410f1dc1fd238c4aceeacd8992d72a803e00fec48"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/blank.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 357769,
+      "human_size": "349.38 KiB",
+      "sha256": "67f499f1d664a56a7de703842b7a33446745d52de1e44c8b7b993930c87e5c88"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/cad.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 316419,
+      "human_size": "309.00 KiB",
+      "sha256": "344b2381f2d969296f080c6d15b4c38231097bd672ef3cc9b3d0d68a6afcee8d"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/finished.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 312270,
+      "human_size": "304.95 KiB",
+      "sha256": "12f9a3c8413ec5e8edad9154c89f6024f73cf6edc7850f33dc64e559fcf8bc6e"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/inspection.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 308791,
+      "human_size": "301.55 KiB",
+      "sha256": "0e9dd886b47a0395906b33c368ad81929acf78cf87127f0bd1d3878b2d59e4c1"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/packed.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 367045,
+      "human_size": "358.44 KiB",
+      "sha256": "85b52465bebf16d8dab39cec499ee6b61079eb5479add51377bd2f530b22f9f0"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/rough.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 322372,
+      "human_size": "314.82 KiB",
+      "sha256": "2937afb4c37ab3eaac2f03834d0b5fbadf59db95178480a6dc5f6f38d29e2d49"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/masters/key-states/stock.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 419460,
+      "human_size": "409.63 KiB",
+      "sha256": "8a6e349e2b1dc53ffdca8eb1febb3b18946480ceef5f52c226188164bf0eeb77"
+    },
+    {
+      "path": "asset-lab/final-cinematic-production/contact-sheet.png",
+      "dimensions": [
+        1440,
+        1440
+      ],
+      "bytes": 547881,
+      "human_size": "535.04 KiB",
+      "sha256": "59dbbc12997eabf873fd0b8553f89507735a765f23355a520ee8190d0c8cfcdd"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-00.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13428,
+      "human_size": "13.11 KiB",
+      "sha256": "9e66298963670f5b8e1d49d0adcb5c29afd7b45876c6e0bb3d7bf541f9355a4d"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-01.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13336,
+      "human_size": "13.02 KiB",
+      "sha256": "b3bd4a3076e2ce74393311df94bc21522af366c42fd93e9c1212a503f7f35f04"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-02.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13035,
+      "human_size": "12.73 KiB",
+      "sha256": "71b551d9b2ab619b84799b1d0b9af8c25665cdf3b992810102cfd45556925bdd"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-03.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13089,
+      "human_size": "12.78 KiB",
+      "sha256": "841a14c5875337520ebf962de566ca6faadd66e20cf51500f003bfded3e5e5fa"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-04.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13001,
+      "human_size": "12.70 KiB",
+      "sha256": "0c7ec56dbeaee8f6e4bbcd7e9cfc366b64f073c8a2eb3fa0a58d45944182dbcf"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-05.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 12961,
+      "human_size": "12.66 KiB",
+      "sha256": "5f395b45a591f40c76bc1cd3d91e8019db50200e7b5f955f0fc7ac99f3a5ab0c"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-06.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13086,
+      "human_size": "12.78 KiB",
+      "sha256": "aa579d330b3090b2acc2480baa348e637a80f72b419a283a489243fe0eb3636a"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-07.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13177,
+      "human_size": "12.87 KiB",
+      "sha256": "318ecde1371e0b511d22c9e66dc01bb0278552af56a7359f018b7ca51b7f3002"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-08.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13117,
+      "human_size": "12.81 KiB",
+      "sha256": "755ec45cdcc17e60a1a3d8b4935a8224f37fa08e845e285352fdff78b11b74c3"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-09.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13178,
+      "human_size": "12.87 KiB",
+      "sha256": "6ce950be1320f7bb809db86d98f75d936ca0057269ae3d8d8905123c91db35d0"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-10.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13226,
+      "human_size": "12.92 KiB",
+      "sha256": "2289290f6219c98e599912b710f9b6aca3f853156523bdee8b4977161348d5bd"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-11.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13046,
+      "human_size": "12.74 KiB",
+      "sha256": "39f13a8c3870bb7122400a8b44b51863cec2986fab105bd3efdc07c2ef2de0c1"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-12.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13073,
+      "human_size": "12.77 KiB",
+      "sha256": "435a05304f15d281e3554322f7526bb64344f47762b363eb0181e36ad43b4396"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-13.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13084,
+      "human_size": "12.78 KiB",
+      "sha256": "47df6b3a2e69b7ce95c0acfc2f70d58e25697adc7b532e69e444e56fe8dd0932"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-14.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 12973,
+      "human_size": "12.67 KiB",
+      "sha256": "d91aae30c744d7f8b51d945f4100eafdfd419c71b68dad38f8f63f97bf8f2de7"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-15.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 12989,
+      "human_size": "12.68 KiB",
+      "sha256": "ff53a77d7f74d94a35ece32aee583b7ed246a6b83cbd6c108a6beaa32f52ff2c"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-16.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13167,
+      "human_size": "12.86 KiB",
+      "sha256": "6e418f00c1742bf3143174ee44daa156c4668e0b1df3b2a3fe8e03292ab52cb8"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-17.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13988,
+      "human_size": "13.66 KiB",
+      "sha256": "0b3c31647fbb3d4542eeb492359c684de23d9cdab56cf1d6c75e7775b5eb5cfe"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-18.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 14051,
+      "human_size": "13.72 KiB",
+      "sha256": "9a62afd41c3792deb3dc1dea642aee8641b8f0c9da245ccf7682462617e3e9f4"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-19.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 14185,
+      "human_size": "13.85 KiB",
+      "sha256": "dfd8aff8fd48daf0b02cb806e06aa8dca734d49fcf01dd2a6fc6a68721bd67c6"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-20.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 14305,
+      "human_size": "13.97 KiB",
+      "sha256": "541c71bcaeaa693cedd212fb49e3e3d865b4addea5627f5a376dd25b5ec6fc5c"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-21.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 14501,
+      "human_size": "14.16 KiB",
+      "sha256": "8536493f86d01a6f48eb2819c09a0b53c3f226268765437ab3a77d2b2744b7ab"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-22.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 14997,
+      "human_size": "14.65 KiB",
+      "sha256": "06b522b920f51b12a390a956a0d5fe57dce10e3c8dd31f033815c24096242359"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-23.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15044,
+      "human_size": "14.69 KiB",
+      "sha256": "44638efd88a9c8b0c84214f86c2a948db912e04c674b095599d02d091750b43c"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-24.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15206,
+      "human_size": "14.85 KiB",
+      "sha256": "fdd56abb988718252d4db10f1faa1a3e693e1e3380e92470183f901829685165"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-25.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15252,
+      "human_size": "14.89 KiB",
+      "sha256": "581e256c758c36f50602e30220fab8ee12653f679aedf454909dcfdcbe44c950"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-26.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15275,
+      "human_size": "14.92 KiB",
+      "sha256": "9b2308844301cf0e6eb6c0b5828f05c6c678b62d4eb833f07b281fd196161c7e"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-27.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15321,
+      "human_size": "14.96 KiB",
+      "sha256": "d32badf754f0300885825e4ca470446d00d24cd595025b6670c597b37c431f3e"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-28.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15222,
+      "human_size": "14.87 KiB",
+      "sha256": "b851df535af2759b33903f0af6f09d43ed747a395a83b16a822f57348ac50f6c"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-29.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15298,
+      "human_size": "14.94 KiB",
+      "sha256": "d42a2ba9a469112006c56329c2f86637e9c965d2cca0d046a885dcdfa4bdd9a6"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-30.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15271,
+      "human_size": "14.91 KiB",
+      "sha256": "6d301effb520ae06bb290e9a06edc346d0e0bc4518f06a2d1497a7e0aee5ea2b"
+    },
+    {
+      "path": "assets/cinematic/machining/1536/frame-31.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15270,
+      "human_size": "14.91 KiB",
+      "sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-00.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6423,
+      "human_size": "6.27 KiB",
+      "sha256": "cc4931275b834362b418e66bbcba43bebda3a3962e396aa531b6d4bb99bb0738"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-01.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6399,
+      "human_size": "6.25 KiB",
+      "sha256": "9de79f9d6650f8187817269b0cc0adce79782a657276ccc6fd34bf8cb3f4bc2d"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-02.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6241,
+      "human_size": "6.09 KiB",
+      "sha256": "e3a6f7de2228d6868c5fa80f45670cdf1c0566b40becf0697a0ae3c569869969"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-03.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6249,
+      "human_size": "6.10 KiB",
+      "sha256": "37343b4d91bae65c645243061d9a07d38216a77e5ccd000642032affcc75d387"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-04.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6264,
+      "human_size": "6.12 KiB",
+      "sha256": "93fc81738a6ac7ca33b08a84303dbf77e8006b8f76f8c341c17e74340bfead14"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-05.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6263,
+      "human_size": "6.12 KiB",
+      "sha256": "df3112920712fd61d8a4ae8e061ef2d1720667acd90276e2a8f9f6323b5ccb82"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-06.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6237,
+      "human_size": "6.09 KiB",
+      "sha256": "495cfae86d35adc373bfa3c77f6e6e8cf981e4395fb541da68e150f1a1ad3858"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-07.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6388,
+      "human_size": "6.24 KiB",
+      "sha256": "af5b0e071a3e5d99dbc5f670495df956151a24af8be9f99909535b5796275aec"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-08.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6348,
+      "human_size": "6.20 KiB",
+      "sha256": "2314a0741a59302b4c12ce31932fc2969d7d689a5030099612e0022735721266"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-09.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6372,
+      "human_size": "6.22 KiB",
+      "sha256": "f50b3b6d3d804d9a8f1b48d2a93571ba08e5388c7d54523ebe4973c1cf92675c"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-10.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6373,
+      "human_size": "6.22 KiB",
+      "sha256": "7cacc482266fdba618bed1151ca1b29aa1bb592ba31e83aa3c4b93bef10ef935"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-11.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6282,
+      "human_size": "6.13 KiB",
+      "sha256": "ad7d6a74f03aeed31bf5460039d845900304a8f034d2e65b21d376e82a0406af"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-12.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6293,
+      "human_size": "6.15 KiB",
+      "sha256": "d52e8c7e4ea757fd19a94761197faa1550d0acca06cc5e8a8ad82931e14e6c93"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-13.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6310,
+      "human_size": "6.16 KiB",
+      "sha256": "b77767d30124b666cbe6987bd67490451d6bcc8f942150c7442355d8f3c8e037"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-14.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6287,
+      "human_size": "6.14 KiB",
+      "sha256": "f381285bc137bfe7dc4bec05c494a2cbbac555ba22da105eb1eaabfca5fe60bd"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-15.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6310,
+      "human_size": "6.16 KiB",
+      "sha256": "7f49d30d6321b6787480a4a481e0676010d82c50eec41467389b53901fb6752c"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-16.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6375,
+      "human_size": "6.23 KiB",
+      "sha256": "83f4acfd9dc76670743c0f8df2d5061a3157259d3f702006b7e27fc0be99ae5f"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-17.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6615,
+      "human_size": "6.46 KiB",
+      "sha256": "7f551199782106857457740ecf7ad6aef60217ef442551535e59c4472bac6c16"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-18.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6727,
+      "human_size": "6.57 KiB",
+      "sha256": "d2a1df249ccd9a40bc6718ab5d8238ad4ec6c150ea7e6955bc532df21e05a7c4"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-19.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6677,
+      "human_size": "6.52 KiB",
+      "sha256": "b4344b60b61cce7f0ea900d17e48d3b4f699c0d41b463f8e8cbc042bf04fe27c"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-20.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6806,
+      "human_size": "6.65 KiB",
+      "sha256": "62668b3422f288c17c38340692197073f51ea07c2432f699116fc7777776db3b"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-21.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6864,
+      "human_size": "6.70 KiB",
+      "sha256": "790a9e7a9afbf31480963c96bd3171d3a72b0f89f938ff26598b3e9e8e998070"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-22.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7039,
+      "human_size": "6.87 KiB",
+      "sha256": "1100ff27d3e869dbb9663aa83efcec5f5061b2f47e905bc29d2f4979d9e9cc94"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-23.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7074,
+      "human_size": "6.91 KiB",
+      "sha256": "a436241120a33ef70e0baeda752d964f276700eb80790a3dd2f9db1bc318b018"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-24.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7169,
+      "human_size": "7.00 KiB",
+      "sha256": "f641572ad1e0b3db4312e8d7d1749e4f7566d679ffb3eab5fe8b60c0c88fb9d1"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-25.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7213,
+      "human_size": "7.04 KiB",
+      "sha256": "b2e59fb340ea617885f5c61b84f9a07d08342ea7c9b8d387536383a0c86303bc"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-26.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7196,
+      "human_size": "7.03 KiB",
+      "sha256": "b5a8934a51e766fab2ad5d2c699f05f551d1903c6d50fce807bb6690db4eb759"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-27.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7225,
+      "human_size": "7.06 KiB",
+      "sha256": "4824df806e47b3268cd4feba4cfc1ac83c2b5b2dbb24c120cac50ae091d5152d"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-28.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7249,
+      "human_size": "7.08 KiB",
+      "sha256": "44fa6b5503b720478404c98922f6191097a6b908eabcacf4278c95577ef122be"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-29.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7217,
+      "human_size": "7.05 KiB",
+      "sha256": "5830fb43f5549afc961d6b2e1d90bd708304e7804c273fc2170772494318bff1"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-30.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7198,
+      "human_size": "7.03 KiB",
+      "sha256": "04d4bce826da651327bb325bff01262a07448e166e0033d02cfcfd05f6843a31"
+    },
+    {
+      "path": "assets/cinematic/machining/960/frame-31.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7268,
+      "human_size": "7.10 KiB",
+      "sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6"
+    },
+    {
+      "path": "assets/cinematic/key-blank-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 10581,
+      "human_size": "10.33 KiB",
+      "sha256": "a8f4a5a5ea60fc6e64b4ba20a8037ffa668941b12d24172a651523911d467741"
+    },
+    {
+      "path": "assets/cinematic/key-cad-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 17017,
+      "human_size": "16.62 KiB",
+      "sha256": "da6f6da944333d63d671f3f5c56e780ba07ae7d12a7c4ac736c68ef408d2e7de"
+    },
+    {
+      "path": "assets/cinematic/key-finished-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 15270,
+      "human_size": "14.91 KiB",
+      "sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1"
+    },
+    {
+      "path": "assets/cinematic/key-inspection-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 16441,
+      "human_size": "16.06 KiB",
+      "sha256": "41a7f6039a0ffbb43899a87401623d840f7b8feeedc184485528392c58db5794"
+    },
+    {
+      "path": "assets/cinematic/key-packed-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 19681,
+      "human_size": "19.22 KiB",
+      "sha256": "d15aa554146bb3b8676d98962beef0635aee49eb72dd1857b7b11f04409bd756"
+    },
+    {
+      "path": "assets/cinematic/key-rough-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 13428,
+      "human_size": "13.11 KiB",
+      "sha256": "9e66298963670f5b8e1d49d0adcb5c29afd7b45876c6e0bb3d7bf541f9355a4d"
+    },
+    {
+      "path": "assets/cinematic/key-stock-1536.avif",
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "bytes": 11483,
+      "human_size": "11.21 KiB",
+      "sha256": "7e11c36828a477310e307128b872e12c9e9af5adb88b40cbe8c79dd453275b87"
+    },
+    {
+      "path": "assets/cinematic/key-blank-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 4812,
+      "human_size": "4.70 KiB",
+      "sha256": "8999e94893ff20a27be245980b1035efdc96a10e20dbd560e5c53dc305663d18"
+    },
+    {
+      "path": "assets/cinematic/key-cad-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 8109,
+      "human_size": "7.92 KiB",
+      "sha256": "ae1e82a38cdc414eb6d3f1e73bda20195d6a2a8c7de6bc8680f168d65624f007"
+    },
+    {
+      "path": "assets/cinematic/key-finished-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7268,
+      "human_size": "7.10 KiB",
+      "sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6"
+    },
+    {
+      "path": "assets/cinematic/key-inspection-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 7959,
+      "human_size": "7.77 KiB",
+      "sha256": "daf03b9467ef8662a527f59d1a41537f9be357ddd09673b3d10252e408d15cd9"
+    },
+    {
+      "path": "assets/cinematic/key-packed-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 9358,
+      "human_size": "9.14 KiB",
+      "sha256": "c10bf8ad3dab68f8abba1ca1f52c299b76a9a45a4ea84e88cb8914a662932cae"
+    },
+    {
+      "path": "assets/cinematic/key-rough-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 6423,
+      "human_size": "6.27 KiB",
+      "sha256": "cc4931275b834362b418e66bbcba43bebda3a3962e396aa531b6d4bb99bb0738"
+    },
+    {
+      "path": "assets/cinematic/key-stock-960.avif",
+      "dimensions": [
+        960,
+        960
+      ],
+      "bytes": 5410,
+      "human_size": "5.28 KiB",
+      "sha256": "f53b0469506fc527ae7f7901fc83aaeee4feeed3382610fda62367ff39ec61c0"
+    }
+  ]
+}

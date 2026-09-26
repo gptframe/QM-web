@@ -1,0 +1,28 @@
+{
+  "delivery_note": "The pilot preview loads one responsive AVIF tier; PNG files are review masters and are not proposed as web delivery assets.",
+  "masters_png": {
+    "frame_count": 16,
+    "total_bytes": 4724592,
+    "total_human": "4.51 MiB"
+  },
+  "responsive_tiers": {
+    "avif_1536": {
+      "frame_count": 16,
+      "total_bytes": 167593,
+      "total_human": "163.67 KiB",
+      "average_bytes": 10475,
+      "average_human": "10.23 KiB",
+      "minimum_bytes": 10074,
+      "maximum_bytes": 12050
+    },
+    "avif_960": {
+      "frame_count": 16,
+      "total_bytes": 79834,
+      "total_human": "77.96 KiB",
+      "average_bytes": 4990,
+      "average_human": "4.87 KiB",
+      "minimum_bytes": 4808,
+      "maximum_bytes": 5536
+    }
+  }
+}

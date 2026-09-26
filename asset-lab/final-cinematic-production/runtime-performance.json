@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-09-26T21:33:29.290Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "beforeManufacturing": {
+    "resourceCount": 5,
+    "encodedBytes": 193343,
+    "urls": [
+      "http://127.0.0.1:51434/assets/cinematic/key-finished-1536.avif",
+      "http://127.0.0.1:51434/styles.css",
+      "http://127.0.0.1:51434/assets/vendor/gsap-3.12.5.min.js",
+      "http://127.0.0.1:51434/assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "http://127.0.0.1:51434/script.js"
+    ]
+  },
+  "afterActivation": {
+    "resourceCount": 44,
+    "encodedBytes": 688834,
+    "sequenceResourceCount": 32,
+    "sequenceEncodedBytes": 446152,
+    "sequenceTier": "1536"
+  },
+  "activationDeltaBytes": 495491,
+  "encodedSequencePayloads": {
+    "960": {
+      "frameCount": 32,
+      "bytes": 212951
+    },
+    "1536": {
+      "frameCount": 32,
+      "bytes": 446152
+    }
+  },
+  "mobileSequencePayloadBytes": 0,
+  "note": "The mobile and reduced-motion assertions below verify that no machining-frame request is made."
+}

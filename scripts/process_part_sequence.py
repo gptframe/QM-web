@@ -1,10 +1,10 @@
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "assets" / "part-evolution-master.png"
-OUTPUT = ROOT / "dist" / "assets"
+SOURCE = ROOT / "part-evolution-master.png"
+OUTPUT = ROOT / "assets"
 
 PANELS = {
     "part-cad": (0, 0, 509, 507),
@@ -22,8 +22,10 @@ def main() -> None:
         sheet = sheet.convert("RGB")
         for name, crop_box in PANELS.items():
             panel = sheet.crop(crop_box)
-            panel.thumbnail((768, 768), Image.Resampling.LANCZOS)
-            panel.save(OUTPUT / f"{name}.webp", "WEBP", quality=88, method=6)
+            # Every state shares an identical square canvas so CSS and GSAP can
+            # hold the component on one optical axis without per-stage nudges.
+            panel = ImageOps.fit(panel, (512, 512), Image.Resampling.LANCZOS)
+            panel.save(OUTPUT / f"{name}.webp", "WEBP", quality=86, method=6)
             panel.save(OUTPUT / f"{name}.avif", "AVIF", quality=72)
 
 
