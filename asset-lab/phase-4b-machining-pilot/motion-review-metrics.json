@@ -1,0 +1,459 @@
+{
+  "method": "Fixed-camera 400\u00d7400 geometry-only projection plus decoded 1600\u00d71600 adjacent-frame RGB comparison",
+  "fixed_registration": {
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "projection_dimensions": [
+      400,
+      400
+    ],
+    "camera_or_object_transform_changes": 0
+  },
+  "frames": [
+    {
+      "frame": "pilot-00",
+      "occupied_pixels": 38768,
+      "bbox": [
+        31,
+        131,
+        321,
+        333
+      ],
+      "centroid": [
+        157.6072,
+        212.5541
+      ]
+    },
+    {
+      "frame": "pilot-01",
+      "occupied_pixels": 38146,
+      "bbox": [
+        32,
+        131,
+        320,
+        332
+      ],
+      "centroid": [
+        157.3926,
+        212.642
+      ]
+    },
+    {
+      "frame": "pilot-02",
+      "occupied_pixels": 37561,
+      "bbox": [
+        32,
+        132,
+        319,
+        331
+      ],
+      "centroid": [
+        157.132,
+        212.7096
+      ]
+    },
+    {
+      "frame": "pilot-03",
+      "occupied_pixels": 36991,
+      "bbox": [
+        33,
+        133,
+        319,
+        330
+      ],
+      "centroid": [
+        156.9184,
+        212.8039
+      ]
+    },
+    {
+      "frame": "pilot-04",
+      "occupied_pixels": 36533,
+      "bbox": [
+        33,
+        134,
+        318,
+        329
+      ],
+      "centroid": [
+        156.6829,
+        212.8459
+      ]
+    },
+    {
+      "frame": "pilot-05",
+      "occupied_pixels": 36073,
+      "bbox": [
+        33,
+        134,
+        318,
+        329
+      ],
+      "centroid": [
+        156.5456,
+        212.9022
+      ]
+    },
+    {
+      "frame": "pilot-06",
+      "occupied_pixels": 35698,
+      "bbox": [
+        34,
+        135,
+        317,
+        328
+      ],
+      "centroid": [
+        156.3609,
+        212.9656
+      ]
+    },
+    {
+      "frame": "pilot-07",
+      "occupied_pixels": 35388,
+      "bbox": [
+        34,
+        135,
+        317,
+        327
+      ],
+      "centroid": [
+        156.2846,
+        213.0028
+      ]
+    },
+    {
+      "frame": "pilot-08",
+      "occupied_pixels": 34755,
+      "bbox": [
+        35,
+        136,
+        317,
+        326
+      ],
+      "centroid": [
+        156.2823,
+        213.0092
+      ]
+    },
+    {
+      "frame": "pilot-09",
+      "occupied_pixels": 34052,
+      "bbox": [
+        35,
+        136,
+        316,
+        325
+      ],
+      "centroid": [
+        156.2231,
+        213.0273
+      ]
+    },
+    {
+      "frame": "pilot-10",
+      "occupied_pixels": 33415,
+      "bbox": [
+        36,
+        137,
+        315,
+        324
+      ],
+      "centroid": [
+        156.123,
+        213.0628
+      ]
+    },
+    {
+      "frame": "pilot-11",
+      "occupied_pixels": 32445,
+      "bbox": [
+        36,
+        139,
+        314,
+        323
+      ],
+      "centroid": [
+        155.0276,
+        213.4288
+      ]
+    },
+    {
+      "frame": "pilot-12",
+      "occupied_pixels": 32445,
+      "bbox": [
+        36,
+        139,
+        314,
+        323
+      ],
+      "centroid": [
+        155.0276,
+        213.4288
+      ]
+    },
+    {
+      "frame": "pilot-13",
+      "occupied_pixels": 32445,
+      "bbox": [
+        36,
+        139,
+        314,
+        323
+      ],
+      "centroid": [
+        155.0276,
+        213.4288
+      ]
+    },
+    {
+      "frame": "pilot-14",
+      "occupied_pixels": 32445,
+      "bbox": [
+        36,
+        139,
+        314,
+        323
+      ],
+      "centroid": [
+        155.0276,
+        213.4288
+      ]
+    },
+    {
+      "frame": "pilot-15",
+      "occupied_pixels": 32445,
+      "bbox": [
+        36,
+        139,
+        314,
+        323
+      ],
+      "centroid": [
+        155.0276,
+        213.4288
+      ]
+    }
+  ],
+  "adjacent": [
+    {
+      "parent": "pilot-00",
+      "child": "pilot-01",
+      "raw_projected_child_pixels_outside_parent": 3,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -622,
+      "centroid_delta_at_400px": 0.2319,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.6398,
+        "pixels_changed_more_than_4_levels": 47991,
+        "changed_percent": 1.8746
+      }
+    },
+    {
+      "parent": "pilot-01",
+      "child": "pilot-02",
+      "raw_projected_child_pixels_outside_parent": 2,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -585,
+      "centroid_delta_at_400px": 0.2692,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.607,
+        "pixels_changed_more_than_4_levels": 44227,
+        "changed_percent": 1.7276
+      }
+    },
+    {
+      "parent": "pilot-02",
+      "child": "pilot-03",
+      "raw_projected_child_pixels_outside_parent": 3,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -570,
+      "centroid_delta_at_400px": 0.2335,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.6027,
+        "pixels_changed_more_than_4_levels": 43784,
+        "changed_percent": 1.7103
+      }
+    },
+    {
+      "parent": "pilot-03",
+      "child": "pilot-04",
+      "raw_projected_child_pixels_outside_parent": 1,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -458,
+      "centroid_delta_at_400px": 0.2392,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.5985,
+        "pixels_changed_more_than_4_levels": 38736,
+        "changed_percent": 1.5131
+      }
+    },
+    {
+      "parent": "pilot-04",
+      "child": "pilot-05",
+      "raw_projected_child_pixels_outside_parent": 1,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -460,
+      "centroid_delta_at_400px": 0.1484,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.6456,
+        "pixels_changed_more_than_4_levels": 40421,
+        "changed_percent": 1.5789
+      }
+    },
+    {
+      "parent": "pilot-05",
+      "child": "pilot-06",
+      "raw_projected_child_pixels_outside_parent": 4,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -375,
+      "centroid_delta_at_400px": 0.1953,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.6161,
+        "pixels_changed_more_than_4_levels": 37673,
+        "changed_percent": 1.4716
+      }
+    },
+    {
+      "parent": "pilot-06",
+      "child": "pilot-07",
+      "raw_projected_child_pixels_outside_parent": 2,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -310,
+      "centroid_delta_at_400px": 0.0849,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.6131,
+        "pixels_changed_more_than_4_levels": 38647,
+        "changed_percent": 1.5096
+      }
+    },
+    {
+      "parent": "pilot-07",
+      "child": "pilot-08",
+      "raw_projected_child_pixels_outside_parent": 2,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -633,
+      "centroid_delta_at_400px": 0.0068,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.7545,
+        "pixels_changed_more_than_4_levels": 51739,
+        "changed_percent": 2.0211
+      }
+    },
+    {
+      "parent": "pilot-08",
+      "child": "pilot-09",
+      "raw_projected_child_pixels_outside_parent": 2,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -703,
+      "centroid_delta_at_400px": 0.0619,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.7884,
+        "pixels_changed_more_than_4_levels": 55269,
+        "changed_percent": 2.1589
+      }
+    },
+    {
+      "parent": "pilot-09",
+      "child": "pilot-10",
+      "raw_projected_child_pixels_outside_parent": 0,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -637,
+      "centroid_delta_at_400px": 0.1062,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.7538,
+        "pixels_changed_more_than_4_levels": 51963,
+        "changed_percent": 2.0298
+      }
+    },
+    {
+      "parent": "pilot-10",
+      "child": "pilot-11",
+      "raw_projected_child_pixels_outside_parent": 2,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": -970,
+      "centroid_delta_at_400px": 1.1549,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.8935,
+        "pixels_changed_more_than_4_levels": 71709,
+        "changed_percent": 2.8011
+      }
+    },
+    {
+      "parent": "pilot-11",
+      "child": "pilot-12",
+      "raw_projected_child_pixels_outside_parent": 0,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": 0,
+      "centroid_delta_at_400px": 0.0,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.2849,
+        "pixels_changed_more_than_4_levels": 3555,
+        "changed_percent": 0.1389
+      }
+    },
+    {
+      "parent": "pilot-12",
+      "child": "pilot-13",
+      "raw_projected_child_pixels_outside_parent": 0,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": 0,
+      "centroid_delta_at_400px": 0.0,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.3109,
+        "pixels_changed_more_than_4_levels": 6359,
+        "changed_percent": 0.2484
+      }
+    },
+    {
+      "parent": "pilot-13",
+      "child": "pilot-14",
+      "raw_projected_child_pixels_outside_parent": 0,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": 0,
+      "centroid_delta_at_400px": 0.0,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.3659,
+        "pixels_changed_more_than_4_levels": 16117,
+        "changed_percent": 0.6296
+      }
+    },
+    {
+      "parent": "pilot-14",
+      "child": "pilot-15",
+      "raw_projected_child_pixels_outside_parent": 0,
+      "projected_child_pixels_outside_parent_with_1px_raster_tolerance": 0,
+      "projected_pixel_count_delta": 0,
+      "centroid_delta_at_400px": 0.0,
+      "visual_delta": {
+        "mean_absolute_channel_delta": 0.3427,
+        "pixels_changed_more_than_4_levels": 15732,
+        "changed_percent": 0.6145
+      }
+    }
+  ],
+  "summary": {
+    "raw_projected_child_pixels_outside_parent_total": 22,
+    "projected_child_pixels_outside_parent_with_1px_raster_tolerance_total": 0,
+    "maximum_centroid_delta_at_400px": 1.1549,
+    "maximum_mean_absolute_channel_delta": 0.8935,
+    "largest_changed_percent": 2.8011
+  },
+  "interpretation": "Projected centroid and silhouette changes are consequences of removal from a fixed camera, not camera, crop, scale or object-transform changes. Raw single-pixel boundary differences at the 400px ray-march threshold are reported separately from the one-pixel-tolerant raster result and the higher-density 3D occupancy containment report."
+}

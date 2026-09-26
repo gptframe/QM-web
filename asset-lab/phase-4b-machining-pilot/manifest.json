@@ -1,0 +1,982 @@
+{
+  "generated_at": "2026-09-25T22:57:03.036833+00:00",
+  "generator": "scripts/render_machining_pilot.py",
+  "purpose": "Non-production Phase 4B motion proof from rough-machined to finished illustrative geometry",
+  "rendering": {
+    "approach": "deterministic native-resolution NumPy/Pillow signed-distance-field CPU ray marcher",
+    "master_dimensions": [
+      1600,
+      1600
+    ],
+    "native_resolution": true,
+    "responsive_derivatives": {
+      "1536": {
+        "dimensions": [
+          1536,
+          1536
+        ],
+        "format": "AVIF",
+        "quality": 63
+      },
+      "960": {
+        "dimensions": [
+          960,
+          960
+        ],
+        "format": "AVIF",
+        "quality": 60
+      }
+    },
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "fixed_camera_lighting_crop": true,
+    "randomness": "none",
+    "surface_interpolation": "Component-space rough turning texture amplitude and material response progress monotonically; geometry is never image-blended."
+  },
+  "provenance": "Repository-authored illustrative procedural geometry; no customer geometry or third-party visual assets",
+  "endpoint_identity": {
+    "pilot_00_pixels_equal_phase_4a_rough": true,
+    "pilot_15_pixels_equal_phase_4a_finished": true,
+    "note": "PNG metadata and filenames differ; decoded RGB pixels are required to be identical."
+  },
+  "validation_summary": {
+    "passed": true,
+    "adjacent_pairs": 15,
+    "containment_violations": 0
+  },
+  "assets": [
+    {
+      "frame": "pilot-00",
+      "parameters": {
+        "allowances": [
+          0.14,
+          0.14,
+          0.14,
+          0.14,
+          0.14,
+          0.14,
+          0.14,
+          0.14,
+          0.14,
+          0.14
+        ],
+        "outer_rounding": 0.025,
+        "bore_radius": 0.0,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.0
+      },
+      "master": {
+        "state": "pilot-00",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-00.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 325386,
+        "human_size": "317.76 KiB",
+        "sha256": "d0c5388b3d8230c9a03bbadc97d17c51cb731086fc416a89e8743884cac7299d"
+      },
+      "avif_1536": {
+        "state": "pilot-00",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-00.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10090,
+        "human_size": "9.85 KiB",
+        "sha256": "6ce5c9bd2edd755b99e9dfe592db39058c2fd6af154db9c9fdf4494a8d1736a9"
+      },
+      "avif_960": {
+        "state": "pilot-00",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-00.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4809,
+        "human_size": "4.70 KiB",
+        "sha256": "26d260994edb87a4a0fa20b8b91c4f82afffbc949000229465190417799550a0"
+      }
+    },
+    {
+      "frame": "pilot-01",
+      "parameters": {
+        "allowances": [
+          0.126,
+          0.126,
+          0.126,
+          0.126,
+          0.126,
+          0.126,
+          0.126,
+          0.126,
+          0.126,
+          0.126
+        ],
+        "outer_rounding": 0.026,
+        "bore_radius": 0.0,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.05
+      },
+      "master": {
+        "state": "pilot-01",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-01.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 321515,
+        "human_size": "313.98 KiB",
+        "sha256": "4c5421e6ef2e0d01db604a54d486fab81b9add3108d22804d0e39f3701c8a8a9"
+      },
+      "avif_1536": {
+        "state": "pilot-01",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-01.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10111,
+        "human_size": "9.87 KiB",
+        "sha256": "d754a3e41f63d288ada11d83d22dcc0c9a44dba1b3c92a4a68afb9bad57efebb"
+      },
+      "avif_960": {
+        "state": "pilot-01",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-01.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4808,
+        "human_size": "4.70 KiB",
+        "sha256": "1cfab064fbe8584a79f321b50446d39037947f7eb43cac2484580c07e09bac4e"
+      }
+    },
+    {
+      "frame": "pilot-02",
+      "parameters": {
+        "allowances": [
+          0.113,
+          0.113,
+          0.113,
+          0.113,
+          0.113,
+          0.113,
+          0.113,
+          0.113,
+          0.113,
+          0.113
+        ],
+        "outer_rounding": 0.027,
+        "bore_radius": 0.0,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.1
+      },
+      "master": {
+        "state": "pilot-02",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-02.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 317956,
+        "human_size": "310.50 KiB",
+        "sha256": "e8107b1abc60bc294ed7de753e5740455ac422ca4e2ee0d67544ebcb9f3b326d"
+      },
+      "avif_1536": {
+        "state": "pilot-02",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-02.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10186,
+        "human_size": "9.95 KiB",
+        "sha256": "c79258ed1dd3a71d04360ba9084062dc7737d1912b7d131add912855f3f2c046"
+      },
+      "avif_960": {
+        "state": "pilot-02",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-02.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4853,
+        "human_size": "4.74 KiB",
+        "sha256": "c057b0072a5a3379788a368b2e1d72e32f2c76c06d385987dd6012f7cc1ae80d"
+      }
+    },
+    {
+      "frame": "pilot-03",
+      "parameters": {
+        "allowances": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "outer_rounding": 0.028,
+        "bore_radius": 0.0,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.15
+      },
+      "master": {
+        "state": "pilot-03",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-03.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 312751,
+        "human_size": "305.42 KiB",
+        "sha256": "22641d23e3125b99d4350653b41daffa06989fb6f0e209dcb2a5186d5d667dfb"
+      },
+      "avif_1536": {
+        "state": "pilot-03",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-03.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10169,
+        "human_size": "9.93 KiB",
+        "sha256": "9e96561d701d56ace2a678aa2ed81c15330486c1a61bd1e041e23d1708342742"
+      },
+      "avif_960": {
+        "state": "pilot-03",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-03.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4836,
+        "human_size": "4.72 KiB",
+        "sha256": "7eea30c2f85ed36c2250441232d12a2315b1ebf2927648c40fd125742af38774"
+      }
+    },
+    {
+      "frame": "pilot-04",
+      "parameters": {
+        "allowances": [
+          0.09,
+          0.09,
+          0.09,
+          0.09,
+          0.09,
+          0.09,
+          0.09,
+          0.09,
+          0.09,
+          0.09
+        ],
+        "outer_rounding": 0.0295,
+        "bore_radius": 0.055,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.22
+      },
+      "master": {
+        "state": "pilot-04",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-04.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 307427,
+        "human_size": "300.22 KiB",
+        "sha256": "bbff503c73111c8c3c31a9cdc2d048bf70f98b5be13e2cd8328cd491cc95665c"
+      },
+      "avif_1536": {
+        "state": "pilot-04",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-04.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10186,
+        "human_size": "9.95 KiB",
+        "sha256": "37a9e6d2433222d665168b65fc38e1ff370ca49138f1d9f2fff7ed373ff9d41a"
+      },
+      "avif_960": {
+        "state": "pilot-04",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-04.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4813,
+        "human_size": "4.70 KiB",
+        "sha256": "d00c7187b042df880fef9f9022e05de822b96330b1c7e1bac4a0df337f5f0fe2"
+      }
+    },
+    {
+      "frame": "pilot-05",
+      "parameters": {
+        "allowances": [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ],
+        "outer_rounding": 0.031,
+        "bore_radius": 0.105,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.3
+      },
+      "master": {
+        "state": "pilot-05",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-05.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 303869,
+        "human_size": "296.75 KiB",
+        "sha256": "a16684d73e1e2ddfa6b60daa88aa77750028fe04a0256854455147658adb8cae"
+      },
+      "avif_1536": {
+        "state": "pilot-05",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-05.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10165,
+        "human_size": "9.93 KiB",
+        "sha256": "1c851ee05bbcda412caa4ce42e20b09610256b72f2e080848acf6887993e1241"
+      },
+      "avif_960": {
+        "state": "pilot-05",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-05.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4859,
+        "human_size": "4.75 KiB",
+        "sha256": "ec1fa71716166ef5fde7fb7a655b68facff8936586d629bcdc8f7e8afcc07b26"
+      }
+    },
+    {
+      "frame": "pilot-06",
+      "parameters": {
+        "allowances": [
+          0.072,
+          0.072,
+          0.072,
+          0.072,
+          0.072,
+          0.072,
+          0.072,
+          0.072,
+          0.072,
+          0.072
+        ],
+        "outer_rounding": 0.033,
+        "bore_radius": 0.165,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.38
+      },
+      "master": {
+        "state": "pilot-06",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-06.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 302630,
+        "human_size": "295.54 KiB",
+        "sha256": "2a92a2e4a4906a7c036497362257f63e826c988ed8145d00c4291e2c6a4cd7f6"
+      },
+      "avif_1536": {
+        "state": "pilot-06",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-06.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10074,
+        "human_size": "9.84 KiB",
+        "sha256": "cd463b13ebda84056b4fa66b48365e676326907737a5b66718c897a0d9641e01"
+      },
+      "avif_960": {
+        "state": "pilot-06",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-06.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4826,
+        "human_size": "4.71 KiB",
+        "sha256": "99bad36b2b8483fad761144f3d340bdcd8e88dbe35f7ea4e19a99d392881ede1"
+      }
+    },
+    {
+      "frame": "pilot-07",
+      "parameters": {
+        "allowances": [
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065
+        ],
+        "outer_rounding": 0.035,
+        "bore_radius": 0.245,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.46
+      },
+      "master": {
+        "state": "pilot-07",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-07.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 298611,
+        "human_size": "291.61 KiB",
+        "sha256": "547ad6cfded4535612a75fb1f738645b9ade6d7989a0c732a86c22c56d097155"
+      },
+      "avif_1536": {
+        "state": "pilot-07",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-07.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10349,
+        "human_size": "10.11 KiB",
+        "sha256": "7ae64d1244add0fefb434ff1d71993406a86e7a6a3ae08f789bb1b9411f86576"
+      },
+      "avif_960": {
+        "state": "pilot-07",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-07.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4970,
+        "human_size": "4.85 KiB",
+        "sha256": "396e35f5e1b6cecd952a73f6d6028c6fd1ce21067fc6c72e86f3050c8a5c7c0f"
+      }
+    },
+    {
+      "frame": "pilot-08",
+      "parameters": {
+        "allowances": [
+          0.048,
+          0.05,
+          0.054,
+          0.056,
+          0.056,
+          0.05,
+          0.056,
+          0.056,
+          0.056,
+          0.056
+        ],
+        "outer_rounding": 0.038,
+        "bore_radius": 0.26,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.54
+      },
+      "master": {
+        "state": "pilot-08",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-08.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 294414,
+        "human_size": "287.51 KiB",
+        "sha256": "b8e5cb058cef023270edd81e1b36fe2ae6283175fcc9d1588412ecb94cbdfebc"
+      },
+      "avif_1536": {
+        "state": "pilot-08",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-08.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10210,
+        "human_size": "9.97 KiB",
+        "sha256": "bb2898d2a89874d1380858e0a800b8922e9c4643b93cfaf94341b15ae9937018"
+      },
+      "avif_960": {
+        "state": "pilot-08",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-08.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4937,
+        "human_size": "4.82 KiB",
+        "sha256": "d7b86e8d95cb78d6eb3ce03657d6a9d8c7dc0eb96c32ad190bb94a2e0705571f"
+      }
+    },
+    {
+      "frame": "pilot-09",
+      "parameters": {
+        "allowances": [
+          0.03,
+          0.034,
+          0.04,
+          0.044,
+          0.044,
+          0.034,
+          0.044,
+          0.044,
+          0.044,
+          0.044
+        ],
+        "outer_rounding": 0.041,
+        "bore_radius": 0.275,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.62
+      },
+      "master": {
+        "state": "pilot-09",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-09.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 285566,
+        "human_size": "278.87 KiB",
+        "sha256": "24a9b09cb2eff44343ab187bc4646b2abb8022f970c8144dca2dc529631a81ff"
+      },
+      "avif_1536": {
+        "state": "pilot-09",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-09.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10203,
+        "human_size": "9.96 KiB",
+        "sha256": "b47877d836d08d1a9be24a9c249596094a4f1cdbf3d1e798b771479e6f6b98d6"
+      },
+      "avif_960": {
+        "state": "pilot-09",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-09.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4921,
+        "human_size": "4.81 KiB",
+        "sha256": "839f5727ca0612f2e2d2b4725a509b7c312aa22a6b9e074dc91da37a80605e4f"
+      }
+    },
+    {
+      "frame": "pilot-10",
+      "parameters": {
+        "allowances": [
+          0.014,
+          0.02,
+          0.028,
+          0.032,
+          0.032,
+          0.02,
+          0.032,
+          0.032,
+          0.032,
+          0.032
+        ],
+        "outer_rounding": 0.045,
+        "bore_radius": 0.286,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.7
+      },
+      "master": {
+        "state": "pilot-10",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-10.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 277809,
+        "human_size": "271.30 KiB",
+        "sha256": "b8b051bfc8653d92d0294dbb11f6194cf9bed856eb90461ede8b2d1e8be591a9"
+      },
+      "avif_1536": {
+        "state": "pilot-10",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-10.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10276,
+        "human_size": "10.04 KiB",
+        "sha256": "6569c64a2ebcff2b6bc566f8e759ef149a806d4c9098ec34b3cf57ef97f296b2"
+      },
+      "avif_960": {
+        "state": "pilot-10",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-10.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4927,
+        "human_size": "4.81 KiB",
+        "sha256": "7d4754a746917f1daf1f690165cb0c9bb0943fa792de11aae3e1153db4df4e78"
+      }
+    },
+    {
+      "frame": "pilot-11",
+      "parameters": {
+        "allowances": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_rounding": 0.05,
+        "bore_radius": 0.296,
+        "bolt_hole_radius": 0.0,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.0,
+        "counterbore_half_length": 0.0,
+        "counterbore_rounding": 0.0,
+        "cross_hole_radius": 0.0,
+        "surface_progress": 0.78
+      },
+      "master": {
+        "state": "pilot-11",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-11.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 271199,
+        "human_size": "264.84 KiB",
+        "sha256": "d500de507cdb8c6b73c68a4fbdfa829fc85df164fcbfd46f22706da21b680632"
+      },
+      "avif_1536": {
+        "state": "pilot-11",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-11.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10192,
+        "human_size": "9.95 KiB",
+        "sha256": "914563e85d4bacf7e7fccdc91b3c335d53c88f0620755f9dfcf515ddbe6dae5a"
+      },
+      "avif_960": {
+        "state": "pilot-11",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-11.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 4861,
+        "human_size": "4.75 KiB",
+        "sha256": "dc1d2fb34de33ec2a9fdc76e0d6e2b930e9abc7b758e6bd547b41c59665c0962"
+      }
+    },
+    {
+      "frame": "pilot-12",
+      "parameters": {
+        "allowances": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_rounding": 0.05,
+        "bore_radius": 0.304,
+        "bolt_hole_radius": 0.025,
+        "mouth_radius": 0.0,
+        "mouth_half_length": 0.0,
+        "mouth_rounding": 0.0,
+        "counterbore_radius": 0.345,
+        "counterbore_half_length": 0.04,
+        "counterbore_rounding": 0.008,
+        "cross_hole_radius": 0.025,
+        "surface_progress": 0.84
+      },
+      "master": {
+        "state": "pilot-12",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-12.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 273063,
+        "human_size": "266.66 KiB",
+        "sha256": "706ead9a0dd152463f0ae2cb66e9665abed411cfb774a1dd945791defdfcfeec"
+      },
+      "avif_1536": {
+        "state": "pilot-12",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-12.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 10728,
+        "human_size": "10.48 KiB",
+        "sha256": "399448e8af0a99adc2bbc7af27e88c3ed49225a4423d5451b74bd044211daf6f"
+      },
+      "avif_960": {
+        "state": "pilot-12",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-12.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 5121,
+        "human_size": "5.00 KiB",
+        "sha256": "d412944115aecf28a46c995026b1391f3e81945e0621162395adb95f38355daa"
+      }
+    },
+    {
+      "frame": "pilot-13",
+      "parameters": {
+        "allowances": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_rounding": 0.05,
+        "bore_radius": 0.312,
+        "bolt_hole_radius": 0.05,
+        "mouth_radius": 0.085,
+        "mouth_half_length": 0.025,
+        "mouth_rounding": 0.008,
+        "counterbore_radius": 0.385,
+        "counterbore_half_length": 0.08,
+        "counterbore_rounding": 0.017,
+        "cross_hole_radius": 0.052,
+        "surface_progress": 0.9
+      },
+      "master": {
+        "state": "pilot-13",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-13.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 275216,
+        "human_size": "268.77 KiB",
+        "sha256": "5e71de4ac359c0aef0db6c480f7e023dbb55b2fa9ff0f324e15a3ff3f1e9e607"
+      },
+      "avif_1536": {
+        "state": "pilot-13",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-13.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 11084,
+        "human_size": "10.82 KiB",
+        "sha256": "853f44e1aa877e5e921ec94f06650b75d35716a2d10c700a77c23a62d23904b2"
+      },
+      "avif_960": {
+        "state": "pilot-13",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-13.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 5270,
+        "human_size": "5.15 KiB",
+        "sha256": "4908a402f9ad20785dadbb7528a5b05b6400f783d6fc2dd7ddd046e244989981"
+      }
+    },
+    {
+      "frame": "pilot-14",
+      "parameters": {
+        "allowances": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_rounding": 0.05,
+        "bore_radius": 0.319,
+        "bolt_hole_radius": 0.075,
+        "mouth_radius": 0.115,
+        "mouth_half_length": 0.04,
+        "mouth_rounding": 0.013,
+        "counterbore_radius": 0.425,
+        "counterbore_half_length": 0.12,
+        "counterbore_rounding": 0.026,
+        "cross_hole_radius": 0.079,
+        "surface_progress": 0.95
+      },
+      "master": {
+        "state": "pilot-14",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-14.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 277775,
+        "human_size": "271.26 KiB",
+        "sha256": "288d9a02d0292c3c126fc5ee3bab16b0a9d96e1dba6cd113639f6569b4f19934"
+      },
+      "avif_1536": {
+        "state": "pilot-14",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-14.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 11520,
+        "human_size": "11.25 KiB",
+        "sha256": "b2bd0e522c7e38a17a91a95c06c7b54f741315187450441cccc68e7c35489c25"
+      },
+      "avif_960": {
+        "state": "pilot-14",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-14.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 5487,
+        "human_size": "5.36 KiB",
+        "sha256": "16ca44af0144174ba06fe9d7cc5abf1fc3e224dfd473249a513f54bb310352a1"
+      }
+    },
+    {
+      "frame": "pilot-15",
+      "parameters": {
+        "allowances": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outer_rounding": 0.05,
+        "bore_radius": 0.325,
+        "bolt_hole_radius": 0.098,
+        "mouth_radius": 0.145,
+        "mouth_half_length": 0.055,
+        "mouth_rounding": 0.018,
+        "counterbore_radius": 0.46,
+        "counterbore_half_length": 0.16,
+        "counterbore_rounding": 0.035,
+        "cross_hole_radius": 0.105,
+        "surface_progress": 1.0
+      },
+      "master": {
+        "state": "pilot-15",
+        "path": "asset-lab/phase-4b-machining-pilot/masters/pilot-15.png",
+        "width": 1600,
+        "height": 1600,
+        "bytes": 279405,
+        "human_size": "272.86 KiB",
+        "sha256": "6d686054325a18d1c8337e365cec2856914b578242c161ec93408431264d98d7"
+      },
+      "avif_1536": {
+        "state": "pilot-15",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-1536/pilot-15.avif",
+        "width": 1536,
+        "height": 1536,
+        "bytes": 12050,
+        "human_size": "11.77 KiB",
+        "sha256": "6c3550d395f1198332972a32fc2de33ee19f729c8af411670d76c85abacc15e0"
+      },
+      "avif_960": {
+        "state": "pilot-15",
+        "path": "asset-lab/phase-4b-machining-pilot/avif-960/pilot-15.avif",
+        "width": 960,
+        "height": 960,
+        "bytes": 5536,
+        "human_size": "5.41 KiB",
+        "sha256": "6fe6c6b7f0c82888b5a6d43a795b8c18ce523b61529d44c3051c06508b7d3e90"
+      }
+    }
+  ],
+  "contact_sheet": {
+    "state": "pilot-contact-sheet",
+    "path": "asset-lab/phase-4b-machining-pilot/pilot-contact-sheet.png",
+    "width": 2560,
+    "height": 2560,
+    "bytes": 1319898,
+    "human_size": "1.26 MiB",
+    "sha256": "0564c91b104b68f99477dbdc30fbc1b94ec8298696f7a1494b477b81364079ac"
+  },
+  "payload_report": {
+    "delivery_note": "The pilot preview loads one responsive AVIF tier; PNG files are review masters and are not proposed as web delivery assets.",
+    "masters_png": {
+      "frame_count": 16,
+      "total_bytes": 4724592,
+      "total_human": "4.51 MiB"
+    },
+    "responsive_tiers": {
+      "avif_1536": {
+        "frame_count": 16,
+        "total_bytes": 167593,
+        "total_human": "163.67 KiB",
+        "average_bytes": 10475,
+        "average_human": "10.23 KiB",
+        "minimum_bytes": 10074,
+        "maximum_bytes": 12050
+      },
+      "avif_960": {
+        "frame_count": 16,
+        "total_bytes": 79834,
+        "total_human": "77.96 KiB",
+        "average_bytes": 4990,
+        "average_human": "4.87 KiB",
+        "minimum_bytes": 4808,
+        "maximum_bytes": 5536
+      }
+    }
+  }
+}

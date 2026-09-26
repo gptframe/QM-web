@@ -1,0 +1,2765 @@
+{
+  "passed": true,
+  "rule": "pilot-00 \u2287 pilot-01 \u2287 \u2026 \u2287 pilot-15",
+  "method": "analytic parameter monotonicity plus deterministic 171\u00d7129\u00d7129 occupancy sampling for every adjacent pair",
+  "analytic_checks": [
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.14,
+      "to": 0.126,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.025,
+      "to": 0.026,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 contains pilot-01",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-00 to pilot-01",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.0,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.126,
+      "to": 0.113,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.026,
+      "to": 0.027,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 contains pilot-02",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-01 to pilot-02",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.05,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.113,
+      "to": 0.1,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.027,
+      "to": 0.028,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 contains pilot-03",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-02 to pilot-03",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.1,
+      "to": 0.15,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.1,
+      "to": 0.09,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.028,
+      "to": 0.0295,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.055,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 contains pilot-04",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-03 to pilot-04",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.15,
+      "to": 0.22,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.09,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0295,
+      "to": 0.031,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.055,
+      "to": 0.105,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 contains pilot-05",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-04 to pilot-05",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.22,
+      "to": 0.3,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.08,
+      "to": 0.072,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.031,
+      "to": 0.033,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.105,
+      "to": 0.165,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 contains pilot-06",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-05 to pilot-06",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.3,
+      "to": 0.38,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.072,
+      "to": 0.065,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.033,
+      "to": 0.035,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.165,
+      "to": 0.245,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 contains pilot-07",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-06 to pilot-07",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.38,
+      "to": 0.46,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.048,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.054,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.065,
+      "to": 0.056,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.035,
+      "to": 0.038,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.245,
+      "to": 0.26,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 contains pilot-08",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-07 to pilot-08",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.46,
+      "to": 0.54,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.048,
+      "to": 0.03,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.05,
+      "to": 0.034,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.054,
+      "to": 0.04,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.05,
+      "to": 0.034,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.056,
+      "to": 0.044,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.038,
+      "to": 0.041,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.26,
+      "to": 0.275,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 contains pilot-09",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-08 to pilot-09",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.54,
+      "to": 0.62,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.03,
+      "to": 0.014,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.034,
+      "to": 0.02,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.04,
+      "to": 0.028,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.034,
+      "to": 0.02,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.044,
+      "to": 0.032,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.041,
+      "to": 0.045,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.275,
+      "to": 0.286,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 contains pilot-10",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-09 to pilot-10",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.62,
+      "to": 0.7,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.014,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.02,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.028,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.032,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.032,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.02,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.032,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.032,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.032,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.032,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.045,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.286,
+      "to": 0.296,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 contains pilot-11",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-10 to pilot-11",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.7,
+      "to": 0.78,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.296,
+      "to": 0.304,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.025,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.345,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.04,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.008,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 contains pilot-12",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.025,
+      "passed": true
+    },
+    {
+      "pair": "pilot-11 to pilot-12",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.78,
+      "to": 0.84,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.304,
+      "to": 0.312,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.025,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.085,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.025,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.0,
+      "to": 0.008,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.345,
+      "to": 0.385,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.04,
+      "to": 0.08,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.008,
+      "to": 0.017,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 contains pilot-13",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.025,
+      "to": 0.052,
+      "passed": true
+    },
+    {
+      "pair": "pilot-12 to pilot-13",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.84,
+      "to": 0.9,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.312,
+      "to": 0.319,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.05,
+      "to": 0.075,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.085,
+      "to": 0.115,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.025,
+      "to": 0.04,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.008,
+      "to": 0.013,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.385,
+      "to": 0.425,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.08,
+      "to": 0.12,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.017,
+      "to": 0.026,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 contains pilot-14",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.052,
+      "to": 0.079,
+      "passed": true
+    },
+    {
+      "pair": "pilot-13 to pilot-14",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.9,
+      "to": 0.95,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_00",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_01",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_02",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_03",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_04",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_05",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_06",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_07",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_08",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_allowance_segment_09",
+      "direction": "nonincreasing outer extent",
+      "from": 0.0,
+      "to": 0.0,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "outer_edge_rounding_removal",
+      "direction": "nondecreasing subtraction",
+      "from": 0.05,
+      "to": 0.05,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "central_bore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.319,
+      "to": 0.325,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "bolt_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.075,
+      "to": 0.098,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "hole_mouth_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.115,
+      "to": 0.145,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "hole_mouth_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.04,
+      "to": 0.055,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "hole_mouth_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.013,
+      "to": 0.018,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "counterbore_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.425,
+      "to": 0.46,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "counterbore_depth",
+      "direction": "nondecreasing subtraction",
+      "from": 0.12,
+      "to": 0.16,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "counterbore_rounding",
+      "direction": "nondecreasing subtraction",
+      "from": 0.026,
+      "to": 0.035,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 contains pilot-15",
+      "parameter": "cross_hole_radius",
+      "direction": "nondecreasing subtraction",
+      "from": 0.079,
+      "to": 0.105,
+      "passed": true
+    },
+    {
+      "pair": "pilot-14 to pilot-15",
+      "parameter": "surface_progress",
+      "direction": "nondecreasing surface interpolation",
+      "from": 0.95,
+      "to": 1.0,
+      "passed": true
+    }
+  ],
+  "sampled_adjacent_checks": [
+    {
+      "parent": "pilot-00",
+      "child": "pilot-01",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-01",
+      "child": "pilot-02",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-02",
+      "child": "pilot-03",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-03",
+      "child": "pilot-04",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-04",
+      "child": "pilot-05",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-05",
+      "child": "pilot-06",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-06",
+      "child": "pilot-07",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-07",
+      "child": "pilot-08",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-08",
+      "child": "pilot-09",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-09",
+      "child": "pilot-10",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-10",
+      "child": "pilot-11",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-11",
+      "child": "pilot-12",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-12",
+      "child": "pilot-13",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-13",
+      "child": "pilot-14",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    },
+    {
+      "parent": "pilot-14",
+      "child": "pilot-15",
+      "passed": true,
+      "violations": 0,
+      "sample_count": 2845611,
+      "grid": [
+        171,
+        129,
+        129
+      ]
+    }
+  ],
+  "endpoint_checks": [
+    {
+      "check": "pilot-00 occupancy equals Phase 4A rough geometry",
+      "passed": true
+    },
+    {
+      "check": "pilot-15 occupancy equals Phase 4A finished geometry",
+      "passed": true
+    },
+    {
+      "check": "pilot-00 delegates to Phase 4A rough SDF",
+      "passed": true
+    },
+    {
+      "check": "pilot-15 delegates to Phase 4A finished SDF",
+      "passed": true
+    }
+  ],
+  "fixed_registration": {
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "output_dimensions": [
+      1600,
+      1600
+    ],
+    "component_coordinate_system": "Phase 4A dimensionless component coordinates",
+    "background": "Phase 4A neutral machining background, fixed for all frames",
+    "light_key": [
+      -0.4264684319496155,
+      -0.5212392210960388,
+      0.7392119765281677
+    ],
+    "light_rim": [
+      0.6515001654624939,
+      0.5512694120407104,
+      0.5212001204490662
+    ],
+    "fixed_across_all_frames": true
+  },
+  "geometry_units": "dimensionless illustrative model units"
+}

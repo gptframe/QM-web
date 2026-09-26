@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quantamorph Phase 4B machining pilot</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; background: #050709; color: #eef1f3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #050709; }
+    main { width: min(100% - 32px, 1120px); margin: 0 auto; padding: 28px 0 40px; }
+    header { display: flex; gap: 18px; align-items: end; justify-content: space-between; margin-bottom: 18px; }
+    h1 { margin: 0; font-size: clamp(1.35rem, 3vw, 2.5rem); line-height: 1; letter-spacing: -.035em; }
+    p { margin: 8px 0 0; max-width: 66ch; color: #abb3b9; line-height: 1.5; }
+    .frame-label { color: #fff; font: 700 .78rem/1 monospace; letter-spacing: .11em; white-space: nowrap; }
+    .viewer { position: relative; overflow: hidden; border: 1px solid #30363a; background: #07090b; aspect-ratio: 1; touch-action: pan-y; }
+    .viewer::before { content: "MOTION PROOF · ILLUSTRATIVE"; position: absolute; z-index: 2; top: 14px; left: 14px; padding-left: 10px; border-left: 3px solid #de1f31; color: #d8dde0; font: 700 .68rem/1.2 monospace; letter-spacing: .08em; }
+    img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .controls { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; margin-top: 16px; }
+    button { min-height: 44px; padding: 0 18px; border: 1px solid #555d62; background: #111518; color: #fff; font: 700 .75rem/1 monospace; letter-spacing: .08em; cursor: pointer; }
+    button:hover, button:focus-visible { border-color: #de1f31; outline: 2px solid transparent; box-shadow: 0 0 0 2px #de1f31; }
+    input[type="range"] { width: 100%; min-height: 44px; accent-color: #de1f31; cursor: ew-resize; }
+    output { min-width: 5.5rem; text-align: right; color: #d8dde0; font: 700 .78rem/1 monospace; }
+    .hint { font-size: .8rem; }
+    @media (max-width: 620px) {
+      main { width: min(100% - 24px, 1120px); padding-top: 18px; }
+      header { display: block; }
+      .frame-label { display: inline-block; margin-top: 14px; }
+      .controls { grid-template-columns: auto 1fr; }
+      output { grid-column: 1 / -1; text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      button { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Rough-to-finished machining pilot</h1>
+        <p>Sixteen registered frames testing monotonic material removal. No production-site integration, claimed dimensions, equipment or process result.</p>
+      </div>
+      <span class="frame-label" aria-hidden="true">PHASE 4B · 16 FRAMES</span>
+    </header>
+
+    <div class="viewer" id="viewer">
+      <img id="frame" src="../avif-1536/pilot-00.avif" alt="Illustrative rough-machined component at pilot frame 00">
+    </div>
+
+    <div class="controls">
+      <button type="button" id="play" aria-pressed="false">PLAY 12 FPS</button>
+      <label>
+        <span class="frame-label">SCRUB FRAME</span>
+        <input id="scrubber" type="range" min="0" max="15" step="1" value="0" aria-label="Machining pilot frame">
+      </label>
+      <output id="readout" for="scrubber" aria-live="polite">00 / 15</output>
+    </div>
+    <p class="hint">Drag the range control, use Left/Right arrows, or scroll over the image. Playback loops only in this local review page.</p>
+  </main>
+
+  <script>
+    const frame = document.querySelector('#frame');
+    const scrubber = document.querySelector('#scrubber');
+    const readout = document.querySelector('#readout');
+    const play = document.querySelector('#play');
+    const viewer = document.querySelector('#viewer');
+    const sources = Array.from({ length: 16 }, (_, index) => `../avif-1536/pilot-${String(index).padStart(2, '0')}.avif`);
+    let playing = false;
+    let timer = 0;
+
+    sources.forEach((source) => { const image = new Image(); image.src = source; });
+
+    function show(index) {
+      const safeIndex = Math.max(0, Math.min(15, Number(index)));
+      scrubber.value = String(safeIndex);
+      frame.src = sources[safeIndex];
+      frame.alt = `Illustrative component machining pilot frame ${String(safeIndex).padStart(2, '0')}`;
+      readout.value = `${String(safeIndex).padStart(2, '0')} / 15`;
+    }
+
+    function stop() {
+      playing = false;
+      window.clearInterval(timer);
+      play.textContent = 'PLAY 12 FPS';
+      play.setAttribute('aria-pressed', 'false');
+    }
+
+    scrubber.addEventListener('input', () => { stop(); show(scrubber.value); });
+    viewer.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      stop();
+      show(Number(scrubber.value) + (event.deltaY > 0 ? 1 : -1));
+    }, { passive: false });
+    play.addEventListener('click', () => {
+      if (playing) { stop(); return; }
+      playing = true;
+      play.textContent = 'PAUSE';
+      play.setAttribute('aria-pressed', 'true');
+      timer = window.setInterval(() => show((Number(scrubber.value) + 1) % 16), 1000 / 12);
+    });
+  </script>
+</body>
+</html>
