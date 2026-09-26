@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "method": "All variants delegate to the same Phase 4A geometry_sdf; hashes are SHA-256 over an identical deterministic 81\u00d765\u00d765 float32 SDF sample grid.",
+  "geometry_source": "scripts/render_cinematic_art_direction.py",
+  "geometry_source_sha256": "2052f7154035146617ec4a55251fecfac57dc7fb8089bf34317dc4b46493ff45",
+  "sample_grid": [
+    81,
+    65,
+    65
+  ],
+  "state_geometry_hashes": {
+    "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+    "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+    "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+    "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+  },
+  "variant_geometry_hashes": {
+    "variant-a": {
+      "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+      "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+      "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+    },
+    "variant-b": {
+      "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+      "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+      "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+    },
+    "variant-c": {
+      "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+      "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+      "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+    }
+  },
+  "finished_equals_packed_geometry": true,
+  "camera": {
+    "position": [
+      -6.8,
+      -8.0,
+      4.6
+    ],
+    "target": [
+      -0.05,
+      0.0,
+      -0.02
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "vertical_fov_degrees": 31.0
+  },
+  "camera_sha256": "afc412266e41b9cdadee839e126a02ecadb79d761c0c89bead0ba1e1184ee515",
+  "camera_fixed_across_states_and_variants": true,
+  "component_coordinate_system": "Phase 4A dimensionless component coordinates"
+}

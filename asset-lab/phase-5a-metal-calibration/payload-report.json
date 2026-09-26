@@ -1,0 +1,84 @@
+{
+  "note": "Representative finished-state encodes only; this calibration does not estimate or generate the longer sequence.",
+  "encoding": {
+    "1536": {
+      "format": "AVIF",
+      "quality": 63
+    },
+    "960": {
+      "format": "AVIF",
+      "quality": 60
+    }
+  },
+  "variants": {
+    "variant-a": {
+      "label": "A \u00b7 BALANCED SATIN",
+      "finished_1536_avif": {
+        "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished-1536.avif",
+        "dimensions": [
+          1536,
+          1536
+        ],
+        "bytes": 14294,
+        "human_size": "13.96 KiB",
+        "sha256": "41fee24759b3b97d41cf92779e17a601738dd8df16b1a5dfa9c790e551da230f"
+      },
+      "finished_960_avif": {
+        "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished-960.avif",
+        "dimensions": [
+          960,
+          960
+        ],
+        "bytes": 6662,
+        "human_size": "6.51 KiB",
+        "sha256": "d6f4a863e1bf86bd97e424f0582eab7f7acec51bb0b4cb876185df87594c5bc7"
+      }
+    },
+    "variant-b": {
+      "label": "B \u00b7 CRISP DIRECTIONAL",
+      "finished_1536_avif": {
+        "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished-1536.avif",
+        "dimensions": [
+          1536,
+          1536
+        ],
+        "bytes": 15270,
+        "human_size": "14.91 KiB",
+        "sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1"
+      },
+      "finished_960_avif": {
+        "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished-960.avif",
+        "dimensions": [
+          960,
+          960
+        ],
+        "bytes": 7268,
+        "human_size": "7.10 KiB",
+        "sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6"
+      }
+    },
+    "variant-c": {
+      "label": "C \u00b7 BROAD TECHNICAL SATIN",
+      "finished_1536_avif": {
+        "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished-1536.avif",
+        "dimensions": [
+          1536,
+          1536
+        ],
+        "bytes": 14130,
+        "human_size": "13.80 KiB",
+        "sha256": "163e3611d90d26441faefd684c7c5e0bea95c12c648b7143cac7315d50f0f87b"
+      },
+      "finished_960_avif": {
+        "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished-960.avif",
+        "dimensions": [
+          960,
+          960
+        ],
+        "bytes": 6655,
+        "human_size": "6.50 KiB",
+        "sha256": "002edf9aed1284abfb62525abbf280ee064899bca24f48daa0199992a004a476"
+      }
+    }
+  }
+}

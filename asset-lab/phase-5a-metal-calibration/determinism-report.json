@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "method": "Complete second native render in an isolated temporary directory; SHA-256 comparison of 12 PNG states, 6 AVIF representatives and the contact sheet",
+  "matched_assets": 19,
+  "total_assets": 19,
+  "comparisons": [
+    {
+      "path": "variant-a/finished.png",
+      "source_sha256": "627f67540ee0c510cefc46b4967dac566f8002e99e5f81a6021a78b314f481b6",
+      "rerender_sha256": "627f67540ee0c510cefc46b4967dac566f8002e99e5f81a6021a78b314f481b6",
+      "matched": true
+    },
+    {
+      "path": "variant-a/packed.png",
+      "source_sha256": "f483f6fbd32e38f8c31f9ef52b60f122f545e0aca999299b2070744470aad05b",
+      "rerender_sha256": "f483f6fbd32e38f8c31f9ef52b60f122f545e0aca999299b2070744470aad05b",
+      "matched": true
+    },
+    {
+      "path": "variant-a/rough.png",
+      "source_sha256": "f3b879ea59aaab277b19d87d14163e222537c091bd689e0a809f94163985bfaf",
+      "rerender_sha256": "f3b879ea59aaab277b19d87d14163e222537c091bd689e0a809f94163985bfaf",
+      "matched": true
+    },
+    {
+      "path": "variant-a/semi.png",
+      "source_sha256": "5e76b6f741afb55514fe80c2b25d67ee1241e8642fcd75bc50a6bd2162e2737f",
+      "rerender_sha256": "5e76b6f741afb55514fe80c2b25d67ee1241e8642fcd75bc50a6bd2162e2737f",
+      "matched": true
+    },
+    {
+      "path": "variant-a/finished-1536.avif",
+      "source_sha256": "41fee24759b3b97d41cf92779e17a601738dd8df16b1a5dfa9c790e551da230f",
+      "rerender_sha256": "41fee24759b3b97d41cf92779e17a601738dd8df16b1a5dfa9c790e551da230f",
+      "matched": true
+    },
+    {
+      "path": "variant-a/finished-960.avif",
+      "source_sha256": "d6f4a863e1bf86bd97e424f0582eab7f7acec51bb0b4cb876185df87594c5bc7",
+      "rerender_sha256": "d6f4a863e1bf86bd97e424f0582eab7f7acec51bb0b4cb876185df87594c5bc7",
+      "matched": true
+    },
+    {
+      "path": "variant-b/finished.png",
+      "source_sha256": "57015d3d08c299d0e10633c17205c7d8111a619475825bf82eb8feaaa62049f3",
+      "rerender_sha256": "57015d3d08c299d0e10633c17205c7d8111a619475825bf82eb8feaaa62049f3",
+      "matched": true
+    },
+    {
+      "path": "variant-b/packed.png",
+      "source_sha256": "a8bca5b22de4f17e6e40125805bcdd61ecb8558cbf3e2a403e93b420aec9a55b",
+      "rerender_sha256": "a8bca5b22de4f17e6e40125805bcdd61ecb8558cbf3e2a403e93b420aec9a55b",
+      "matched": true
+    },
+    {
+      "path": "variant-b/rough.png",
+      "source_sha256": "ecf81234b8294da0189da82175880707b24eaa65c196b8965dd23f6eef94e662",
+      "rerender_sha256": "ecf81234b8294da0189da82175880707b24eaa65c196b8965dd23f6eef94e662",
+      "matched": true
+    },
+    {
+      "path": "variant-b/semi.png",
+      "source_sha256": "9de97879fce781ed4cc997708513a18f597f0c816e3df54e50a15729ade70db7",
+      "rerender_sha256": "9de97879fce781ed4cc997708513a18f597f0c816e3df54e50a15729ade70db7",
+      "matched": true
+    },
+    {
+      "path": "variant-b/finished-1536.avif",
+      "source_sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1",
+      "rerender_sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1",
+      "matched": true
+    },
+    {
+      "path": "variant-b/finished-960.avif",
+      "source_sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6",
+      "rerender_sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6",
+      "matched": true
+    },
+    {
+      "path": "variant-c/finished.png",
+      "source_sha256": "5f36e812d89330df50c8efe0dd252660d39e08b80bc06ae55d8338321985d719",
+      "rerender_sha256": "5f36e812d89330df50c8efe0dd252660d39e08b80bc06ae55d8338321985d719",
+      "matched": true
+    },
+    {
+      "path": "variant-c/packed.png",
+      "source_sha256": "04b28893250c796b9597d017f0cb60a300be01b5789984b012f8fcd9a351956a",
+      "rerender_sha256": "04b28893250c796b9597d017f0cb60a300be01b5789984b012f8fcd9a351956a",
+      "matched": true
+    },
+    {
+      "path": "variant-c/rough.png",
+      "source_sha256": "54bd6fab8753dbb4463e57e25aeb1e82e35c87cf2c2165ece3cd33ce8f778e83",
+      "rerender_sha256": "54bd6fab8753dbb4463e57e25aeb1e82e35c87cf2c2165ece3cd33ce8f778e83",
+      "matched": true
+    },
+    {
+      "path": "variant-c/semi.png",
+      "source_sha256": "4d2f22ad264ba5779b5d2f441a837d9bb204824b442b6aeb3ef166d2431034b1",
+      "rerender_sha256": "4d2f22ad264ba5779b5d2f441a837d9bb204824b442b6aeb3ef166d2431034b1",
+      "matched": true
+    },
+    {
+      "path": "variant-c/finished-1536.avif",
+      "source_sha256": "163e3611d90d26441faefd684c7c5e0bea95c12c648b7143cac7315d50f0f87b",
+      "rerender_sha256": "163e3611d90d26441faefd684c7c5e0bea95c12c648b7143cac7315d50f0f87b",
+      "matched": true
+    },
+    {
+      "path": "variant-c/finished-960.avif",
+      "source_sha256": "002edf9aed1284abfb62525abbf280ee064899bca24f48daa0199992a004a476",
+      "rerender_sha256": "002edf9aed1284abfb62525abbf280ee064899bca24f48daa0199992a004a476",
+      "matched": true
+    },
+    {
+      "path": "metal-comparison-sheet.png",
+      "source_sha256": "c9b3f004b9d6a3004b87c0ca27cab25345f3715bc7d4055ab3d0e39ecbc7b4d0",
+      "rerender_sha256": "c9b3f004b9d6a3004b87c0ca27cab25345f3715bc7d4055ab3d0e39ecbc7b4d0",
+      "matched": true
+    }
+  ]
+}

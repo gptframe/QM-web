@@ -1,0 +1,457 @@
+{
+  "generated_at": "2026-09-26T10:08:18.025386+00:00",
+  "generator": "scripts/render_metal_calibration.py",
+  "purpose": "Non-production Phase 5A comparison of three controlled cool-metal treatments",
+  "rendering": {
+    "approach": "deterministic native-resolution NumPy/Pillow SDF CPU ray marcher",
+    "master_dimensions": [
+      1600,
+      1600
+    ],
+    "native_resolution": true,
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "same_geometry_camera_crop_background_across_variants": true,
+    "randomness": "none",
+    "generative_enhancement": "none"
+  },
+  "provenance": "Repository-authored illustrative procedural geometry and shading; no customer geometry or third-party visual assets",
+  "geometry_validation": {
+    "passed": true,
+    "method": "All variants delegate to the same Phase 4A geometry_sdf; hashes are SHA-256 over an identical deterministic 81\u00d765\u00d765 float32 SDF sample grid.",
+    "geometry_source": "scripts/render_cinematic_art_direction.py",
+    "geometry_source_sha256": "2052f7154035146617ec4a55251fecfac57dc7fb8089bf34317dc4b46493ff45",
+    "sample_grid": [
+      81,
+      65,
+      65
+    ],
+    "state_geometry_hashes": {
+      "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+      "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+      "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+      "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+    },
+    "variant_geometry_hashes": {
+      "variant-a": {
+        "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+        "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+        "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+        "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+      },
+      "variant-b": {
+        "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+        "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+        "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+        "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+      },
+      "variant-c": {
+        "rough": "17ecfaf470d58f067803f411b317c94b94fb7508a224d22f2aa408432157817c",
+        "semi": "5aec6037ed8c3fcd8f21379bce01a0679eef50509cb7a3fc7dab524a23bce788",
+        "finished": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb",
+        "packed": "5ba55241a595b6128482967e0a6efc7649297543b334cfde064f2cfe00d5e1bb"
+      }
+    },
+    "finished_equals_packed_geometry": true,
+    "camera": {
+      "position": [
+        -6.8,
+        -8.0,
+        4.6
+      ],
+      "target": [
+        -0.05,
+        0.0,
+        -0.02
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertical_fov_degrees": 31.0
+    },
+    "camera_sha256": "afc412266e41b9cdadee839e126a02ecadb79d761c0c89bead0ba1e1184ee515",
+    "camera_fixed_across_states_and_variants": true,
+    "component_coordinate_system": "Phase 4A dimensionless component coordinates"
+  },
+  "variants": {
+    "variant-a": {
+      "label": "A \u00b7 BALANCED SATIN",
+      "description": "Neutral satin steel with balanced shoulder separation, broad controlled highlights and moderate dark-form lift.",
+      "shader_parameters": {
+        "slug": "variant-a",
+        "label": "A \u00b7 BALANCED SATIN",
+        "description": "Neutral satin steel with balanced shoulder separation, broad controlled highlights and moderate dark-form lift.",
+        "finished_base": [
+          0.52,
+          0.565,
+          0.6
+        ],
+        "rough_base_factor": 0.77,
+        "ambient": 0.255,
+        "diffuse_strength": 0.5,
+        "specular_strength": 0.62,
+        "shininess": 76.0,
+        "panel_strength": 0.205,
+        "panel_width": 0.3,
+        "rim_strength": 0.16,
+        "lower_fill": 0.052,
+        "rough_turn_amplitude": 0.018,
+        "rough_coarse_amplitude": 0.007,
+        "semi_turn_amplitude": 0.009,
+        "finished_turn_amplitude": 0.004
+      },
+      "assets": {
+        "rough": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/rough.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 310804,
+          "human_size": "303.52 KiB",
+          "sha256": "f3b879ea59aaab277b19d87d14163e222537c091bd689e0a809f94163985bfaf"
+        },
+        "semi": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/semi.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 299189,
+          "human_size": "292.18 KiB",
+          "sha256": "5e76b6f741afb55514fe80c2b25d67ee1241e8642fcd75bc50a6bd2162e2737f"
+        },
+        "finished": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 305469,
+          "human_size": "298.31 KiB",
+          "sha256": "627f67540ee0c510cefc46b4967dac566f8002e99e5f81a6021a78b314f481b6"
+        },
+        "packed": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/packed.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 360216,
+          "human_size": "351.77 KiB",
+          "sha256": "f483f6fbd32e38f8c31f9ef52b60f122f545e0aca999299b2070744470aad05b"
+        },
+        "finished_1536_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished-1536.avif",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 14294,
+          "human_size": "13.96 KiB",
+          "sha256": "41fee24759b3b97d41cf92779e17a601738dd8df16b1a5dfa9c790e551da230f"
+        },
+        "finished_960_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished-960.avif",
+          "dimensions": [
+            960,
+            960
+          ],
+          "bytes": 6662,
+          "human_size": "6.51 KiB",
+          "sha256": "d6f4a863e1bf86bd97e424f0582eab7f7acec51bb0b4cb876185df87594c5bc7"
+        }
+      }
+    },
+    "variant-b": {
+      "label": "B \u00b7 CRISP DIRECTIONAL",
+      "description": "Brighter steel with a narrower directional highlight and stronger edge definition; highest contrast of the three.",
+      "shader_parameters": {
+        "slug": "variant-b",
+        "label": "B \u00b7 CRISP DIRECTIONAL",
+        "description": "Brighter steel with a narrower directional highlight and stronger edge definition; highest contrast of the three.",
+        "finished_base": [
+          0.585,
+          0.63,
+          0.665
+        ],
+        "rough_base_factor": 0.73,
+        "ambient": 0.22,
+        "diffuse_strength": 0.52,
+        "specular_strength": 0.82,
+        "shininess": 104.0,
+        "panel_strength": 0.275,
+        "panel_width": 0.22,
+        "rim_strength": 0.2,
+        "lower_fill": 0.045,
+        "rough_turn_amplitude": 0.014,
+        "rough_coarse_amplitude": 0.005,
+        "semi_turn_amplitude": 0.007,
+        "finished_turn_amplitude": 0.0032
+      },
+      "assets": {
+        "rough": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/rough.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 322387,
+          "human_size": "314.83 KiB",
+          "sha256": "ecf81234b8294da0189da82175880707b24eaa65c196b8965dd23f6eef94e662"
+        },
+        "semi": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/semi.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 311382,
+          "human_size": "304.08 KiB",
+          "sha256": "9de97879fce781ed4cc997708513a18f597f0c816e3df54e50a15729ade70db7"
+        },
+        "finished": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 312285,
+          "human_size": "304.97 KiB",
+          "sha256": "57015d3d08c299d0e10633c17205c7d8111a619475825bf82eb8feaaa62049f3"
+        },
+        "packed": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/packed.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 367060,
+          "human_size": "358.46 KiB",
+          "sha256": "a8bca5b22de4f17e6e40125805bcdd61ecb8558cbf3e2a403e93b420aec9a55b"
+        },
+        "finished_1536_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished-1536.avif",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 15270,
+          "human_size": "14.91 KiB",
+          "sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1"
+        },
+        "finished_960_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished-960.avif",
+          "dimensions": [
+            960,
+            960
+          ],
+          "bytes": 7268,
+          "human_size": "7.10 KiB",
+          "sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6"
+        }
+      }
+    },
+    "variant-c": {
+      "label": "C \u00b7 BROAD TECHNICAL SATIN",
+      "description": "Darker broad satin response with the strongest shadow readability and the most visible restrained process texture.",
+      "shader_parameters": {
+        "slug": "variant-c",
+        "label": "C \u00b7 BROAD TECHNICAL SATIN",
+        "description": "Darker broad satin response with the strongest shadow readability and the most visible restrained process texture.",
+        "finished_base": [
+          0.475,
+          0.525,
+          0.565
+        ],
+        "rough_base_factor": 0.81,
+        "ambient": 0.305,
+        "diffuse_strength": 0.43,
+        "specular_strength": 0.52,
+        "shininess": 58.0,
+        "panel_strength": 0.215,
+        "panel_width": 0.39,
+        "rim_strength": 0.21,
+        "lower_fill": 0.07,
+        "rough_turn_amplitude": 0.021,
+        "rough_coarse_amplitude": 0.008,
+        "semi_turn_amplitude": 0.011,
+        "finished_turn_amplitude": 0.0048
+      },
+      "assets": {
+        "rough": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/rough.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 312151,
+          "human_size": "304.83 KiB",
+          "sha256": "54bd6fab8753dbb4463e57e25aeb1e82e35c87cf2c2165ece3cd33ce8f778e83"
+        },
+        "semi": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/semi.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 302250,
+          "human_size": "295.17 KiB",
+          "sha256": "4d2f22ad264ba5779b5d2f441a837d9bb204824b442b6aeb3ef166d2431034b1"
+        },
+        "finished": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 304177,
+          "human_size": "297.05 KiB",
+          "sha256": "5f36e812d89330df50c8efe0dd252660d39e08b80bc06ae55d8338321985d719"
+        },
+        "packed": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/packed.png",
+          "dimensions": [
+            1600,
+            1600
+          ],
+          "bytes": 359196,
+          "human_size": "350.78 KiB",
+          "sha256": "04b28893250c796b9597d017f0cb60a300be01b5789984b012f8fcd9a351956a"
+        },
+        "finished_1536_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished-1536.avif",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 14130,
+          "human_size": "13.80 KiB",
+          "sha256": "163e3611d90d26441faefd684c7c5e0bea95c12c648b7143cac7315d50f0f87b"
+        },
+        "finished_960_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished-960.avif",
+          "dimensions": [
+            960,
+            960
+          ],
+          "bytes": 6655,
+          "human_size": "6.50 KiB",
+          "sha256": "002edf9aed1284abfb62525abbf280ee064899bca24f48daa0199992a004a476"
+        }
+      }
+    }
+  },
+  "comparison_sheet": {
+    "path": "asset-lab/phase-5a-metal-calibration/metal-comparison-sheet.png",
+    "dimensions": [
+      1920,
+      2560
+    ],
+    "bytes": 1093264,
+    "human_size": "1.04 MiB",
+    "sha256": "c9b3f004b9d6a3004b87c0ca27cab25345f3715bc7d4055ab3d0e39ecbc7b4d0"
+  },
+  "payload_report": {
+    "note": "Representative finished-state encodes only; this calibration does not estimate or generate the longer sequence.",
+    "encoding": {
+      "1536": {
+        "format": "AVIF",
+        "quality": 63
+      },
+      "960": {
+        "format": "AVIF",
+        "quality": 60
+      }
+    },
+    "variants": {
+      "variant-a": {
+        "label": "A \u00b7 BALANCED SATIN",
+        "finished_1536_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished-1536.avif",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 14294,
+          "human_size": "13.96 KiB",
+          "sha256": "41fee24759b3b97d41cf92779e17a601738dd8df16b1a5dfa9c790e551da230f"
+        },
+        "finished_960_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-a/finished-960.avif",
+          "dimensions": [
+            960,
+            960
+          ],
+          "bytes": 6662,
+          "human_size": "6.51 KiB",
+          "sha256": "d6f4a863e1bf86bd97e424f0582eab7f7acec51bb0b4cb876185df87594c5bc7"
+        }
+      },
+      "variant-b": {
+        "label": "B \u00b7 CRISP DIRECTIONAL",
+        "finished_1536_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished-1536.avif",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 15270,
+          "human_size": "14.91 KiB",
+          "sha256": "384e1ce326080482e4c3e4793400c70613282eda74f51796a2e1ca00e1c536b1"
+        },
+        "finished_960_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-b/finished-960.avif",
+          "dimensions": [
+            960,
+            960
+          ],
+          "bytes": 7268,
+          "human_size": "7.10 KiB",
+          "sha256": "38f91c50d4ec6c8c4a22c9113a6fe0199e3a3e7f4ff9e5c7819373a4aab323f6"
+        }
+      },
+      "variant-c": {
+        "label": "C \u00b7 BROAD TECHNICAL SATIN",
+        "finished_1536_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished-1536.avif",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 14130,
+          "human_size": "13.80 KiB",
+          "sha256": "163e3611d90d26441faefd684c7c5e0bea95c12c648b7143cac7315d50f0f87b"
+        },
+        "finished_960_avif": {
+          "path": "asset-lab/phase-5a-metal-calibration/variant-c/finished-960.avif",
+          "dimensions": [
+            960,
+            960
+          ],
+          "bytes": 6655,
+          "human_size": "6.50 KiB",
+          "sha256": "002edf9aed1284abfb62525abbf280ee064899bca24f48daa0199992a004a476"
+        }
+      }
+    }
+  }
+}
