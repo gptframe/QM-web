@@ -1,25 +1,18 @@
 {
-  "generatedAt": "2026-09-26T14:32:44.372Z",
+  "generatedAt": "2026-09-26T21:33:29.290Z",
   "viewport": {
     "width": 1440,
     "height": 900
   },
   "beforeManufacturing": {
-    "resourceCount": 12,
-    "encodedBytes": 242682,
+    "resourceCount": 5,
+    "encodedBytes": 193343,
     "urls": [
-      "http://127.0.0.1:49156/assets/cinematic/key-finished-1536.avif",
-      "http://127.0.0.1:49156/styles.css",
-      "http://127.0.0.1:49156/assets/vendor/gsap-3.12.5.min.js",
-      "http://127.0.0.1:49156/assets/vendor/ScrollTrigger-3.12.5.min.js",
-      "http://127.0.0.1:49156/script.js",
-      "http://127.0.0.1:49156/assets/cinematic/key-cad-960.avif",
-      "http://127.0.0.1:49156/assets/cinematic/key-stock-960.avif",
-      "http://127.0.0.1:49156/assets/cinematic/key-blank-960.avif",
-      "http://127.0.0.1:49156/assets/cinematic/key-rough-960.avif",
-      "http://127.0.0.1:49156/assets/cinematic/key-finished-960.avif",
-      "http://127.0.0.1:49156/assets/cinematic/key-inspection-960.avif",
-      "http://127.0.0.1:49156/assets/cinematic/key-packed-960.avif"
+      "http://127.0.0.1:51434/assets/cinematic/key-finished-1536.avif",
+      "http://127.0.0.1:51434/styles.css",
+      "http://127.0.0.1:51434/assets/vendor/gsap-3.12.5.min.js",
+      "http://127.0.0.1:51434/assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "http://127.0.0.1:51434/script.js"
     ]
   },
   "afterActivation": {
@@ -29,7 +22,7 @@
     "sequenceEncodedBytes": 446152,
     "sequenceTier": "1536"
   },
-  "activationDeltaBytes": 446152,
+  "activationDeltaBytes": 495491,
   "encodedSequencePayloads": {
     "960": {
       "frameCount": 32,

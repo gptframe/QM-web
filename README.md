@@ -9,7 +9,7 @@ A static, GitHub Pages-compatible homepage for Quantamorph Limited. The central 
 - `script.js` progressively enhances navigation, the capability tabs and the desktop manufacturing story.
 - `assets/vendor/` contains pinned local copies of GSAP 3.12.5 and ScrollTrigger 3.12.5, removing the runtime dependency on a public CDN.
 - `assets/cinematic/key-*.avif` are seven responsive key states of the same illustrative representative component.
-- `assets/cinematic/machining/` contains the responsive 32-frame removal-only machining sequence. Review masters and validation evidence remain under `asset-lab/final-cinematic-production/`.
+- `assets/cinematic/machining/` contains the responsive 32-frame removal-only machining sequence. Lightweight validation evidence and regeneration instructions remain under `asset-lab/final-cinematic-production/`; reproducible review masters are generated locally and ignored.
 
 No build step, Node.js runtime or framework runtime is required for the production website. The page uses relative URLs and can be served directly from a GitHub Pages branch or repository root. Node.js is used only for local browser QA.
 
@@ -72,4 +72,4 @@ npm run qa
 
 `npm run qa:install` installs Playwright's portable Chromium build once; `npm run qa` starts a temporary local static server and executes the assertions. `QA_URL` may be supplied to test an already-running preview instead. The package is a development tool only and is not part of the deployed website.
 
-The assertions cover 375, 390, 430, 768, 780, 1024, 1440 and 1920 CSS-pixel widths; desktop cinematic activation; first/middle/final machining frames; responsive sequence tiers and staged loading; the static sequence-failure fallback; the mobile, reduced-motion and no-JavaScript eight-stage route; keyboard navigation and focus; interactive descendants inside `aria-hidden` subtrees; internal anchors; image loading; console and page errors; failed requests; and horizontal overflow. The detailed report is written to ignored `qa-output/`; committed release-review screenshots and runtime payload evidence are written under `asset-lab/final-cinematic-production/`.
+The assertions cover 375, 390, 430, 768, 780, 1024, 1440 and 1920 CSS-pixel widths; desktop cinematic activation; first/middle/final machining frames; responsive sequence tiers and staged loading; the static sequence-failure fallback; the mobile, reduced-motion and no-JavaScript eight-stage route; keyboard navigation and focus; interactive descendants inside `aria-hidden` subtrees; internal anchors; image loading; console and page errors; failed requests; and horizontal overflow. The detailed report is written to ignored `qa-output/`; release-review screenshots are regenerated under the ignored `asset-lab/final-cinematic-production/evidence/` directory, while the lightweight runtime payload report remains tracked.

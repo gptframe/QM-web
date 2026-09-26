@@ -2,3 +2,19 @@ node_modules/
 __pycache__/
 qa-output/
 debug.log
+
+# Reproducible cinematic review media (production delivery assets stay tracked in assets/cinematic/).
+asset-lab/phase-3-cinematic-proof/*.png
+asset-lab/phase-4-art-direction-proof/*.png
+asset-lab/phase-4b-machining-pilot/avif-1536/
+asset-lab/phase-4b-machining-pilot/avif-960/
+asset-lab/phase-4b-machining-pilot/masters/
+asset-lab/phase-4b-machining-pilot/pilot-contact-sheet.png
+asset-lab/phase-4b-machining-pilot/preview/
+asset-lab/phase-5a-metal-calibration/metal-comparison-sheet.png
+asset-lab/phase-5a-metal-calibration/variant-a/
+asset-lab/phase-5a-metal-calibration/variant-b/
+asset-lab/phase-5a-metal-calibration/variant-c/
+asset-lab/final-cinematic-production/contact-sheet.png
+asset-lab/final-cinematic-production/evidence/
+asset-lab/final-cinematic-production/masters/

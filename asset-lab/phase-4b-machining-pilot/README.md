@@ -17,19 +17,17 @@ The first command validates all geometric parameters and 15 adjacent solid pairs
 
 The second command performs a complete second native render in an isolated temporary directory and compares SHA-256 hashes for all 49 media outputs.
 
-## Preview
+## Local preview
 
-Serve the repository root through HTTP:
+The repository-owned generator recreates the ignored pilot media. The former static preview and its duplicate pilot assets are not tracked in the production tree; use the generated contact sheet or the final integrated production sequence for review.
+
+To inspect regenerated pilot outputs, first run the generation command above, then serve the repository root through HTTP:
 
 ```powershell
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open:
-
-`http://127.0.0.1:4173/asset-lab/phase-4b-machining-pilot/preview/`
-
-Use the native range control, Left/Right arrow keys, the mouse wheel over the viewer, or the 12 fps play control. The preview is intentionally simple and is not linked from `index.html`.
+The pilot outputs remain isolated from and unlinked by `index.html`.
 
 ## Scope and provenance
 
